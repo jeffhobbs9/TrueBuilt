@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrueBuilt — Sales Deal Room | Snyder Langston Prep</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#0a0c0f; --surface:#111418; --surface2:#181d24;
+  --border:#1e2730; --amber:#f5a623; --red:#e84545;
+  --green:#2ecc71; --blue:#3a9bd5; --text:#e8eaec; --muted:#7a8694;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Barlow',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:15px;}
+.nav{position:sticky;top:0;z-index:100;background:rgba(10,12,15,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;height:50px;gap:0;}
+.nav-brand{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:var(--amber);letter-spacing:.08em;margin-right:20px;white-space:nowrap;}
+.nav-tabs{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.nav-tab{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;cursor:pointer;border-radius:4px;color:var(--muted);white-space:nowrap;transition:all .15s;border:none;background:none;}
+.nav-tab:hover{color:var(--text);background:var(--surface);}
+.nav-tab.active{color:var(--amber);background:rgba(245,166,35,.1);}
+.section{display:none;padding:36px 24px;max-width:1100px;margin:0 auto;}
+.section.active{display:block;animation:fadeIn .2s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.section-label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:8px;}
+h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(34px,5vw,56px);font-weight:900;line-height:1;letter-spacing:-.01em;margin-bottom:18px;}
+h2{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;letter-spacing:.01em;margin-bottom:14px;}
+h3{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;letter-spacing:.02em;margin-bottom:10px;color:var(--amber);}
+p{line-height:1.7;color:#b8bfc8;margin-bottom:12px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:22px;margin-bottom:14px;}
+.card-accent{border-left:3px solid var(--amber);}
+.card-red{border-left:3px solid var(--red);}
+.card-green{border-left:3px solid var(--green);}
+.card-blue{border-left:3px solid var(--blue);}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
+@media(max-width:700px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.stat-box{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:18px;text-align:center;}
+.stat-number{font-family:'Barlow Condensed',sans-serif;font-size:42px;font-weight:900;color:var(--amber);line-height:1;margin-bottom:4px;}
+.stat-label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
+.tag{display:inline-block;border-radius:4px;padding:3px 10px;font-size:12px;font-weight:600;letter-spacing:.05em;margin:3px 3px 3px 0;font-family:'Space Mono',monospace;border:1px solid;}
+.tag-amber{color:var(--amber);border-color:rgba(245,166,35,.3);background:rgba(245,166,35,.07);}
+.tag-red{color:var(--red);border-color:rgba(232,69,69,.3);background:rgba(232,69,69,.07);}
+.tag-green{color:var(--green);border-color:rgba(46,204,113,.3);background:rgba(46,204,113,.07);}
+.tag-blue{color:var(--blue);border-color:rgba(58,155,213,.3);background:rgba(58,155,213,.07);}
+.flow-step{display:flex;gap:14px;margin-bottom:18px;}
+.flow-num{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--amber);background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.3);border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.flow-content{flex:1;}
+.flow-content strong{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;display:block;margin-bottom:6px;color:var(--text);}
+.q-list{list-style:none;padding:0;}
+.q-list li{padding:8px 12px;background:var(--surface2);border-radius:6px;margin-bottom:6px;font-size:14px;color:#b8bfc8;border-left:2px solid var(--border);font-style:italic;}
+.q-list li::before{content:'"';color:var(--amber);}
+.q-list li::after{content:'"';color:var(--amber);}
+.slider-row{margin-bottom:14px;}
+.slider-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;}
+.slider-name{font-size:13px;color:var(--muted);}
+.slider-val{font-size:13px;font-weight:700;color:var(--text);font-family:'Space Mono',monospace;}
+input[type=range]{width:100%;-webkit-appearance:none;height:4px;background:var(--border);border-radius:2px;outline:none;}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--amber);cursor:pointer;}
+.roi-out-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0;}
+@media(max-width:600px){.roi-out-grid{grid-template-columns:1fr 1fr;}}
+.roi-metric{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;}
+.roi-metric .n{font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:900;line-height:1;margin-bottom:4px;}
+.roi-metric .l{font-size:11px;color:var(--muted);}
+.payback-box{border:1px solid rgba(46,204,113,.3);background:rgba(46,204,113,.04);border-radius:8px;padding:20px;text-align:center;margin-bottom:20px;}
+.payback-box .n{font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:var(--green);line-height:1;}
+.payback-box .l{font-size:13px;color:var(--muted);margin-top:4px;}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:13px;}
+.bar-label{width:200px;flex-shrink:0;color:var(--muted);font-size:12px;}
+.bar-track{flex:1;background:var(--surface2);border-radius:3px;height:20px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:3px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:700;transition:width .3s ease;white-space:nowrap;}
+.bar-fill-red{background:rgba(232,69,69,.2);color:var(--red);}
+.bar-fill-green{background:rgba(46,204,113,.2);color:var(--green);}
+.gen-btn{width:100%;padding:11px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--text);font-size:14px;cursor:pointer;margin-top:14px;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.05em;transition:background .15s;}
+.gen-btn:hover{background:var(--surface);}
+.summary-out{display:none;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:16px;font-size:13px;line-height:1.9;margin-top:12px;font-family:'Space Mono',monospace;white-space:pre-wrap;color:#b8bfc8;}
+.obj-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:10px;cursor:pointer;}
+.obj-head{padding:14px 18px;background:var(--surface2);border-bottom:1px solid transparent;display:flex;align-items:center;gap:10px;}
+.obj-head strong{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;flex:1;}
+.obj-body{padding:16px 18px;display:none;}
+.obj-body.open{display:block;}
+.reframe{background:rgba(46,204,113,.06);border:1px solid rgba(46,204,113,.2);border-radius:6px;padding:12px 14px;font-size:14px;margin-top:10px;line-height:1.6;color:#9ef5c6;}
+.reframe::before{content:'→ REFRAME: ';font-family:'Space Mono',monospace;font-size:9px;font-weight:700;color:var(--green);letter-spacing:.12em;display:block;margin-bottom:5px;}
+.timeline{position:relative;padding-left:28px;}
+.timeline::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:2px;background:var(--border);}
+.tl-item{position:relative;margin-bottom:24px;}
+.tl-dot{position:absolute;left:-24px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--amber);border:2px solid var(--bg);}
+.tl-period{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--amber);margin-bottom:4px;}
+.tl-title{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;margin-bottom:6px;}
+.tl-bullets{list-style:none;padding:0;}
+.tl-bullets li{font-size:14px;color:#b8bfc8;padding:3px 0;}
+.tl-bullets li::before{content:'▸ ';color:var(--amber);}
+.onepager{background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+.onepager-header{background:linear-gradient(135deg,#0f1923 0%,#1a2535 100%);padding:28px 32px;border-bottom:2px solid var(--amber);position:relative;}
+.onepager-header::after{content:'CONFIDENTIAL';position:absolute;top:14px;right:14px;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.2em;color:rgba(245,166,35,.3);}
+.onepager-body{padding:28px 32px;}
+.pain-metric{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 18px;background:rgba(232,69,69,.07);border:1px solid rgba(232,69,69,.2);border-radius:8px;text-align:center;}
+.pain-metric .n{font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:900;color:var(--red);line-height:1;}
+.pain-metric .l{font-size:11px;color:var(--muted);margin-top:4px;}
+.gloss-item{border-bottom:1px solid var(--border);padding:18px 0;}
+.gloss-item:last-child{border-bottom:none;}
+.gloss-term{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;color:var(--amber);margin-bottom:4px;}
+.gloss-full{font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);margin-bottom:8px;}
+.gloss-plain{font-size:14px;color:#b8bfc8;line-height:1.7;margin-bottom:6px;}
+.gloss-example{font-size:13px;color:var(--muted);background:var(--surface2);border-radius:6px;padding:10px 14px;border-left:2px solid var(--amber);font-style:italic;margin-top:6px;}
+.cs-layout{display:grid;grid-template-columns:1fr 290px;gap:20px;align-items:start;}
+@media(max-width:800px){.cs-layout{grid-template-columns:1fr;}}
+.cs-phase{margin-bottom:10px;border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+.cs-phase-head{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--surface2);border-bottom:1px solid transparent;cursor:pointer;user-select:none;}
+.cs-phase-head:hover{background:var(--surface);}
+.cs-phase-num{width:24px;height:24px;border-radius:50%;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--muted);flex-shrink:0;font-family:'Space Mono',monospace;transition:all .2s;}
+.cs-phase-num.done{background:rgba(46,204,113,.15);border-color:rgba(46,204,113,.4);color:var(--green);}
+.cs-phase-title{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;flex:1;letter-spacing:.02em;}
+.cs-phase-time{font-family:'Space Mono',monospace;font-size:10px;color:var(--muted);}
+.cs-phase-done{font-family:'Space Mono',monospace;font-size:10px;color:var(--green);}
+.cs-phase-body{padding:14px 16px;display:none;border-top:1px solid var(--border);}
+.cs-phase-body.open{display:block;}
+.cs-say{background:rgba(58,155,213,.06);border:1px solid rgba(58,155,213,.15);border-left:3px solid var(--blue);border-radius:0 6px 6px 0;padding:11px 14px;margin-bottom:10px;font-size:14px;line-height:1.8;color:var(--text);}
+.cs-say::before{content:'YOU SAY';display:block;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;color:var(--blue);margin-bottom:5px;}
+.cs-listen{font-size:13px;color:var(--muted);padding:4px 0 10px;line-height:1.6;font-style:italic;}
+.cs-capture{display:flex;align-items:center;gap:8px;margin-bottom:8px;padding:9px 12px;background:var(--surface2);border-radius:6px;border:1px solid var(--border);}
+.cs-capture-label{font-size:12px;color:var(--muted);flex:1;line-height:1.4;}
+.cs-capture-inp{width:90px;padding:5px 8px;border-radius:4px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:13px;font-weight:700;text-align:right;font-family:'Space Mono',monospace;}
+.cs-capture-inp:focus{outline:none;border-color:var(--amber);}
+.cs-capture-unit{font-size:11px;color:var(--muted);white-space:nowrap;min-width:40px;}
+.cs-calc{background:rgba(46,204,113,.06);border:1px solid rgba(46,204,113,.2);border-radius:6px;padding:10px 14px;margin-bottom:10px;font-size:13px;line-height:1.7;color:#9ef5c6;}
+.cs-calc::before{content:'LIVE MATH';display:block;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;color:var(--green);margin-bottom:4px;opacity:.7;}
+.cs-generated-say{background:rgba(245,166,35,.05);border:1px solid rgba(245,166,35,.15);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:11px 14px;margin-bottom:10px;font-size:14px;line-height:1.8;color:var(--text);display:none;}
+.cs-generated-say::before{content:'SAY THIS (built from his numbers)';display:block;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;color:var(--amber);margin-bottom:5px;}
+.cs-pivot{background:rgba(245,166,35,.08);border:1px solid rgba(245,166,35,.2);border-radius:6px;padding:10px 14px;margin-bottom:10px;font-size:13px;color:#d4a826;line-height:1.6;}
+.cs-pivot::before{content:'PIVOT MOMENT';display:block;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;color:var(--amber);margin-bottom:4px;opacity:.7;}
+.cs-silence{font-size:12px;color:var(--muted);padding:4px 0 10px;border-left:2px solid var(--border);margin-left:8px;padding-left:12px;font-style:italic;}
+.cs-divider{border:none;border-top:1px solid var(--border);margin:12px 0;}
+.cs-sidebar{display:flex;flex-direction:column;gap:10px;}
+.cs-sidebar-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;}
+.cs-sidebar-head{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border);}
+.cs-stat{margin-bottom:10px;}
+.cs-stat:last-child{margin-bottom:0;}
+.cs-stat-label{font-size:11px;color:var(--muted);margin-bottom:2px;}
+.cs-stat-val{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:900;line-height:1;}
+.cs-stat-val.red{color:var(--red);}
+.cs-stat-val.amber{color:var(--amber);}
+.cs-stat-val.green{color:var(--green);}
+.cs-stat-sub{font-size:11px;color:var(--muted);margin-top:1px;}
+.cs-playback{background:var(--surface2);border-radius:6px;padding:10px 12px;font-size:13px;color:#b8bfc8;line-height:1.8;display:none;}
+.cs-playback.visible{display:block;}
+.cs-playback::before{content:'YOUR PLAYBACK';display:block;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;color:var(--amber);margin-bottom:5px;}
+.daylife-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:20px;}
+.daylife-col{padding:0;}
+.daylife-header{padding:16px 20px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:900;letter-spacing:.02em;}
+.daylife-header.before{background:rgba(232,69,69,.1);border-bottom:2px solid var(--red);color:var(--red);}
+.daylife-header.after{background:rgba(46,204,113,.08);border-bottom:2px solid var(--green);border-left:1px solid var(--border);color:var(--green);}
+.daylife-event{padding:12px 18px;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:flex-start;}
+.daylife-col:nth-child(2) .daylife-event{border-left:1px solid var(--border);}
+.daylife-time{font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);white-space:nowrap;flex-shrink:0;margin-top:2px;}
+.daylife-desc{font-size:13px;line-height:1.6;}
+.daylife-desc.pain{color:#e88;}
+.daylife-desc.good{color:#8e8;}
+.daylife-note{font-size:11px;color:var(--muted);margin-top:3px;}
+.ucmap{display:grid;grid-template-columns:1fr 2fr 1fr;gap:0;align-items:stretch;margin-bottom:20px;}
+.uc-col{background:var(--surface);border:1px solid var(--border);}
+.uc-col:nth-child(2){border-left:none;border-right:none;}
+.uc-col-head{padding:12px 16px;background:var(--surface2);border-bottom:1px solid var(--border);font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:800;text-align:center;}
+.uc-item{padding:12px 16px;border-bottom:1px solid var(--border);font-size:13px;line-height:1.5;}
+.uc-item:last-child{border-bottom:none;}
+.uc-item .uc-name{font-weight:600;color:var(--text);margin-bottom:3px;}
+.uc-item .uc-sub{color:var(--muted);font-size:12px;}
+.uc-relay{padding:12px 16px;border-bottom:1px solid var(--border);}
+.uc-relay:last-child{border-bottom:none;}
+.uc-relay .step{display:flex;align-items:flex-start;gap:8px;margin-bottom:4px;font-size:13px;color:#b8bfc8;}
+.uc-relay .step-num{font-family:'Space Mono',monospace;font-size:10px;color:var(--amber);flex-shrink:0;margin-top:2px;}
+hr{border:none;border-top:1px solid var(--border);margin:22px 0;}
+.note{font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:8px 12px;margin-bottom:12px;line-height:1.6;}
+.hero-band{background:linear-gradient(90deg,rgba(245,166,35,.08) 0%,transparent 100%);border:1px solid rgba(245,166,35,.15);border-radius:8px;padding:22px 26px;margin-bottom:28px;}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.3);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;color:var(--green);letter-spacing:.08em;text-transform:uppercase;font-family:'Space Mono',monospace;margin-bottom:10px;}
+.badge::before{content:'●';font-size:8px;}
+.src{font-size:10px;color:var(--muted);font-family:'Space Mono',monospace;}
+.contact-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px;margin-bottom:16px;}
+.contact-card h3{font-size:20px;}
+.contact-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.contact-row:last-child{border-bottom:none;}
+.contact-row span:first-child{color:var(--muted);}
+.contact-row span:last-child{font-weight:600;text-align:right;}
+::-webkit-scrollbar{width:5px;height:5px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+@media(max-width:700px){.ucmap{grid-template-columns:1fr;}.daylife-grid{grid-template-columns:1fr;}.daylife-col:nth-child(2) .daylife-event{border-left:none;}.daylife-header.after{border-left:none;}.bar-label{width:120px;}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-brand">TRUEBUILT // DEAL ROOM</div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="show('prospecting',this)">🎯 Prospecting</button>
+    <button class="nav-tab" onclick="show('pipeline',this)">📈 Pipeline</button>
+    <button class="nav-tab" onclick="show('pitch',this)">🎤 Elevator Pitch</button>
+    <button class="nav-tab" onclick="show('intel',this)">🔍 Intel</button>
+    <button class="nav-tab" onclick="show('script',this)">📞 Call Script</button>
+    <button class="nav-tab" onclick="show('discovery',this)">💬 Discovery</button>
+    <button class="nav-tab" onclick="show('daylife',this)">📅 Day-in-Life</button>
+    <button class="nav-tab" onclick="show('ucmap',this)">🗺 Platform Map</button>
+    <button class="nav-tab" onclick="show('roi',this)">💰 ROI Calc</button>
+    <button class="nav-tab" onclick="show('objections',this)">🛡 Objections</button>
+    <button class="nav-tab" onclick="show('pilot',this)">🚀 Pilot Plan</button>
+    <button class="nav-tab" onclick="show('onepager',this)">📄 1-Pager</button>
+    <button class="nav-tab" onclick="show('glossary',this)">📖 Glossary</button>
+    <button class="nav-tab" onclick="show('qualify',this)">✅ Live Qualifier</button>
+  </div>
+  <div style="display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0;">
+    <span id="save-indicator" style="font-family:'Space Mono',monospace;font-size:10px;color:var(--green);opacity:0;transition:opacity .4s;white-space:nowrap;">✓ saved</span>
+    <button onclick="clearState()" style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;padding:4px 10px;border-radius:4px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;white-space:nowrap;" title="Reset all data">↺ reset</button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════ PROSPECTING -->
+<section id="prospecting" class="section active">
+  <div class="section-label">Assignment · Part 1 (3–5 min)</div>
+  <h1>Five Companies<br><span style="color:var(--amber)">Worth The Call</span></h1>
+  <div class="note">TrueBuilt sells to General Contractors and Subcontractors who run enough bid volume that manual takeoff is a real bottleneck. Territory below is built around TrueBuilt's own Huntington Beach, CA home base — Orange County / San Diego commercial construction — so travel-to-close and reference-ability both work in our favor.</div>
+
+  <div class="card card-accent">
+    <h3>How this list was built</h3>
+    <p style="margin:0;">Screened for three things: (1) real bid/takeoff volume — enough estimators or bid frequency that a 70%-faster-takeoff claim actually moves a P&amp;L, (2) a named or identifiable precon decision-maker, and (3) a specific, provable reason <em>this</em> firm — not "contractors in general" — needs TrueBuilt now. Sourced from public company sites, LinkedIn, ENR rankings, and trade press — the same research stack a TrueBuilt SDR has access to (no paid ZoomInfo/Sales Navigator seat assumed).</p>
+  </div>
+
+  <div class="contact-card" style="border-left:3px solid var(--amber);">
+    <div class="badge">Hero Prospect — used throughout this deal room</div>
+    <h3>1. Snyder Langston <span style="font-size:13px;color:var(--muted);font-weight:400;">— Irvine, CA</span></h3>
+    <p>Mid-size commercial GC (K-12, higher ed, corporate/mixed-use) running multiple concurrent public and private bids out of one Irvine office — 12 minutes from TrueBuilt's HQ. Big enough to have a real precon department, small enough that one champion can still get a deal through committee in weeks, not quarters.</p>
+    <div class="contact-row"><span>Key stakeholder</span><span>Adam Schneider — Director of Preconstruction</span></div>
+    <div class="contact-row"><span>Why he's the right entry point</span><span style="text-align:right;max-width:60%;">Publicly spoke at the UCI Center for Real Estate Spring Board Meeting on "Innovation and Technology Integration" in preconstruction — he's already on record caring about exactly this</span></div>
+    <div class="contact-row"><span>Contact path</span><span>LinkedIn InMail; site contact form at snyderlangston.com; standard SoCal GC email pattern first.last@snyderlangston.com — verify before send</span></div>
+    <div class="src">Source: snyderlangston.com press page ("Director of Preconstruction Adam Schneider to Speak on Innovation and Technology Integration at UCI CRE Spring Board Meeting")</div>
+  </div>
+
+  <div class="contact-card">
+    <h3>2. Sully-Miller Contracting Co. <span style="font-size:13px;color:var(--muted);font-weight:400;">— Brea, CA</span></h3>
+    <p>Heavy civil / paving contractor bidding a constant stream of public agency lettings across Southern California. Public bid day is a hard deadline with zero grace period — there is no stronger use case for "takeoff finishes hours faster" than a contractor who loses the whole opportunity if the number isn't in by 2pm.</p>
+    <div class="contact-row"><span>Key stakeholder</span><span>Anthony Lino — Director of Preconstruction</span></div>
+    <div class="contact-row"><span>Contact path</span><span>LinkedIn (public profile, Orange County network)</span></div>
+    <div class="src">Source: Anthony Lino, LinkedIn public profile — "Director of Preconstruction at Sully-Miller Contracting Co."</div>
+  </div>
+
+  <div class="contact-card">
+    <h3>3. Helix Electric <span style="font-size:13px;color:var(--muted);font-weight:400;">— San Diego, CA</span></h3>
+    <p>One of the largest electrical contractors in the country — data centers, hospitals, aviation, mission-critical work. TrueBuilt explicitly serves subcontractors, not just GCs, and a self-perform electrical shop this size runs its own full estimating department bidding dozens of jobs a month with heavy repetitive quantity counts (conduit, fixtures, panels) — exactly the pattern computer-vision takeoff is built for.</p>
+    <div class="contact-row"><span>Key stakeholder</span><span>Sam Turiy — Chief Estimator</span></div>
+    <div class="contact-row"><span>Contact path</span><span>LinkedIn; general estimating line at helixelectric.com</span></div>
+    <div class="src">Source: ZoomInfo public profile — "Sam Turiy, Chief Estimator at Helix Electric"</div>
+  </div>
+
+  <div class="contact-card">
+    <h3>4. ACCO Engineered Systems <span style="font-size:13px;color:var(--muted);font-weight:400;">— Glendale, CA</span></h3>
+    <p>ENR-ranked as the largest mechanical contractor in the Western U.S. — HVAC, plumbing, process piping, self-perform across CA/AZ/CO/NV. At this scale, even a modest per-estimator efficiency gain compounds across a large distributed team, and a logo this size is a flagship reference for TrueBuilt's push into the mechanical/electrical subcontractor segment.</p>
+    <div class="contact-row"><span>Key stakeholder</span><span>Target role: VP of Estimating / Director of Preconstruction</span></div>
+    <div class="contact-row"><span>Contact path</span><span>No individual name surfaced in open search — next step is a LinkedIn Sales Navigator pull filtered to "ACCO Engineered Systems" + Estimating/Preconstruction titles, or a warm intro through the mechanical-contractor trade association network</span></div>
+    <div class="src">Source: accoes.com; ENR "Top Specialty Contractors" recognition of ACCO as largest Western U.S. mechanical contractor</div>
+  </div>
+
+  <div class="contact-card">
+    <h3>5. ATI Restoration <span style="font-size:13px;color:var(--muted);font-weight:400;">— Irvine, CA</span></h3>
+    <p>The nation's largest family-owned restoration/reconstruction contractor — HQ'd in the same metro as TrueBuilt. TrueBuilt acquired Capabuild in November 2025 specifically to pair AI estimating with field data capture (LiDAR, 360° walkthroughs) for the restoration/mitigation vertical. ATI already estimates on Xactimate today, which proves two things: they have budget for specialized estimating software, and they're used to paying for it. This is the single cleanest fit for the newly-combined TrueBuilt + Capabuild offering.</p>
+    <div class="contact-row"><span>Key stakeholder</span><span>Target role: VP of Estimating / Reconstruction Services</span></div>
+    <div class="contact-row"><span>Contact path</span><span>No individual name confirmed in open search — pursue via LinkedIn company directory or a warm intro from a mutual restoration-industry contact; lead with the Capabuild story specifically</span></div>
+    <div class="src">Source: atirestoration.com; Commercial Observer / constructionowners.com coverage of TrueBuilt's Capabuild acquisition (completed Nov 1, 2025)</div>
+  </div>
+
+  <div class="card" style="border-color:rgba(58,155,213,.3);background:rgba(58,155,213,.04);">
+    <h3 style="color:var(--text);">A note on contact data</h3>
+    <p style="margin:0;font-size:14px;">Where I couldn't confirm a named individual through public sources, I listed the target role and the next legitimate step to find them (Sales Navigator, trade association, warm intro) rather than guessing a name or fabricating a direct email/phone number I can't verify. That's the honest version of what real prospecting looks like — three of five below have a confirmed name and title; two have a confirmed target role and a clear next move.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ PIPELINE STRATEGY -->
+<section id="pipeline" class="section">
+  <div class="section-label">Assignment · Part 2 (5 min)</div>
+  <h1>Building a Pipeline<br><span style="color:var(--amber)">That Hits Number, Every Quarter</span></h1>
+  <p style="font-size:16px;max-width:720px;margin-bottom:24px;">Construction sales cycles are long (60–120+ days) and relationship-dense. A pipeline that only fills from cold outbound will always be feast-or-famine. This is the system, not a single tactic.</p>
+
+  <h2>Prospecting Methods &amp; Lead Generation</h2>
+  <div class="grid-2" style="margin-bottom:22px;">
+    <div class="card card-accent">
+      <h3>Signal-based targeting</h3>
+      <p style="margin:0;">Use ENR's regional Top Contractor / Top Specialty Contractor lists and Dodge/ConstructConnect bid-board activity to find firms that are actively bidding heavy volume right now — active bidders feel the takeoff bottleneck more acutely than idle ones. Track trigger events: new project awards, a new hire into a Director/VP of Preconstruction role (a new leader evaluating tools in their first 90 days is a warm window), M&amp;A activity, or a headcount freeze forcing "bid more with the same team."</p>
+    </div>
+    <div class="card card-blue">
+      <h3>Warm channels first</h3>
+      <p style="margin:0;">LinkedIn Sales Navigator filtered by title (Chief Estimator, Director/VP Preconstruction, Precon Manager) and company size. Local trade associations — AGC of California, ABC chapters, ENR networking nights, industry conferences like Advancing Preconstruction — put me in the room with people who've already self-identified as caring about this exact problem, which converts far better than cold email.</p>
+    </div>
+  </div>
+  <div class="grid-2" style="margin-bottom:22px;">
+    <div class="card card-green">
+      <h3>Referral flywheel</h3>
+      <p style="margin:0;">Construction is a small, relationship-driven world — GCs and subs already work together on the same jobsites. Every closed pilot customer gets asked for two warm introductions to a peer GC or a specialty sub they partner with regularly. A referral from someone already using TrueBuilt converts at a completely different rate than cold outbound, and it's nearly free.</p>
+    </div>
+    <div class="card">
+      <h3>Content-led inbound</h3>
+      <p style="margin:0;">Short, specific content aimed at estimators — "why a commercial takeoff still eats a day and a half," case studies on the Capabuild/restoration angle — gives the AE something to send instead of a cold pitch, and lets warm leads self-select into a call already half-sold.</p>
+    </div>
+  </div>
+
+  <h2>Building and Maintaining the Pipeline</h2>
+  <div class="card card-accent" style="margin-bottom:22px;">
+    <ul style="font-size:14px;color:#b8bfc8;padding-left:18px;line-height:2;margin:0;">
+      <li><strong style="color:var(--text);">3–4x coverage</strong> — carry pipeline worth 3–4x quota at every stage. With a realistic 20–25% close rate on a construction-software cycle this long, anything less and a single slipped deal blows the quarter.</li>
+      <li><strong style="color:var(--text);">Multi-thread from meeting one</strong> — never rely on a single champion. Build the relationship with the economic buyer (President/COO, or CFO on larger firms) and, where relevant, IT/security in parallel — construction leadership moves slowly and collectively, and a single-threaded deal dies the moment the champion changes jobs or gets busy during bid season.</li>
+      <li><strong style="color:var(--text);">Bid-cycle-aware pilots</strong> — anchor the next step to a real, already-scheduled bid on the prospect's calendar ("run TrueBuilt in parallel on your next live bid") instead of an abstract "free trial." It's a lower-friction ask and it produces real, defensible before/after numbers.</li>
+      <li><strong style="color:var(--text);">CRM discipline</strong> — every touch logged, every open opportunity tagged to a MEDDPICC stage (see Live Qualifier tab), and every deal carries a dated next step. No deal is allowed to just "go quiet."</li>
+      <li><strong style="color:var(--text);">Weekly self-audit</strong> — track new discovery calls booked, qualified opportunities added, and pilots in shadow mode against a weekly target, not just a monthly one — problems caught weekly are cheap to fix; problems caught monthly are not.</li>
+    </ul>
+  </div>
+
+  <h2>Qualifying a TrueBuilt Customer in the First Meeting</h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3>Fit signals to confirm</h3>
+      <ul style="font-size:14px;color:#b8bfc8;padding-left:18px;line-height:2;margin:0;">
+        <li>Real bid volume — rule of thumb, 3+ full-time estimators or 8+ bids/month, below which the ROI math doesn't clear a meaningful bar</li>
+        <li>Current workflow is manual — Bluebeam/On-Screen Takeoff/Excel with no computer-vision assist, and estimator bandwidth is visibly capping how many jobs they can chase</li>
+        <li>A named budget owner and a realistic decision path (precon director vs. CFO vs. IT security review)</li>
+        <li>A timing trigger — busy season approaching, recent losses on bid-day timing, or a headcount freeze</li>
+      </ul>
+    </div>
+    <div class="card card-red">
+      <h3>Disqualifiers to listen for</h3>
+      <ul style="font-size:14px;color:#b8bfc8;padding-left:18px;line-height:2;margin:0;">
+        <li>Locked into a multi-year enterprise agreement (Procore, Sage, Autodesk Construction Cloud) with no near-term renewal window</li>
+        <li>Bid volume too small to justify a platform switch — a one- or two-estimator shop is a better fit for a lighter, cheaper point tool</li>
+        <li>No one owns preconstruction as a function — buying decision would need to be invented from scratch, signaling a much longer cycle</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note" style="margin-top:16px;">Full live version of this qualifier — with MEDDPICC scoring built in — is in the ✅ Live Qualifier tab.</div>
+
+  <h2 style="margin-top:28px;">My First 90 Days on Territory</h2>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-period">Days 1–30</div><div class="tl-title">Map the territory</div><ul class="tl-bullets"><li>Build the full target list using the same ENR/Dodge/LinkedIn method above — not just the 5 in this deck</li><li>Sit in on 5+ existing customer calls to hear the pitch land in the room before running it solo</li><li>Book first discovery calls against the 5 named prospects here</li></ul></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-period">Days 31–60</div><div class="tl-title">Open and qualify</div><ul class="tl-bullets"><li>Run discovery using the framework in the 💬 Discovery tab; qualify every open deal with MEDDPICC</li><li>Get at least one live-bid pilot scheduled with a qualified prospect</li></ul></div>
+    <div class="tl-item"><div class="tl-dot" style="background:var(--green);"></div><div class="tl-period">Days 61–90</div><div class="tl-title">Prove the motion repeats</div><ul class="tl-bullets"><li>Close first pilot, turn the before/after numbers into a reference story</li><li>Use that reference to unlock the two role-based targets (ACCO, ATI) that don't yet have a named contact</li></ul></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ ELEVATOR PITCH -->
+<section id="pitch" class="section">
+  <div class="section-label">Assignment · Part 3 (5 min)</div>
+  <h1>The Pitch<br><span style="color:var(--amber)">For Adam Schneider</span></h1>
+  <p style="font-size:16px;max-width:720px;margin-bottom:24px;">Targeted at the hero prospect from the Prospecting tab — Adam Schneider, Director of Preconstruction at Snyder Langston. Personalized, not generic, per the brief.</p>
+
+  <div class="card card-accent">
+    <h3>30-Second Version</h3>
+    <p style="font-size:17px;color:var(--text);line-height:1.9;margin:0;">"Adam — you told the UCI CRE board that technology integration is central to how Snyder Langston stays competitive in precon. TrueBuilt is built for exactly that mandate. It's an AI-native takeoff-to-bid platform — computer vision handles about 70% of the quantity extraction automatically, so a takeoff that eats a day and a half today takes a few hours. That's not a productivity nice-to-have, it's bid capacity: every hour your team isn't buried in manual counts is an hour they can spend on a bid you'd otherwise have to pass on. I'm not asking you to rip out your process — I'm asking for one live bid, run in parallel with your current workflow, so your own estimators tell me if the math holds."</p>
+  </div>
+
+  <div class="grid-2" style="margin-top:18px;">
+    <div class="card card-blue">
+      <h3>Why it's built for him specifically</h3>
+      <ul style="font-size:14px;color:#b8bfc8;padding-left:18px;line-height:2;margin:0;">
+        <li>Opens with something only true of Adam — the UCI CRE talk — not a generic cold-call line</li>
+        <li>Translates "70% faster takeoff" into his metric, bid capacity, not a vague efficiency claim</li>
+        <li>Names his actual tools implicitly (manual markup, multi-day takeoffs) without guessing wrong</li>
+        <li>Closes with the lowest-friction ask in construction sales: one bid, in parallel, no rip-and-replace</li>
+      </ul>
+    </div>
+    <div class="card card-green">
+      <h3>Pain points it addresses</h3>
+      <ul style="font-size:14px;color:#b8bfc8;padding-left:18px;line-height:2;margin:0;">
+        <li>Estimator bandwidth capping how many bids Snyder Langston can pursue in a given cycle</li>
+        <li>Takeoff/estimate/bid living across disconnected tools — nothing carries forward automatically</li>
+        <li>Risk of missed scope items ("busted bids") from manual quantity counts under bid-day pressure</li>
+        <li>His own stated goal — being the tech-forward GC in the room — needs a real platform behind it, not just a talking point</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin-top:24px;">Longer Version — "Why TrueBuilt, Why Now"</h3>
+  <div class="card">
+    <p style="margin:0;">"Here's the thing about precon right now: the constraint was never demand, it was estimator hours. Snyder Langston can only bid as many jobs as your estimators can physically take off, and every hour spent counting doors and duct runs by hand is an hour not spent finding the next win. TrueBuilt puts takeoff, estimating, and bid leveling in one place, with computer vision doing the first pass on quantities — about 70% faster than doing it by hand — and an AI assistant that can pull from your own historical bids and specbooks when you need a gut-check on a number. We're a small, fast-moving team — we just brought on Capabuild to extend the same AI into field data capture — and we're looking for a handful of design-partner GCs in Southern California to build alongside. I'd rather earn that with your numbers on your next bid than with a slide deck."</p>
+  </div>
+
+  <h3 style="margin-top:24px;">Why This Approach — Originality &amp; Customer-Centricity</h3>
+  <div class="card card-accent">
+    <p style="margin:0;">Every other rep pitching Adam will open with a feature list. I opened by referencing something specific and true about him — a talk he actually gave — which does two things: it proves I did real homework (not a mail-merge), and it hands him a reason this call isn't a waste of his time before I've said a single thing about the product. The ask at the end is deliberately the smallest possible commitment — one bid, in parallel, zero disruption to his current process — because construction buyers are burned by vendors asking for a leap of faith before they've earned it. Let his own numbers, not my slide, make the case.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ INTEL -->
+<section id="intel" class="section">
+  <div class="section-label">Pre-Call Research</div>
+  <h1>Know the Battlefield<br><span style="color:var(--amber)">Before You Walk In</span></h1>
+  <div class="hero-band">
+    <div class="badge">$4M Seed · Bienville Capital, Fifth Wall, Marek · Founded 2022</div>
+    <p style="color:var(--text);font-size:16px;margin:0;line-height:1.7;">TrueBuilt is the first end-to-end AI-native preconstruction platform for General Contractors and Subcontractors — takeoff, estimating, and bid management in one system, no separate software required. Founded by <strong style="color:var(--amber)">Jon Sibley</strong>, HQ'd in Huntington Beach, CA. In November 2025 TrueBuilt acquired <strong style="color:var(--amber)">Capabuild</strong> to connect AI-driven estimating with real-time jobsite documentation (LiDAR scans, 360° walkthroughs), extending into the restoration/mitigation vertical while Capabuild continues as a standalone brand.</p>
+  </div>
+  <div class="grid-3" style="margin-bottom:22px;">
+    <div class="stat-box"><div class="stat-number">70%</div><div class="stat-label">Faster Takeoff (Computer Vision)</div></div>
+    <div class="stat-box"><div class="stat-number">3-in-1</div><div class="stat-label">Takeoff + Estimate + Bid</div></div>
+    <div class="stat-box"><div class="stat-number">2022</div><div class="stat-label">Founded · Huntington Beach, CA</div></div>
+  </div>
+  <div class="grid-2">
+    <div>
+      <div class="card card-accent">
+        <h3>What TrueBuilt Actually Does</h3>
+        <p style="margin-bottom:10px;"><strong style="color:var(--text)">📐 AI Takeoff</strong> — Computer vision auto-recognizes plan elements and extracts quantities; traditional markup tools still available. Multiple estimators can work the same set live, at the same time.</p>
+        <p style="margin-bottom:10px;"><strong style="color:var(--text)">💵 Smart Estimating</strong> — Estimates tie directly to the takeoff; a "Quick Comparison" tool shows line-item changes between estimate versions.</p>
+        <p style="margin:0;"><strong style="color:var(--text)">🤝 Bid Management</strong> — Invite and level subcontractor bids inside the same platform; ML-assisted leveling flags the best sub by scope and price.</p>
+      </div>
+      <div class="card card-blue">
+        <h3>The AI Assistant</h3>
+        <p style="margin:0;">Queries historical bids, specbooks, and blueprints in plain language — "what did we pay for structural steel on the last three K-12 jobs" — instead of digging through old spreadsheets. This is the feature that speaks directly to a firm's own institutional knowledge, which is exactly what a Director of Preconstruction worries about losing when a senior estimator retires.</p>
+      </div>
+    </div>
+    <div>
+      <div class="card card-red">
+        <h3>Adam Schneider — Know Your Buyer</h3>
+        <p><strong style="color:var(--text)">Role:</strong> Director of Preconstruction, Snyder Langston (Irvine, CA).</p>
+        <p><strong style="color:var(--text)">What he's on record caring about:</strong></p>
+        <div style="margin-bottom:10px;">
+          <span class="tag tag-amber">Tech Integration</span>
+          <span class="tag tag-amber">Innovation</span>
+          <span class="tag tag-red">Bid Velocity</span>
+          <span class="tag tag-red">Team Bandwidth</span>
+        </div>
+        <p style="margin:0;font-size:13px;color:var(--muted);">Publicly spoke on innovation and tech integration in precon at UCI CRE — he wants to be the tech-forward GC in the room. Lead with a real platform, not a features slide.</p>
+      </div>
+      <div class="card card-green">
+        <h3>Snyder Langston Snapshot</h3>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+          <div style="display:flex;justify-content:space-between;"><span style="color:var(--muted);">HQ</span><span style="font-weight:700;">Irvine, CA</span></div>
+          <div style="display:flex;justify-content:space-between;"><span style="color:var(--muted);">Sector focus</span><span style="font-weight:700;">K-12 · Higher Ed · Corporate</span></div>
+          <div style="display:flex;justify-content:space-between;"><span style="color:var(--muted);">Precon team (est.)</span><span style="font-weight:700;color:var(--amber);">~6 estimators</span></div>
+          <div style="display:flex;justify-content:space-between;"><span style="color:var(--muted);">Bids/month (est.)</span><span style="font-weight:700;color:var(--red);">~12</span></div>
+          <div style="display:flex;justify-content:space-between;"><span style="color:var(--muted);">Distance from TrueBuilt HQ</span><span style="font-weight:700;">~12 min</span></div>
+        </div>
+        <div class="src" style="margin-top:8px;">Estimates modeled for prep purposes — confirm live on the call. See 📞 Call Script.</div>
+      </div>
+    </div>
+  </div>
+  <h2 style="margin:28px 0 14px;">The Preconstruction Software Market — Rates &amp; Comps</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:22px;">
+    <div class="card card-blue" style="margin:0;">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--blue);margin-bottom:6px;">HOW GCs SPEND ON TOOLS</div>
+      <h3 style="font-size:14px;">The Comp Set</h3>
+      <p style="font-size:13px;color:#b8bfc8;margin:0;line-height:1.8;">On-Screen Takeoff ≈ $995/seat/yr. HeavyBid (Trimble) ≈ $4,000/seat/yr. InEight Estimate NOW ≈ $199/seat/mo ($2,388/yr). Sage/CostOS: perpetual seat ≈ $3,000 + ~20%/yr maintenance, $25K+ first year for 5 seats + a consultant. Procore prices off Annual Construction Volume, not per seat. TrueBuilt itself doesn't publish pricing — it's sold as a custom enterprise quote via sales@truebuiltsoftware.com.</p>
+    </div>
+    <div class="card" style="margin:0;border-color:rgba(231,76,60,.3);background:rgba(231,76,60,.04);">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--red);margin-bottom:6px;">WHERE MARGIN LEAKS</div>
+      <h3 style="font-size:14px;">The Margin Killers</h3>
+      <ul style="font-size:13px;color:#b8bfc8;padding-left:16px;margin:0;line-height:2;">
+        <li>Estimator hours are the hard cap on how many jobs a firm can bid</li>
+        <li>Manual quantity takeoff errors ("busted bids") erode margin or trigger rework</li>
+        <li>Data re-keyed across Bluebeam → Excel → bid form loses time and introduces mistakes</li>
+        <li>Institutional knowledge (unit costs, historical bids) leaves when a senior estimator does</li>
+      </ul>
+    </div>
+    <div class="card card-green" style="margin:0;">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--green);margin-bottom:6px;">WHERE TRUEBUILT FITS</div>
+      <h3 style="font-size:14px;">The Wedge</h3>
+      <p style="font-size:13px;color:#b8bfc8;margin:0;line-height:1.8;">Takeoff time is the single biggest lever — cut it 70% and the same team can chase more work. Bid leveling and the AI Assistant are the natural expansion once takeoff/estimating land. These are the same three-motion sequence TrueBuilt itself sells: takeoff → estimate → bid, one platform.</p>
+    </div>
+  </div>
+  <div class="card" style="border-color:rgba(245,166,35,.3);background:rgba(245,166,35,.04);">
+    <h3 style="color:var(--text);">⚡ Competitive Edge Right Now</h3>
+    <p style="margin:0;font-size:15px;line-height:1.8;">TrueBuilt is a small, venture-backed team ($4M seed, just extended the platform with the Capabuild acquisition) actively looking for design-partner GCs and subs in Southern California. That's a real, honest urgency lever — <strong style="color:var(--amber)">early customers get founder-level attention and flexible pilot terms that won't be on the table once the sales motion scales.</strong></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ CALL SCRIPT -->
+<section id="script" class="section">
+  <div class="section-label">Call Playbook</div>
+  <h1>What To<br><span style="color:var(--amber)">Actually Say</span></h1>
+  <p style="font-size:16px;max-width:680px;margin-bottom:24px;">Type Adam's answers in as he gives them. The math builds live, the playback sentence writes itself from his numbers, and each phase ticks done as you fill it in. Everything here also syncs to the ROI Calc and Live Qualifier tabs.</p>
+
+  <div class="cs-layout">
+    <div>
+
+      <!-- PHASE 0 -->
+      <div class="cs-phase">
+        <div class="cs-phase-head" onclick="csToggle(this)">
+          <div class="cs-phase-num done">✓</div>
+          <div class="cs-phase-title">Opening</div>
+          <div class="cs-phase-time">min 0–2</div>
+        </div>
+        <div class="cs-phase-body open">
+          <div class="cs-say">"Adam — good to connect. Saw you speak at UCI CRE about technology integration in precon. What's actually hardest about getting a bid out the door right now?"</div>
+          <div class="cs-listen">One sentence showing you did homework. One question. Then stop. The instinct to fill silence is the enemy — resist it completely.</div>
+          <div class="cs-alt">"Where does your precon team feel the most stretched right now?" or "What's the bottleneck between a plan set landing and a bid going out?"</div>
+        </div>
+      </div>
+
+      <!-- PHASE 1 -->
+      <div class="cs-phase">
+        <div class="cs-phase-head" onclick="csToggle(this)">
+          <div class="cs-phase-num" id="csn1">1</div>
+          <div class="cs-phase-title">Map the takeoff workload</div>
+          <div class="cs-phase-time">min 2–8</div>
+          <div class="cs-phase-done" id="csd1"></div>
+        </div>
+        <div class="cs-phase-body">
+          <div class="cs-say">"Walk me through a typical bid — plan set lands, what happens between that and a number going out the door?"</div>
+          <div class="cs-listen">Let him list every tool and handoff. Don't help him. When he finishes, reflect it back: "So that's Bluebeam for markup, Excel for the estimate, and a separate leveling sheet for subs — three tools, one bid." He confirms because it's true and you listened.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Estimators / precon staff</div>
+            <input class="cs-capture-inp" type="number" id="cs-estimators" placeholder="6" min="1" max="60" oninput="csCalc()">
+            <div class="cs-capture-unit">people</div>
+          </div>
+          <div class="cs-divider"></div>
+          <div class="cs-say">"How many bids does the team pursue in a typical month?"</div>
+          <div class="cs-listen">This is the most important number you'll capture — it sets the whole ROI model. Write down total bids pursued, not just bids won.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Bids pursued / month</div>
+            <input class="cs-capture-inp" type="number" id="cs-bids" placeholder="12" min="1" max="200" oninput="csCalc()">
+            <div class="cs-capture-unit">bids</div>
+          </div>
+          <div class="cs-say">"And roughly how many hours does a full manual takeoff eat on an average bid, start to finish?"</div>
+          <div class="cs-listen">Don't say "a day and a half." Let him give the number — his number is more powerful in the playback than yours.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Hours per manual takeoff</div>
+            <input class="cs-capture-inp" type="number" id="cs-hours" placeholder="14" oninput="csCalc()">
+            <div class="cs-capture-unit">hrs</div>
+          </div>
+          <div class="cs-calc" id="cs-calc-hours">Enter bids and hours per takeoff above</div>
+          <div class="cs-generated-say" id="cs-say-hours"><span id="cs-hours-stmt"></span></div>
+          <div class="cs-silence" id="cs-silence1" style="display:none;">Stop here. The number does the work.</div>
+          <div class="cs-divider"></div>
+          <div class="cs-say">"Of the work you'd genuinely like to chase, how many bids a month do you end up passing on just because the team doesn't have the hours?"</div>
+          <div class="cs-listen">This unlocks the second ROI stream — opportunity cost, not just labor cost. If he has a number here, this is the one that gets a CFO's attention.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Bids passed on / month (bandwidth)</div>
+            <input class="cs-capture-inp" type="number" id="cs-declined" placeholder="3" min="0" oninput="csCalc()">
+            <div class="cs-capture-unit">/mo</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 2 -->
+      <div class="cs-phase">
+        <div class="cs-phase-head" onclick="csToggle(this)">
+          <div class="cs-phase-num" id="csn2">2</div>
+          <div class="cs-phase-title">Win rate, value &amp; busted bids</div>
+          <div class="cs-phase-time">min 8–14</div>
+          <div class="cs-phase-done" id="csd2"></div>
+        </div>
+        <div class="cs-phase-body">
+          <div class="cs-say">"What's your win rate running these days, and what's a typical contract value when you land one?"</div>
+          <div class="cs-listen">Industry average sits around 20–25%. If he says higher, that's a strong champion signal — a firm that already wins efficiently gets even more leverage from bidding more work.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Win rate</div>
+            <input class="cs-capture-inp" type="number" id="cs-winrate" placeholder="25" min="1" max="100" oninput="csCalc()">
+            <div class="cs-capture-unit">%</div>
+          </div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Avg. contract value</div>
+            <input class="cs-capture-inp" type="number" id="cs-contractval" placeholder="3500000" oninput="csCalc()">
+            <div class="cs-capture-unit">$</div>
+          </div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Gross margin</div>
+            <input class="cs-capture-inp" type="number" id="cs-margin" placeholder="12" min="1" max="40" oninput="csCalc()">
+            <div class="cs-capture-unit">%</div>
+          </div>
+          <div class="cs-divider"></div>
+          <div class="cs-say">"Be honest — how often does a job come back and bite you because something got missed in the takeoff?"</div>
+          <div class="cs-listen">Most precon leads will wince here. They know it happens. After he answers — don't follow up immediately. Silence. He'll fill it with more honesty than the first answer.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Jobs with a takeoff miss (est.)</div>
+            <input class="cs-capture-inp" type="number" id="cs-errorpct" placeholder="8" min="0" max="100" oninput="csCalc()">
+            <div class="cs-capture-unit">%</div>
+          </div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Avg. cost of one miss</div>
+            <input class="cs-capture-inp" type="number" id="cs-errorcost" placeholder="18000" oninput="csCalc()">
+            <div class="cs-capture-unit">$</div>
+          </div>
+          <div class="cs-calc" id="cs-calc-claims">Enter win rate, contract value, and error rate above</div>
+          <div class="cs-generated-say" id="cs-say-claims"><span id="cs-claims-stmt"></span></div>
+        </div>
+      </div>
+
+      <!-- PHASE 3 -->
+      <div class="cs-phase">
+        <div class="cs-phase-head" onclick="csToggle(this)">
+          <div class="cs-phase-num" id="csn3">3</div>
+          <div class="cs-phase-title">Trust &amp; institutional knowledge</div>
+          <div class="cs-phase-time">min 14–18</div>
+          <div class="cs-phase-done" id="csd3"></div>
+        </div>
+        <div class="cs-phase-body">
+          <div class="cs-say">"When a miss happens, is it usually a training gap on a newer estimator, or is it a process problem that keeps changing underneath the team?"</div>
+          <div class="cs-listen">Training = trust issue with junior staff. Changing process = SOP problem. Both = you'll use the AI Assistant / historical-data story later. File it. Don't jump there yet.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Root cause</div>
+            <select class="cs-capture-inp" style="width:110px;font-size:12px;" id="cs-escalation" onchange="csCalc()">
+              <option value="">—</option>
+              <option value="training">Training</option>
+              <option value="process">Process</option>
+              <option value="both">Both</option>
+            </select>
+            <div class="cs-capture-unit"></div>
+          </div>
+          <div class="cs-say">"Where do your historical unit costs and past bid data live today — if a new estimator starts Monday, how do they learn what you paid last time?"</div>
+          <div class="cs-listen">"Whoever's been here longest" or "old spreadsheets somewhere" = your AI Assistant pitch. File it. Don't go there now.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Historical data lives in</div>
+            <input class="cs-capture-inp" type="text" id="cs-sop" placeholder="Old spreadsheets..." style="width:110px;font-size:12px;" oninput="csCalc()">
+            <div class="cs-capture-unit"></div>
+          </div>
+          <div class="cs-say">"If your most senior estimator retired next year — what happens to that knowledge?"</div>
+          <div class="cs-silence">Stop. Don't answer it for him. Don't soften it. Let him sit with that.</div>
+        </div>
+      </div>
+
+      <!-- PHASE 4 -->
+      <div class="cs-phase">
+        <div class="cs-phase-head" onclick="csToggle(this)">
+          <div class="cs-phase-num" id="csn4">4</div>
+          <div class="cs-phase-title">Playback → pivot</div>
+          <div class="cs-phase-time">min 18–24</div>
+          <div class="cs-phase-done" id="csd4"></div>
+        </div>
+        <div class="cs-phase-body">
+          <div class="cs-pivot">Before you pivot — play back what you heard using his exact words and numbers. He needs to hear his own problem reflected before he'll receive a solution.</div>
+          <div class="cs-playback visible" id="cs-playback">Fill in the earlier sections — your playback language builds here automatically.</div>
+          <div class="cs-divider"></div>
+          <div class="cs-say">"Here's what we built TrueBuilt to do — not in general, for exactly this. Computer vision takes the first pass on quantities, so takeoff drops by about 70%. That estimate carries straight into bid leveling — nothing gets re-keyed. And the AI Assistant can pull your own historical unit costs on command, so that knowledge doesn't live in one person's head. Want to see it run against one of your actual live bids, side by side with how your team does it today?"</div>
+          <div class="cs-listen">Don't ask "does that sound interesting?" Ask if he wants to see it applied to his specific situation. Yes/no he can actually answer.</div>
+        </div>
+      </div>
+
+      <!-- PHASE 4.5 — DEAL QUALIFY -->
+      <div class="cs-phase">
+        <div class="cs-phase-head" onclick="csToggle(this)">
+          <div class="cs-phase-num" id="csn45">Q</div>
+          <div class="cs-phase-title">Deal qualify <span style="font-size:11px;font-weight:400;color:var(--muted);margin-left:6px;">MEDDPICC embedded</span></div>
+          <div class="cs-phase-time">min 24–28</div>
+          <div class="cs-phase-done" id="csd45"></div>
+        </div>
+        <div class="cs-phase-body">
+          <div class="cs-pivot" style="border-color:rgba(58,155,213,.2);background:rgba(58,155,213,.06);color:var(--blue);">These questions sound natural at this stage — you've just pitched, he's reacting. Weave them in conversationally, not as a checklist.</div>
+
+          <div class="cs-say">"Who else would need to weigh in on a decision like this — is it your call, or does ownership/finance need to sign off?"</div>
+          <div class="cs-listen">This is your authority question. If he says "just me," confirm: "So you could move forward without additional sign-off?" If he names someone, write it down — that's your next relationship to build.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Decision authority</div>
+            <select class="cs-capture-inp" style="width:130px;font-size:11px;" id="cs-authority" onchange="csCalc()">
+              <option value="">—</option>
+              <option value="yes">Adam signs</option>
+              <option value="partial">Recommends, President/CFO signs</option>
+              <option value="no">Champion only</option>
+            </select>
+            <div class="cs-capture-unit"></div>
+          </div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Who signs above Adam</div>
+            <input class="cs-capture-inp" type="text" id="cs-abovemike" placeholder="President, CFO..." style="width:130px;font-size:11px;" oninput="csCalc()">
+            <div class="cs-capture-unit"></div>
+          </div>
+
+          <div class="cs-divider"></div>
+          <div class="cs-say">"Do you have budget set aside for precon software, or would we need to build the case to go find it?"</div>
+          <div class="cs-listen">Blunt, but respectful. If he says "we'd need to find it," follow with: "What does that process look like — do you put together a business case, or does it go through a planning cycle?"</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Budget status</div>
+            <select class="cs-capture-inp" style="width:130px;font-size:11px;" id="cs-budget" onchange="csCalc()">
+              <option value="">—</option>
+              <option value="yes">Allocated now</option>
+              <option value="unallocated">Exists, not allocated</option>
+              <option value="needsapproval">Needs approval</option>
+              <option value="no">No budget yet</option>
+            </select>
+            <div class="cs-capture-unit"></div>
+          </div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Approval threshold ($)</div>
+            <input class="cs-capture-inp" type="number" id="cs-doa" placeholder="25000" style="width:130px;" oninput="csCalc()">
+            <div class="cs-capture-unit">DOA</div>
+          </div>
+
+          <div class="cs-divider"></div>
+          <div class="cs-say">"What did your last software purchase look like — how did that decision actually happen?"</div>
+          <div class="cs-listen">Free intelligence. The answer is your exact roadmap: who was involved, how long it took, what nearly killed it.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Last purchase notes</div>
+            <input class="cs-capture-inp" type="text" id="cs-lastpurchase" placeholder="Took 4 mo, President + IT..." style="width:160px;font-size:11px;" oninput="csCalc()">
+            <div class="cs-capture-unit"></div>
+          </div>
+
+          <div class="cs-divider"></div>
+          <div class="cs-say">"Is there a date this needs to be solved by — a busy bid season, a contract renewal on your current tools, anything like that?"</div>
+          <div class="cs-listen">If no forcing function exists, you need to create one or the deal drifts.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Timeline to decide</div>
+            <select class="cs-capture-inp" style="width:130px;font-size:11px;" id="cs-timeline" onchange="csCalc()">
+              <option value="">—</option>
+              <option value="immediate">Weeks</option>
+              <option value="thisquarter">This quarter</option>
+              <option value="nextquarter">Next quarter</option>
+              <option value="sixplus">6+ months</option>
+            </select>
+            <div class="cs-capture-unit"></div>
+          </div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Forcing function</div>
+            <input class="cs-capture-inp" type="text" id="cs-forcing" placeholder="Bid season, renewal..." style="width:130px;font-size:11px;" oninput="csCalc()">
+            <div class="cs-capture-unit"></div>
+          </div>
+
+          <div class="cs-divider"></div>
+          <div class="cs-say">"Are you looking at anyone else for this, or are we the only conversation?"</div>
+          <div class="cs-listen">Don't hedge this question. If he says "we're looking at a few things" — ask who.</div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">Competition</div>
+            <select class="cs-capture-inp" style="width:130px;font-size:11px;" id="cs-competition" onchange="csCalc()">
+              <option value="">—</option>
+              <option value="none">Only us</option>
+              <option value="buildvsbuy">Sticking with current tools</option>
+              <option value="competitor">Competitor(s)</option>
+              <option value="donothing">vs. doing nothing</option>
+            </select>
+            <div class="cs-capture-unit"></div>
+          </div>
+          <div class="cs-capture">
+            <div class="cs-capture-label">IT / security involvement</div>
+            <select class="cs-capture-inp" style="width:130px;font-size:11px;" id="cs-it" onchange="csCalc()">
+              <option value="">—</option>
+              <option value="no">Not required</option>
+              <option value="review">Reviews, doesn't block</option>
+              <option value="approval">Must approve</option>
+            </select>
+            <div class="cs-capture-unit"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 5 -->
+      <div class="cs-phase">
+        <div class="cs-phase-head" onclick="csToggle(this)">
+          <div class="cs-phase-num" id="csn5">5</div>
+          <div class="cs-phase-title">The close</div>
+          <div class="cs-phase-time">min 28–30</div>
+        </div>
+        <div class="cs-phase-body">
+          <div class="cs-say">"Here's what I'd suggest. Pick your next live bid — we run it in parallel with your current process, no disruption to how you're already bidding it. My team handles setup and imports your historical data. Once the bid's out, we sit down with the actual numbers: hours spent, quantities caught, time to submit. If the math works, we talk about rolling it out to the rest of the team. If it doesn't, you've lost a few hours on one bid. Fair way to find out?"</div>
+          <div class="cs-silence">Stop talking. Do not fill this silence. Whoever speaks next loses.</div>
+          <div class="cs-divider"></div>
+          <div style="font-size:13px;color:var(--muted);line-height:1.8;">
+            <strong style="color:var(--text);display:block;margin-bottom:4px;">If he asks price before agreeing to the pilot:</strong>
+            "Pricing scales to seats and volume — I'd rather size a number for what you actually need after we've run this bid together. That side-by-side comparison is also exactly what your CFO will want to see before signing anything."<br><br>
+            <strong style="color:var(--text);display:block;margin-bottom:4px;">If he says he needs to think about it:</strong>
+            "What specifically would help you decide — a reference call with another GC we work with, the ROI model, or just time? I want to be useful, not just persistent."<br><br>
+            <strong style="color:var(--text);display:block;margin-bottom:4px;">If IT/security is a blocker:</strong>
+            "TrueBuilt is cloud-based and doesn't require touching your ERP or network — most security reviews come back clean quickly. Want me to send a technical one-pager straight to your IT lead so it's moving in parallel?"
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="cs-sidebar">
+      <div class="cs-sidebar-card">
+        <div class="cs-sidebar-head">Captured live</div>
+        <div class="cs-stat"><div class="cs-stat-label">Estimators</div><div class="cs-stat-val" id="cssb-ftes">—</div></div>
+        <div class="cs-stat"><div class="cs-stat-label">Bids/month</div><div class="cs-stat-val" id="cssb-tickets">—</div></div>
+        <div class="cs-stat"><div class="cs-stat-label">Hrs per takeoff</div><div class="cs-stat-val" id="cssb-handle">—</div></div>
+        <div class="cs-stat"><div class="cs-stat-label">Win rate</div><div class="cs-stat-val" id="cssb-systems">—</div></div>
+        <div class="cs-stat"><div class="cs-stat-label">Bids passed on/mo</div><div class="cs-stat-val" id="cssb-sla">—</div></div>
+        <div class="cs-stat"><div class="cs-stat-label">Takeoff miss rate</div><div class="cs-stat-val" id="cssb-miss">—</div></div>
+      </div>
+      <div class="cs-sidebar-card">
+        <div class="cs-sidebar-head">Live pain math</div>
+        <div class="cs-stat"><div class="cs-stat-label">Hrs/month on takeoff</div><div class="cs-stat-val red" id="cssb-hours">—</div><div class="cs-stat-sub" id="cssb-hours-sub"></div></div>
+        <div class="cs-stat"><div class="cs-stat-label">Annual labor cost on takeoff</div><div class="cs-stat-val red" id="cssb-labor">—</div></div>
+        <div class="cs-stat"><div class="cs-stat-label">Annual busted-bid cost</div><div class="cs-stat-val red" id="cssb-claims">—</div></div>
+        <div class="cs-stat"><div class="cs-stat-label">Missed-bid opportunity/yr</div><div class="cs-stat-val red" id="cssb-slayr">—</div></div>
+        <div style="border-top:1px solid var(--border);margin:8px 0;padding-top:8px;">
+          <div class="cs-stat-label">Total annual pain</div>
+          <div class="cs-stat-val amber" id="cssb-total" style="font-size:28px;">—</div>
+        </div>
+      </div>
+      <div class="cs-sidebar-card">
+        <div class="cs-sidebar-head">Deal health</div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px;">
+          <div style="text-align:center;flex:1;min-width:28px;"><div style="font-family:'Space Mono',monospace;font-size:9px;color:var(--muted);margin-bottom:3px;">M</div><div style="width:28px;height:28px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin:0 auto;transition:all .3s;" id="cs-ring-M">—</div></div>
+          <div style="text-align:center;flex:1;min-width:28px;"><div style="font-family:'Space Mono',monospace;font-size:9px;color:var(--muted);margin-bottom:3px;">E</div><div style="width:28px;height:28px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin:0 auto;transition:all .3s;" id="cs-ring-E">—</div></div>
+          <div style="text-align:center;flex:1;min-width:28px;"><div style="font-family:'Space Mono',monospace;font-size:9px;color:var(--muted);margin-bottom:3px;">D</div><div style="width:28px;height:28px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin:0 auto;transition:all .3s;" id="cs-ring-D">—</div></div>
+          <div style="text-align:center;flex:1;min-width:28px;"><div style="font-family:'Space Mono',monospace;font-size:9px;color:var(--muted);margin-bottom:3px;">I</div><div style="width:28px;height:28px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin:0 auto;transition:all .3s;" id="cs-ring-I">—</div></div>
+          <div style="text-align:center;flex:1;min-width:28px;"><div style="font-family:'Space Mono',monospace;font-size:9px;color:var(--muted);margin-bottom:3px;">C</div><div style="width:28px;height:28px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin:0 auto;transition:all .3s;" id="cs-ring-C">—</div></div>
+        </div>
+        <div style="height:4px;background:var(--border);border-radius:2px;overflow:hidden;margin-bottom:6px;">
+          <div id="cs-deal-bar" style="height:100%;width:0%;background:var(--red);border-radius:2px;transition:all .4s;"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div style="font-size:12px;font-weight:700;" id="cs-deal-status">Unqualified</div>
+          <div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--muted);" id="cs-deal-pct">0%</div>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-top:6px;" id="cs-deal-gap"></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);line-height:1.6;padding:2px;">Turn toward Adam at phase 4. His numbers, not estimates.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ DISCOVERY -->
+<section id="discovery" class="section">
+  <div class="section-label">Discovery Framework</div>
+  <h1>The Conversation<br><span style="color:var(--amber)">Architecture</span></h1>
+  <p style="font-size:16px;margin-bottom:28px;max-width:680px;">Don't pitch. Mine. By the time you explain TrueBuilt, Adam should have already told you why he needs it — in his own words.</p>
+  <div class="note">TARGET: 70% listening, 30% talking. Every question ladders from symptom → root cause → dollar impact.</div>
+
+  <div class="flow-step">
+    <div class="flow-num">00</div>
+    <div class="flow-content">
+      <strong>Open with Respect, Not a Pitch</strong>
+      <ul class="q-list"><li>Adam, before I say anything about TrueBuilt — walk me through what happens between a plan set landing on your desk and a bid going out the door. I want to understand what's actually hard before I tell you anything about what we do.</li></ul>
+      <p style="font-size:13px;color:var(--muted);">→ Take notes visibly. Don't interrupt. The longer he talks, the more he sells himself.</p>
+    </div>
+  </div>
+  <div class="flow-step">
+    <div class="flow-num">01</div>
+    <div class="flow-content">
+      <strong>Quantify the Takeoff Pain</strong>
+      <ul class="q-list">
+        <li>Step by step, what tools touch a single bid — markup, quantities, estimate, leveling?</li>
+        <li>What's the average time from plan set to finished takeoff?</li>
+        <li>Of the bids you pursue in a month, how many do you wish you had bandwidth to also chase?</li>
+      </ul>
+      <p style="font-size:13px;color:var(--muted);">→ Build the math live: 12 bids × 14 hrs = 168 estimator hours/month on takeoff alone.</p>
+    </div>
+  </div>
+  <div class="flow-step">
+    <div class="flow-num">02</div>
+    <div class="flow-content">
+      <strong>Hit the Win-Rate and Margin Nerve</strong>
+      <ul class="q-list">
+        <li>What's your win rate running, and what's a typical contract worth when you land one?</li>
+        <li>How often does a takeoff miss actually cost you — rework, a self-perform correction, margin erosion?</li>
+        <li>If you had to put a number on what missed bids and busted-bid costs ran last year — ballpark — what would it be?</li>
+      </ul>
+      <p style="font-size:13px;color:var(--muted);">→ When he gives a number, write it down, repeat it back, build your ROI around his figure — not an assumption.</p>
+    </div>
+  </div>
+  <div class="flow-step">
+    <div class="flow-num">03</div>
+    <div class="flow-content">
+      <strong>Surface the Institutional-Knowledge Risk</strong>
+      <ul class="q-list">
+        <li>When a miss happens, is it a training gap or a process that keeps shifting under the team?</li>
+        <li>Where do your historical unit costs and past bids live today? How current is that data?</li>
+        <li>If your most senior estimator left tomorrow — what happens?</li>
+      </ul>
+      <p style="font-size:13px;color:var(--muted);">→ "Institutional knowledge walking out the door" is a real fear for every precon leader. Make him feel it.</p>
+    </div>
+  </div>
+  <div class="flow-step">
+    <div class="flow-num">04</div>
+    <div class="flow-content">
+      <strong>Map the Tech Stack</strong>
+      <ul class="q-list">
+        <li>Walk me through every tool a bid touches end to end — takeoff, estimate, leveling, submission.</li>
+        <li>What are you on today — Bluebeam? On-Screen Takeoff? Straight Excel?</li>
+        <li>How much of that handoff between tools is manual copy-paste?</li>
+      </ul>
+      <p style="font-size:13px;color:var(--muted);">→ You're qualifying for fit AND showing you understand the complexity. Most vendors never ask this.</p>
+    </div>
+  </div>
+  <div class="flow-step">
+    <div class="flow-num">05</div>
+    <div class="flow-content">
+      <strong>The Discovery Close</strong>
+      <ul class="q-list"><li>Let me play this back — stop me if I've got anything wrong. You're running about 12 bids a month, roughly 14 hours of manual takeoff apiece, split across three disconnected tools. A meaningful chunk of the work you'd want to chase gets passed on for lack of hours. And when a takeoff miss slips through, it costs real money on the job. Does that capture it?</li></ul>
+      <p style="font-size:13px;color:var(--muted);">→ When he says "yeah, that's exactly it" — pivot to the pitch. He just sold himself.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ DAY IN LIFE -->
+<section id="daylife" class="section">
+  <div class="section-label">Emotional Proof</div>
+  <h1>A Day in the Life<br><span style="color:var(--amber)">Before vs. After</span></h1>
+  <p style="font-size:16px;max-width:680px;margin-bottom:12px;">Numbers convince the brain. Stories convince the gut. Updates live from whatever Adam tells you in the Call Script tab.</p>
+  <div class="note" style="margin-bottom:20px;">Enter numbers in the 📞 Call Script tab — this page updates automatically with his actual figures.</div>
+
+  <div class="daylife-grid">
+    <div class="daylife-col">
+      <div class="daylife-header before">TODAY (Without TrueBuilt)</div>
+      <div class="daylife-event"><span class="daylife-time">7:30am</span><div><div class="daylife-desc pain">Opens the plan set for a new bid. <strong id="dl-overnight-before">3</strong> other live bids already on the board. Sighs audibly.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">8:00am</span><div><div class="daylife-desc pain">Starts manual takeoff in Bluebeam. Counts doors, measures duct runs, tallies fixtures by hand. Copies quantities into Excel. Repeat across <span id="dl-systems-before">3</span> disconnected tools per bid.</div><div class="daylife-note">Avg <span id="dl-handle-before">14 hrs</span> per takeoff</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">11:00am</span><div><div class="daylife-desc pain">Junior estimator flags a scope question on structural steel. "Not sure what we paid last time." Senior estimator drops what she's doing to dig through an old spreadsheet.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">1:00pm</span><div><div class="daylife-desc pain">A promising K-12 bid comes across the desk. No bandwidth this week. Passed. That's <span id="dl-claimval-before">$3.5M</span> of potential contract value nobody even bid on.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">3:30pm</span><div><div class="daylife-desc pain">Bid leveling sheet has to be rebuilt by hand from sub quotes that came back in three different formats.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">4:30pm</span><div><div class="daylife-desc pain">A duct run gets missed in the final quantity check — nobody catches it until buyout. That gap comes straight off the job's margin.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">6:00pm</span><div><div class="daylife-desc pain"><span id="dl-total-before">1</span> bid finished today, <span id="dl-escalated-before">1</span> bid passed on entirely. Team's exhausted. Tomorrow looks the same.</div></div></div>
+    </div>
+    <div class="daylife-col">
+      <div class="daylife-header after">WITH TRUEBUILT (First Live Bid)</div>
+      <div class="daylife-event"><span class="daylife-time">7:30am</span><div><div class="daylife-desc good">Uploads the plan set. Computer vision starts pulling quantities automatically — <span id="dl-overnight-after">most of the count</span> is done before coffee's finished brewing.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">8:15am</span><div><div class="daylife-desc good">Reviews <span id="dl-exceptions-after">flagged</span> items the AI wasn't fully confident on. TrueBuilt has already surfaced them with a suggested read. Confirm or adjust.</div><div class="daylife-note">Minutes, not hours, per bid</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">9:30am</span><div><div class="daylife-desc good">Junior estimator has a scope question. Asks the AI Assistant what was paid for structural steel on the last three K-12 jobs. Answer in seconds, sourced from TrueBuilt's own historical bid data.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">10:00am</span><div><div class="daylife-desc good">With hours freed up, the team picks up that K-12 bid they'd normally have passed on. Estimate and bid leveling live in the same platform as the takeoff — nothing gets re-keyed.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">11:30am</span><div><div class="daylife-desc good">Sub quotes come back and level automatically inside TrueBuilt — no more rebuilding a comparison sheet from three formats by hand.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">2:00pm</span><div><div class="daylife-desc good">Computer-vision takeoff catches a duct run a manual count would likely have missed. Flagged before the bid goes out, not after buyout.</div></div></div>
+      <div class="daylife-event"><span class="daylife-time">5:00pm</span><div><div class="daylife-desc good"><span id="dl-total-after">2</span> bids finished today — the original plus the one that would've been passed on. <span id="dl-relay-after">Hours</span> of manual counting turned into review time. Team leaves on time.</div><div class="daylife-note" style="color:var(--green);font-weight:600;margin-top:4px;">Bid capacity up, not headcount. Adam's "tech-forward precon team" story now has a platform behind it.</div></div></div>
+    </div>
+  </div>
+
+  <div class="grid-3">
+    <div class="stat-box" style="border-color:rgba(232,69,69,.3);"><div class="stat-number" style="color:var(--red);" id="dl-stat-handle">14</div><div class="stat-label">Hrs per takeoff today</div></div>
+    <div class="stat-box" style="border-color:rgba(46,204,113,.3);"><div class="stat-number" style="color:var(--green);">−70%</div><div class="stat-label">TrueBuilt takeoff time</div></div>
+    <div class="stat-box"><div class="stat-number" id="dl-stat-hrs">—</div><div class="stat-label">Estimator hrs freed / month</div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ PLATFORM MAP -->
+<section id="ucmap" class="section">
+  <div class="section-label">Workflow Coverage</div>
+  <h1>What TrueBuilt<br><span style="color:var(--amber)">Actually Touches</span></h1>
+  <p style="font-size:16px;max-width:680px;margin-bottom:28px;">Use this as a screenshare during the call. Show Adam exactly which steps TrueBuilt handles, in his own workflow, from plan set to submitted bid.</p>
+
+  <div class="ucmap" style="border-radius:8px;overflow:hidden;margin-bottom:20px;">
+    <div class="uc-col">
+      <div class="uc-col-head" style="color:var(--amber);">Input</div>
+      <div class="uc-item"><div class="uc-name">📐 New plan set</div><div class="uc-sub">PDF drawings, specbook</div></div>
+      <div class="uc-item"><div class="uc-name">📋 Invitation to Bid</div><div class="uc-sub">From owner or GC</div></div>
+      <div class="uc-item"><div class="uc-name">📨 Sub quotes</div><div class="uc-sub">Inbound bids from trade partners</div></div>
+      <div class="uc-item"><div class="uc-name">📚 Historical bid data</div><div class="uc-sub">Past estimates, unit costs</div></div>
+      <div class="uc-item"><div class="uc-name">🏚️ Field data (via Capabuild)</div><div class="uc-sub">LiDAR scans, 360° walkthroughs</div></div>
+    </div>
+    <div class="uc-col">
+      <div class="uc-col-head" style="color:var(--blue);">What TrueBuilt does</div>
+      <div class="uc-relay">
+        <div class="step"><span class="step-num">1.</span>Computer vision reads the plan set, auto-recognizes elements</div>
+        <div class="step"><span class="step-num">2.</span>Extracts quantities automatically — ~70% faster than manual markup</div>
+        <div class="step"><span class="step-num">3.</span>Estimator reviews/adjusts flagged items, confirms the takeoff</div>
+      </div>
+      <div class="uc-relay">
+        <div class="step"><span class="step-num">1.</span>Invites subs and trade partners to bid directly in-platform</div>
+        <div class="step"><span class="step-num">2.</span>Tracks response status and deadlines automatically</div>
+      </div>
+      <div class="uc-relay">
+        <div class="step"><span class="step-num">1.</span>Levels incoming sub bids by scope and price with ML assistance</div>
+        <div class="step"><span class="step-num">2.</span>Flags gaps or scope mismatches across bids</div>
+      </div>
+      <div class="uc-relay">
+        <div class="step"><span class="step-num">1.</span>AI Assistant answers plain-language questions against past bids/specs</div>
+        <div class="step"><span class="step-num">2.</span>Surfaces relevant historical unit costs during estimating</div>
+      </div>
+      <div class="uc-relay">
+        <div class="step"><span class="step-num">1.</span>Combines LiDAR/360° field capture with AI estimating (Capabuild)</div>
+        <div class="step"><span class="step-num">2.</span>Most relevant for restoration/mitigation and reconstruction scopes</div>
+      </div>
+    </div>
+    <div class="uc-col">
+      <div class="uc-col-head" style="color:var(--green);">Output</div>
+      <div class="uc-item"><div class="uc-name" style="color:var(--green);">Verified takeoff</div><div class="uc-sub">Feeds straight into the estimate</div></div>
+      <div class="uc-item"><div class="uc-name" style="color:var(--green);">Leveled sub bids</div><div class="uc-sub">Best scope/price surfaced automatically</div></div>
+      <div class="uc-item"><div class="uc-name" style="color:var(--green);">Complete estimate</div><div class="uc-sub">Version comparison built in</div></div>
+      <div class="uc-item"><div class="uc-name" style="color:var(--green);">Submitted bid</div><div class="uc-sub">On time, fewer missed scope items</div></div>
+      <div class="uc-item"><div class="uc-name" style="color:var(--green);">Institutional memory retained</div><div class="uc-sub">Historical data stays in the platform, not one person's head</div></div>
+    </div>
+  </div>
+
+  <div class="card card-accent">
+    <h3 style="color:var(--text);">What TrueBuilt Does NOT Do</h3>
+    <p style="margin-bottom:0;font-size:14px;line-height:1.8;">TrueBuilt won't replace project management, scheduling, or field execution tools once a job is won — it's a preconstruction platform, not a full ERP. It won't make a final pricing decision without an estimator's review — every AI-assisted quantity is reviewable and adjustable before it's submitted. And it doesn't require ripping out existing systems; it's the layer between "plan set received" and "bid submitted." <strong style="color:var(--amber)">Showing Adam this list builds more trust than any feature slide.</strong></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ ROI CALC -->
+<section id="roi" class="section">
+  <div class="section-label">Live Commercial Model</div>
+  <h1>The Money<br><span style="color:var(--amber)">On The Table</span></h1>
+  <p style="font-size:16px;max-width:680px;margin-bottom:16px;">Numbers sync from the 📞 Call Script tab. Adjust any slider to refine. Toggle between Full Model and Savings View depending on who you're talking to.</p>
+
+  <div class="note">TrueBuilt does not publish list pricing — it's sold as a custom enterprise quote (sales@truebuiltsoftware.com). The pricing sliders below are a <strong>modeled placeholder</strong> built from comparable per-seat pricing in the market (On-Screen Takeoff ≈$995/seat/yr, InEight Estimate NOW ≈$2,388/seat/yr, HeavyBid ≈$4,000/seat/yr, Sage/CostOS ≈$3,000/seat + ~20%/yr maintenance) — positioned as a premium AI-native product. Confirm the real number with a TrueBuilt AE before quoting a prospect.</div>
+  <div class="note">The "missed-bid opportunity" stream only counts 30% of the freed-up capacity as converting to pursued-and-won work in Year 1 — a deliberate haircut for ramp-up time and execution-capacity limits elsewhere in the business (self-perform labor, PM bandwidth, bonding capacity). Even with that discount, one extra multi-million-dollar contract win dwarfs the software cost — which is a real, common feature of AEC-industry ROI math, not a modeling error. Sanity-check every output against the prospect's real numbers before presenting it.</div>
+
+  <div style="display:flex;gap:8px;margin-bottom:20px;">
+    <button id="view-full" onclick="roiView('full')" style="padding:7px 18px;border-radius:20px;border:1px solid var(--amber);background:rgba(245,166,35,.15);color:var(--amber);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;cursor:pointer;">Full Model</button>
+    <button id="view-save" onclick="roiView('save')" style="padding:7px 18px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;cursor:pointer;">Savings View (show Adam)</button>
+  </div>
+
+  <!-- SAVINGS VIEW -->
+  <div id="roi-savings-view" style="display:none;">
+    <div style="background:var(--surface);border:1px solid rgba(46,204,113,.3);border-radius:12px;padding:32px;text-align:center;margin-bottom:20px;">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.2em;color:var(--green);margin-bottom:8px;text-transform:uppercase;">With TrueBuilt — Year 1</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:72px;font-weight:900;color:var(--green);line-height:1;" id="sv-total">—</div>
+      <div style="font-size:14px;color:var(--muted);margin-top:8px;">estimated annual value recovered</div>
+    </div>
+    <div class="grid-3" style="margin-bottom:20px;">
+      <div class="stat-box" style="border-color:rgba(46,204,113,.3);">
+        <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;color:var(--green);margin-bottom:6px;text-transform:uppercase;">Labor recaptured</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:900;color:var(--green);" id="sv-labor">—</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;" id="sv-labor-sub">hrs/month freed across the precon team</div>
+      </div>
+      <div class="stat-box" style="border-color:rgba(46,204,113,.3);">
+        <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;color:var(--green);margin-bottom:6px;text-transform:uppercase;">Incremental bid revenue</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:900;color:var(--green);" id="sv-claims">—</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">gross profit from bids the team can now chase</div>
+      </div>
+      <div class="stat-box" style="border-color:rgba(46,204,113,.3);">
+        <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;color:var(--green);margin-bottom:6px;text-transform:uppercase;">Busted-bid cost reduced</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:900;color:var(--green);" id="sv-sla">—</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">fewer missed-scope takeoff errors</div>
+      </div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 20px;font-size:14px;color:var(--muted);line-height:1.8;">
+      TrueBuilt est. annual cost: <strong style="color:var(--amber);" id="sv-cost">—</strong> &nbsp;·&nbsp;
+      Net value after cost: <strong style="color:var(--green);" id="sv-net">—</strong> &nbsp;·&nbsp;
+      Payback: <strong style="color:var(--amber);" id="sv-payback">—</strong> days &nbsp;·&nbsp;
+      ROI: <strong style="color:var(--amber);" id="sv-roi">—</strong> &nbsp;·&nbsp;
+      Hrs freed/mo: <strong style="color:var(--text);" id="sv-hrs">—</strong>
+    </div>
+  </div>
+
+  <!-- FULL MODEL VIEW -->
+  <div id="roi-full-view">
+    <div class="note" style="margin-bottom:20px;">Loaded rate = fully-burdened hourly cost including salary, benefits, payroll taxes, overhead — typically 1.3–1.4× base. Based on national estimator salary data ($84K–$89K avg, $125K–$175K+ for chief/senior estimators), a blended loaded rate lands around $55–$85/hr.</div>
+    <div class="grid-2" style="margin-bottom:20px;">
+      <div>
+        <h3 style="margin-bottom:14px;color:var(--text);">Volume inputs</h3>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Estimators / precon staff</span><span class="slider-val" id="v-ftes">6</span></div>
+          <input type="range" min="1" max="40" step="1" value="6" oninput="set('ftes',this.value)">
+        </div>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Bids pursued per month</span><span class="slider-val" id="v-tickets">12</span></div>
+          <input type="range" min="2" max="80" step="1" value="12" oninput="set('tickets',this.value)">
+        </div>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Hours per manual takeoff</span><span class="slider-val" id="v-handle">14</span></div>
+          <input type="range" min="2" max="60" step="1" value="14" oninput="set('handle',this.value)">
+        </div>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Loaded estimator rate ($/hr)</span><span class="slider-val" id="v-ftecost">$65</span></div>
+          <input type="range" min="35" max="120" step="1" value="65" oninput="set('ftecost',this.value)">
+        </div>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">TrueBuilt takeoff time reduction</span><span class="slider-val" id="v-deflect">70%</span></div>
+          <input type="range" min="40" max="85" step="5" value="70" oninput="set('deflect',this.value)">
+        </div>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Bids passed on / month (bandwidth)</span><span class="slider-val" id="v-returns">2</span></div>
+          <input type="range" min="0" max="30" step="1" value="2" oninput="set('returns',this.value)">
+        </div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:14px;color:var(--text);">Win rate, value &amp; busted bids</h3>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Win rate</span><span class="slider-val" id="v-shipments">25%</span></div>
+          <input type="range" min="10" max="50" step="1" value="25" oninput="set('shipments',this.value)">
+        </div>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Avg. contract value ($)</span><span class="slider-val" id="v-claimrate">$3,500,000</span></div>
+          <input type="range" min="250000" max="30000000" step="250000" value="3500000" oninput="set('claimrate',this.value)">
+        </div>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Gross margin</span><span class="slider-val" id="v-claimval">12%</span></div>
+          <input type="range" min="5" max="25" step="1" value="12" oninput="set('claimval',this.value)">
+        </div>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Jobs with a takeoff miss</span><span class="slider-val" id="v-filedpct">8%</span></div>
+          <input type="range" min="0" max="30" step="1" value="8" oninput="set('filedpct',this.value)">
+        </div>
+        <div class="slider-row">
+          <div class="slider-head"><span class="slider-name">Avg. cost per busted bid ($)</span><span class="slider-val" id="v-sla">$18,000</span></div>
+          <input type="range" min="2000" max="100000" step="1000" value="18000" oninput="set('sla',this.value)">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- PRICING MODEL -->
+    <div style="margin-bottom:24px;">
+      <h3 style="color:var(--text);margin-bottom:6px;">TrueBuilt pricing model (modeled placeholder)</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;">Per-seat annual license, positioned as a premium AI-native product above InEight/On-Screen Takeoff. Adjust to model different quote scenarios — show Adam the ROI holds at any price point.</p>
+      <div class="grid-2">
+        <div>
+          <div class="slider-row">
+            <div class="slider-head">
+              <span class="slider-name">Per-seat annual license ($/seat/yr)</span>
+              <span class="slider-val" id="v-platform">$4,200</span>
+            </div>
+            <input type="range" min="2000" max="8000" step="100" value="4200" oninput="set('platform',this.value)">
+          </div>
+          <div class="slider-row">
+            <div class="slider-head">
+              <span class="slider-name">One-time onboarding / data import ($)</span>
+              <span class="slider-val" id="v-perres">$6,000</span>
+            </div>
+            <input type="range" min="0" max="20000" step="500" value="6000" oninput="set('perres',this.value)">
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:18px;">
+          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Estimated annual cost (Year 1)</div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;margin-bottom:14px;">
+            <div style="display:flex;justify-content:space-between;"><span style="color:var(--muted);">Seat licenses</span><span id="price-platform-yr" style="font-family:'Space Mono',monospace;">—</span></div>
+            <div style="display:flex;justify-content:space-between;"><span style="color:var(--muted);">Onboarding (one-time)</span><span id="price-res-yr" style="font-family:'Space Mono',monospace;">—</span></div>
+            <div style="border-top:1px solid var(--border);padding-top:8px;display:flex;justify-content:space-between;">
+              <span style="font-weight:700;color:var(--text);">Total Year-1 cost</span>
+              <span id="price-total-yr" style="font-family:'Space Mono',monospace;font-weight:700;color:var(--amber);">—</span>
+            </div>
+          </div>
+          <div style="font-size:11px;color:var(--muted);line-height:1.6;">Based on <span id="price-res-count">—</span> seats</div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="roi-out-grid" style="grid-template-columns:repeat(5,1fr);">
+      <div class="roi-metric"><div class="n" style="color:var(--red);" id="out-pain">—</div><div class="l">Annual pain</div></div>
+      <div class="roi-metric"><div class="n" style="color:var(--amber);" id="out-cost">—</div><div class="l">TrueBuilt cost/yr</div></div>
+      <div class="roi-metric"><div class="n" style="color:var(--green);" id="out-value">—</div><div class="l">Annual value</div></div>
+      <div class="roi-metric"><div class="n" style="color:var(--green);" id="out-roi">—</div><div class="l">Year-1 ROI</div></div>
+      <div class="roi-metric"><div class="n" id="out-hrs">—</div><div class="l">Hrs freed/mo</div></div>
+    </div>
+
+    <div class="payback-box">
+      <div class="n" id="out-payback">—</div>
+      <div class="l" id="out-payback-label">estimated days to payback</div>
+    </div>
+
+    <h3 style="color:var(--text);margin-bottom:12px;">Value breakdown</h3>
+    <div id="bars" style="margin-bottom:24px;"></div>
+
+    <!-- PILOT INVESTMENT -->
+    <div style="background:var(--surface);border:1px solid rgba(58,155,213,.25);border-radius:8px;overflow:hidden;margin-bottom:20px;">
+      <div style="background:rgba(58,155,213,.08);padding:12px 18px;border-bottom:1px solid rgba(58,155,213,.15);display:flex;align-items:center;justify-content:space-between;">
+        <div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:800;color:var(--text);">Live-Bid Pilot Investment</div>
+          <div style="font-size:12px;color:var(--muted);">What it costs Adam to find out if this works</div>
+        </div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:var(--blue);" id="pilot-total-cost">—</div>
+      </div>
+      <div style="padding:16px 18px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+          <div>
+            <div style="font-size:10px;color:var(--muted);margin-bottom:8px;font-family:'Space Mono',monospace;letter-spacing:.08em;text-transform:uppercase;">What it includes</div>
+            <div style="font-size:13px;color:#b8bfc8;line-height:2;">
+              ✓ Seat licenses for the pilot team, 60 days<br>
+              ✓ TrueBuilt solutions engineer — historical data import &amp; config<br>
+              ✓ One live bid run in parallel with the current process<br>
+              ✓ Shadow-mode review — zero disruption to the actual submission<br>
+              ✓ Side-by-side report: hours spent, quantities caught, time to submit
+            </div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--muted);margin-bottom:8px;font-family:'Space Mono',monospace;letter-spacing:.08em;text-transform:uppercase;">Cost breakdown</div>
+            <div style="font-size:13px;line-height:2.2;">
+              <div style="display:flex;justify-content:space-between;"><span style="color:var(--muted);">Seat licenses (60 days)</span><span id="pilot-platform" style="font-family:'Space Mono',monospace;">—</span></div>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;">
+                <span style="color:var(--muted);">Onboarding &amp; data import</span>
+                <span style="display:flex;align-items:center;gap:6px;">
+                  <span style="font-family:'Space Mono',monospace;text-decoration:line-through;color:var(--muted);font-size:11px;" id="pilot-se-rate">$6,000</span>
+                  <span style="font-family:'Space Mono',monospace;color:var(--green);font-size:12px;">Waived</span>
+                </span>
+              </div>
+              <div style="display:flex;justify-content:space-between;"><span style="color:var(--muted);">IT resources required</span><span style="font-family:'Space Mono',monospace;color:var(--green);">$0</span></div>
+              <div style="border-top:1px solid var(--border);margin-top:4px;padding-top:4px;display:flex;justify-content:space-between;">
+                <span style="font-weight:700;color:var(--text);">Total pilot investment</span>
+                <span id="pilot-total-cost2" style="font-family:'Space Mono',monospace;font-weight:700;color:var(--blue);">—</span>
+              </div>
+            </div>
+            <div style="margin-top:10px;padding:8px 10px;background:rgba(245,166,35,.07);border:1px solid rgba(245,166,35,.2);border-radius:5px;font-size:11px;color:var(--muted);line-height:1.6;">
+              <strong style="color:var(--amber);display:block;margin-bottom:2px;">Why we waive onboarding</strong>
+              TrueBuilt is actively building design-partner relationships with SoCal commercial GCs post-Capabuild acquisition. Early logos get founder-level attention now — not once the motion scales.
+            </div>
+          </div>
+        </div>
+        <div style="background:rgba(46,204,113,.07);border:1px solid rgba(46,204,113,.2);border-radius:6px;padding:12px 16px;font-size:13px;color:#9ef5c6;line-height:1.8;">
+          <strong style="display:block;font-size:10px;font-family:'Space Mono',monospace;letter-spacing:.12em;color:var(--green);margin-bottom:6px;">THE MATH ON THE PILOT</strong>
+          Pilot costs <strong id="pilot-total-inline">—</strong>. That buys a real side-by-side comparison on your actual next bid — not a demo.<br>
+          The ROI isn't takeoff speed alone. It's <strong>labor freed</strong> (estimators shifted from counting to reviewing), <strong>incremental bid revenue</strong> (jobs the team can now chase), and <strong>busted-bid cost avoided</strong> (fewer missed scope items). Those three together are what justifies the contract. The pilot proves all three with Adam's own numbers before he signs anything.
+        </div>
+      </div>
+    </div>
+
+    <button class="gen-btn" onclick="genSummary()">Generate leave-behind pitch summary ↗</button>
+    <div class="summary-out" id="summary-out"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ OBJECTIONS -->
+<section id="objections" class="section">
+  <div class="section-label">Objection Playbook</div>
+  <h1>Kill the<br><span style="color:var(--amber)">Blockers</span></h1>
+  <p style="font-size:16px;max-width:680px;margin-bottom:28px;">Adam is sharp, skeptical, and has watched software promises fall flat before. Expect all of these. The goal isn't to win — it's to understand and redirect.</p>
+
+  <div class="obj-card" onclick="toggleObj(this)">
+    <div class="obj-head"><strong>"We already have Bluebeam / On-Screen Takeoff — why add another tool?"</strong><span style="color:var(--muted);font-size:20px;margin-left:auto;">+</span></div>
+    <div class="obj-body">
+      <p>Don't fight the incumbent tool. Reposition the comparison.</p>
+      <p><em>"Fair — and I'm not asking you to replace markup entirely on day one. The difference is what happens after the markup: today that takeoff gets manually re-keyed into Excel, then into a separate leveling sheet. TrueBuilt keeps takeoff, estimate, and bid leveling in one place, with computer vision doing the first pass on quantities — about 70% faster than a fully manual count. Run it on one bid next to what you're doing today and let your own estimators tell me if it's actually faster."</em></p>
+      <div class="reframe">The question isn't "markup tool vs. markup tool" — it's how much time gets lost in the handoffs between three disconnected tools on every single bid.</div>
+    </div>
+  </div>
+
+  <div class="obj-card" onclick="toggleObj(this)">
+    <div class="obj-head"><strong>"My estimators don't trust AI to count accurately."</strong><span style="color:var(--muted);font-size:20px;margin-left:auto;">+</span></div>
+    <div class="obj-body">
+      <p>Don't be defensive. Healthy skepticism from an estimator is a feature, not a bug.</p>
+      <p><em>"That's the right instinct — an estimator who blindly trusts a number is a bigger risk than one who doesn't. TrueBuilt isn't a black box: every AI-extracted quantity is shown against the drawing and is fully editable before it goes into the estimate. Nothing submits without a human review. Start the pilot with your most skeptical estimator checking its work line by line — if it holds up to them, it'll hold up to anyone."</em></p>
+      <div class="reframe">Human-in-the-loop review is a core design decision, not an afterthought. Let the most skeptical person on the team be the one who validates it.</div>
+    </div>
+  </div>
+
+  <div class="obj-card" onclick="toggleObj(this)">
+    <div class="obj-head"><strong>"Our bid data is sensitive — IT/security review will take months."</strong><span style="color:var(--muted);font-size:20px;margin-left:auto;">+</span></div>
+    <div class="obj-body">
+      <p>Validate — but scope the pilot to avoid the IT wall entirely.</p>
+      <p><em>"That's a real constraint, and I don't want to waste your time pretending otherwise. Here's how we've worked around it elsewhere: the pilot runs on one bid's data, cloud-hosted, with no ERP or network integration required — no new logins for your broader team, no write access to internal systems. That scope usually falls below a formal security review threshold, so we can get you live results while a full review happens in parallel if you decide to roll it out further."</em></p>
+      <div class="reframe">Narrow the pilot scope until it's below the IT review threshold. Prove the value in weeks, not months, while the full review — if needed — runs alongside it.</div>
+    </div>
+  </div>
+
+  <div class="obj-card" onclick="toggleObj(this)">
+    <div class="obj-head"><strong>"This isn't the right time — we're heading into our busiest bid season."</strong><span style="color:var(--muted);font-size:20px;margin-left:auto;">+</span></div>
+    <div class="obj-body">
+      <p>Flip the timing argument.</p>
+      <p><em>"I'd actually argue busy season is exactly when you see the real cost of the current process. If your team is already maxed at 12 bids a month, waiting until it slows down means passing on the highest volume of opportunity you'll see all year. Setup takes days, not weeks, and we handle the historical data import — your team's time investment is minimal. The question is what another busy season on the current process costs you in bids you didn't have the hours to chase."</em></p>
+      <div class="reframe">Busy season IS the proof of concept — if it holds up under real bid pressure, you know it works. Timing is in your favor.</div>
+    </div>
+  </div>
+
+  <div class="obj-card" onclick="toggleObj(this)">
+    <div class="obj-head"><strong>"Show me a case study from a GC exactly like us."</strong><span style="color:var(--muted);font-size:20px;margin-left:auto;">+</span></div>
+    <div class="obj-body">
+      <p>Don't fake a reference that doesn't exist yet.</p>
+      <p><em>"Fair ask — and if I had a Snyder-Langston-exact case study, I'd be leading with it. What I can tell you is the workflow is functionally identical across commercial GCs: takeoff, estimate, level, submit — the drawings differ, the logic doesn't. What would build more confidence — a call with another GC we're working with, or running this on your own next bid so you see it in your own environment?"</em></p>
+      <div class="reframe">The pilot IS the case study — his own bid, his own numbers, before any long-term commitment. Offer the better proof, not a PDF.</div>
+    </div>
+  </div>
+
+  <div class="obj-card" onclick="toggleObj(this)">
+    <div class="obj-head"><strong>"We're locked into Procore / Sage for another two years."</strong><span style="color:var(--muted);font-size:20px;margin-left:auto;">+</span></div>
+    <div class="obj-body">
+      <p>Don't fight the existing platform — clarify what TrueBuilt actually replaces.</p>
+      <p><em>"TrueBuilt isn't competing with Procore for project management or Sage for accounting — it lives specifically in the preconstruction phase, before a job is even won. Most of our GC customers run TrueBuilt for takeoff/estimate/bid and keep their existing PM and accounting stack untouched. This isn't a rip-and-replace decision, it's a question of whether your precon team is still doing that phase by hand."</em></p>
+      <div class="reframe">Reframe from "replace your platform" to "the one piece of the workflow that's still manual." Much smaller ask, much easier yes.</div>
+    </div>
+  </div>
+
+  <div class="obj-card" onclick="toggleObj(this)">
+    <div class="obj-head"><strong>"You're a small startup. What happens if you don't make it?"</strong><span style="color:var(--muted);font-size:20px;margin-left:auto;">+</span></div>
+    <div class="obj-body">
+      <p>Don't get defensive. He's doing his job. Address it directly and honestly.</p>
+      <p><em>"Fair question — I'd ask the same. A few things: TrueBuilt is backed by Bienville Capital, Fifth Wall, and Marek — a construction-industry investor and a real GC customer both put money in, which isn't typical for an early-stage raise. We just extended the platform with the Capabuild acquisition, which is a growth move, not a survival one. And practically — your bid data lives in your own exported files throughout, so nothing is hostage to us as a vendor. The risk of another year on a fully manual process is a real cost too, even if it's less visible on a balance sheet."</em></p>
+      <div class="reframe">Real investors, a recent acquisition (a growth signal, not a distress signal), and data portability. The status quo has a cost too — it's just not itemized anywhere.</div>
+    </div>
+  </div>
+
+  <div class="obj-card" onclick="toggleObj(this)">
+    <div class="obj-head"><strong>"We tried an automated takeoff tool before. It choked on our drawing style."</strong><span style="color:var(--muted);font-size:20px;margin-left:auto;">+</span></div>
+    <div class="obj-body">
+      <p>Legitimate scar. Don't dismiss it — engage with the specifics.</p>
+      <p><em>"That's actually the best context you could give me, because it tells me exactly what to test for. What kind of drawings gave it the most trouble — hand-marked addenda, unusual symbol legends, scanned-and-rotated sheets? I want to run the pilot specifically against the drawing types that broke the last tool, not just the easy ones. If it holds up there, you'll know it's not the same experience."</em></p>
+      <div class="reframe">Ask which drawing type broke the last tool, then deliberately test against it. Specificity builds credibility that a generic demo can't.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ PILOT -->
+<section id="pilot" class="section">
+  <div class="section-label">Proposed Structure</div>
+  <h1>The First<br><span style="color:var(--amber)">Live-Bid Pilot</span></h1>
+  <p style="font-size:16px;max-width:680px;margin-bottom:28px;">Adam has watched software promises fall flat before. This plan shows him the payoff inside the first bid cycle — before doubt has time to develop. Structured around a real bid, not an arbitrary calendar window, because that's how construction sales cycles actually move.</p>
+
+  <div class="grid-2" style="margin-bottom:28px;">
+    <div class="card card-accent">
+      <h3>Recommended Pilot Scope</h3>
+      <p style="margin-bottom:8px;"><strong style="color:var(--text);">Scope:</strong> One live, already-scheduled bid — pick a mid-complexity project, not the biggest or smallest on the board</p>
+      <p style="margin-bottom:8px;"><strong style="color:var(--text);">Workflow:</strong> AI-assisted takeoff → estimate → bid leveling, run in parallel with the current process</p>
+      <p style="margin-bottom:8px;"><strong style="color:var(--text);">Team:</strong> 1–2 estimators, including the most skeptical one on the team</p>
+      <p style="margin:0;"><strong style="color:var(--text);">Success metrics:</strong> Hours spent vs. baseline, quantities caught vs. missed, time from plan set to submitted bid</p>
+    </div>
+    <div class="card card-blue">
+      <h3>Why This Scope Works</h3>
+      <p>A single live bid requires zero process change to the actual submission — TrueBuilt runs alongside, not instead of, the current workflow, so there's no risk to the bid itself. It produces real, defensible before/after numbers in the time it takes to run one bid cycle, not a synthetic demo environment. And it directly answers the two questions that matter most to Adam: does it actually save hours, and does his team trust the output.</p>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-period">Days 1–3 · Setup</div>
+      <div class="tl-title">Build the Foundation</div>
+      <ul class="tl-bullets">
+        <li>Technical kickoff: plan set upload, historical bid/unit-cost data import</li>
+        <li>Short config session with the assigned estimator(s) — under 2 hours</li>
+        <li>TrueBuilt handles setup — zero IT lift required from Snyder Langston</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-period">Days 4–10 · Parallel Takeoff</div>
+      <div class="tl-title">Run It Side by Side</div>
+      <ul class="tl-bullets">
+        <li>Estimator runs the real bid through TrueBuilt while continuing the normal process</li>
+        <li>Every AI-extracted quantity reviewed and confirmed/adjusted by the estimator</li>
+        <li>Time tracked on both sides for a clean before/after comparison</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-period">Day 11–14 · Estimate &amp; Bid Leveling</div>
+      <div class="tl-title">Carry It Through</div>
+      <ul class="tl-bullets">
+        <li>Confirmed takeoff feeds directly into the estimate — no re-keying</li>
+        <li>Sub quotes leveled inside TrueBuilt for a side-by-side comparison view</li>
+        <li>Bid submitted through Snyder Langston's normal channel either way — TrueBuilt never touches the actual submission risk</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-period">Day 15 · Pilot Review</div>
+      <div class="tl-title">The Business Case Moment</div>
+      <ul class="tl-bullets">
+        <li>Present before/after: hours spent, quantities caught, time to submit</li>
+        <li>Annualize the labor and bid-capacity math live with Adam in the room</li>
+        <li>Propose rollout: full precon team, add bid-leveling workflow for subs</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--green);"></div>
+      <div class="tl-period">Day 30–60 · Full Rollout</div>
+      <div class="tl-title" style="color:var(--green);">Whole Precon Team Live</div>
+      <ul class="tl-bullets">
+        <li>Remaining estimators onboard — config is faster, historical data already imported</li>
+        <li>AI Assistant fully populated with Snyder Langston's own historical bid data</li>
+        <li>Adam's "tech-forward precon team" positioning now has a platform behind it — case study material for TrueBuilt too</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ ONE PAGER -->
+<section id="onepager" class="section">
+  <div class="section-label">Leave-Behind Document</div>
+  <h1>The<br><span style="color:var(--amber)">1-Pager</span></h1>
+  <p style="font-size:16px;max-width:680px;margin-bottom:16px;">Leave this on the table when you walk out. Numbers auto-update from whatever Adam told you. Hit Print to get a clean black-on-white version.</p>
+
+  <div class="onepager" id="print-onepager">
+    <div class="onepager-header">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;">
+        <div>
+          <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:4px;">PREPARED FOR</div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;line-height:1.1;">Snyder Langston</div>
+          <div style="font-size:13px;color:rgba(255,255,255,.6);">Adam Schneider, Director of Preconstruction</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;color:var(--amber);">TrueBuilt</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.5);">AI-Native Preconstruction Platform</div>
+          <div style="font-size:10px;color:rgba(245,166,35,.4);margin-top:2px;">Huntington Beach, CA · Founded 2022</div>
+        </div>
+      </div>
+    </div>
+    <div class="onepager-body">
+      <div class="section-label">The Problem</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+        <div class="pain-metric"><div class="n" id="op-tickets">12</div><div class="l">Bids/month</div></div>
+        <div class="pain-metric"><div class="n" id="op-handle">14 hrs</div><div class="l">Per manual takeoff</div></div>
+        <div class="pain-metric"><div class="n" id="op-systems">3+</div><div class="l">Disconnected tools</div></div>
+        <div class="pain-metric"><div class="n" id="op-pain">—</div><div class="l">Annual pain est.</div></div>
+      </div>
+      <p>Your precon team spends the majority of bid time on manual quantity extraction — work that doesn't require judgment, just hours. Meanwhile every bid you don't have bandwidth to chase is real contract value left on the table, and a missed takeoff item shows up as margin erosion months later at buyout.</p>
+      <hr>
+      <div class="section-label">What TrueBuilt Does</div>
+      <div class="grid-2">
+        <div><h3>AI Takeoff → Estimate → Bid</h3><p>Computer vision extracts quantities directly from the plan set — about 70% faster than manual markup. That takeoff feeds straight into the estimate and bid leveling, in the same platform, with nothing re-keyed by hand.</p></div>
+        <div><h3>AI Assistant</h3><p>Answers plain-language questions against your own historical bids and specbooks — the institutional knowledge that usually lives in one senior estimator's head, available to the whole team on demand.</p></div>
+      </div>
+      <hr>
+      <div class="section-label">What You Get From One Live Bid</div>
+      <div class="grid-3" style="margin-bottom:0">
+        <div class="stat-box"><div class="stat-number">70%</div><div class="stat-label">Faster Takeoff</div></div>
+        <div class="stat-box"><div class="stat-number">1</div><div class="stat-label">Platform, Not 3</div></div>
+        <div class="stat-box" id="op-hrs-freed-box"><div class="stat-number" id="op-hrs-freed">—</div><div class="stat-label">Estimator Hrs Freed/Mo</div></div>
+      </div>
+      <hr>
+      <div class="section-label">The ROI</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;margin-bottom:10px;">
+        <div class="stat-box"><div class="stat-label">Annual value</div><div class="stat-number" style="font-size:22px;color:var(--green);" id="op-roi-value">—</div></div>
+        <div class="stat-box"><div class="stat-label">TrueBuilt cost/yr</div><div class="stat-number" style="font-size:22px;" id="op-roi-cost">—</div></div>
+        <div class="stat-box"><div class="stat-label">Net gain yr 1</div><div class="stat-number" style="font-size:22px;color:var(--green);" id="op-roi-net">—</div></div>
+        <div class="stat-box"><div class="stat-label">ROI multiple</div><div class="stat-number" style="font-size:22px;" id="op-roi-multiple">—</div></div>
+      </div>
+      <div style="background:rgba(46,204,113,.06);border:1px solid rgba(46,204,113,.2);border-radius:6px;padding:8px 12px;font-size:12px;color:#9ef5c6;margin-bottom:10px;">
+        Pilot investment: <strong id="op-pilot-cost">—</strong> (one live bid, seat licenses only) &nbsp;·&nbsp; Full ROI payback in <strong id="op-pilot-payback">—</strong> days &nbsp;·&nbsp; Onboarding waived &nbsp;·&nbsp; No IT project
+      </div>
+      <div style="background:rgba(245,166,35,.07);border:1px solid rgba(245,166,35,.2);border-radius:6px;padding:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+        <div><div style="font-size:17px;font-weight:900;">Ready to see it on your next bid?</div><div style="font-size:12px;color:var(--muted);">One live bid · Parallel to your current process · No disruption to the submission</div></div>
+        <div style="font-size:12px;color:var(--amber);font-weight:700;font-family:'Space Mono',monospace;">truebuiltsoftware.com</div>
+      </div>
+    </div>
+  </div>
+  <button class="gen-btn" onclick="printOnePager()" style="margin-top:16px;">🖨 Print clean version</button>
+</section>
+
+<!-- ═══════════════════════════════════ GLOSSARY -->
+<section id="glossary" class="section">
+  <div class="section-label">Speak Their Language</div>
+  <h1>Every Term<br><span style="color:var(--amber)">Explained Simply</span></h1>
+  <p style="font-size:16px;max-width:680px;margin-bottom:28px;">You don't need to fake construction fluency — you need to not get lost when Adam uses it. These are the terms that come up in every precon conversation.</p>
+
+  <div class="gloss-item">
+    <div class="gloss-term">Takeoff</div>
+    <div class="gloss-full">a.k.a. Quantity Takeoff (QTO)</div>
+    <div class="gloss-plain">Measuring and counting everything shown on a set of drawings — doors, duct runs, square footage, rebar — so it can be priced. It's the first, most time-consuming step of every bid.</div>
+    <div class="gloss-example">"A takeoff that eats a day and a half by hand can drop to a few hours with computer-vision assist."</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">Bid Leveling</div>
+    <div class="gloss-plain">Comparing incoming subcontractor bids for the same scope side by side, so you're comparing apples to apples on price and what's actually included, not just the bottom-line number.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">Value Engineering (VE)</div>
+    <div class="gloss-plain">Proposing alternate materials, systems, or methods that hit the same design intent for less cost — usually surfaced during precon when a budget is over target.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">ITB — Invitation to Bid</div>
+    <div class="gloss-plain">The formal request a GC or owner sends out asking contractors/subs to submit a price for a scope of work, usually with a hard deadline.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">Schedule of Values (SOV)</div>
+    <div class="gloss-plain">A line-item breakdown of the total contract price by task or trade — used for billing/payment applications as the job progresses.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">Bid-Hit Ratio (Win Rate)</div>
+    <div class="gloss-plain">Bids won divided by bids submitted. Industry average sits around 20–25%; top performers with strong repeat-client relationships hit 30–50%.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">Chief Estimator</div>
+    <div class="gloss-plain">The senior person who owns pricing accuracy and estimating methodology across all of a firm's bids — often the institutional-knowledge risk if they leave.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">GMP — Guaranteed Maximum Price</div>
+    <div class="gloss-plain">A contract structure where the GC guarantees a project won't exceed an agreed cost ceiling — puts extra pressure on estimating accuracy since overruns come out of the GC's own margin.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">Buyout</div>
+    <div class="gloss-plain">Finalizing subcontracts after winning the bid — the moment a missed takeoff quantity usually surfaces, since actual sub pricing reveals what got missed in the original estimate.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">Design-Bid-Build vs. Design-Build</div>
+    <div class="gloss-plain">Design-Bid-Build: design is finished, then GCs competitively bid the completed set. Design-Build: one entity handles design and construction together, often with GCs involved earlier and pricing evolving alongside design.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">Annual Construction Volume (ACV)</div>
+    <div class="gloss-plain">The total dollar value of work a firm manages in a year — some software (like Procore) prices off this instead of per-seat.</div>
+  </div>
+  <div class="gloss-item">
+    <div class="gloss-term">Computer Vision Takeoff</div>
+    <div class="gloss-plain">Software that automatically recognizes plan elements (walls, doors, fixtures) directly from a PDF drawing and extracts quantities, instead of an estimator manually clicking/measuring each one. This is TrueBuilt's core differentiator.</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ LIVE QUALIFIER -->
+<section id="qualify" class="section">
+  <div class="section-label">MEDDPICC · Deal Health</div>
+  <h1>Live Deal<br><span style="color:var(--amber)">Qualifier</span></h1>
+  <p style="font-size:16px;max-width:680px;margin-bottom:24px;">Numbers here sync automatically from the 📞 Call Script tab. Fill in anything the script doesn't capture directly — this is your CRM-ready deal brief by the end of the call.</p>
+
+  <div class="q-score-bar" style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:1.2rem;">
+    <div style="text-align:center;"><div style="font-size:13px;font-weight:700;margin-bottom:4px;color:var(--muted);">M</div><div style="width:36px;height:36px;border-radius:50%;border:2px solid var(--border);margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;" id="qring-M">—</div><div style="font-size:9px;color:var(--muted);">Metrics</div></div>
+    <div style="text-align:center;"><div style="font-size:13px;font-weight:700;margin-bottom:4px;color:var(--muted);">E</div><div style="width:36px;height:36px;border-radius:50%;border:2px solid var(--border);margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;" id="qring-E">—</div><div style="font-size:9px;color:var(--muted);">Econ. Buyer</div></div>
+    <div style="text-align:center;"><div style="font-size:13px;font-weight:700;margin-bottom:4px;color:var(--muted);">D</div><div style="width:36px;height:36px;border-radius:50%;border:2px solid var(--border);margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;" id="qring-D">—</div><div style="font-size:9px;color:var(--muted);">Dec. Process</div></div>
+    <div style="text-align:center;"><div style="font-size:13px;font-weight:700;margin-bottom:4px;color:var(--muted);">I</div><div style="width:36px;height:36px;border-radius:50%;border:2px solid var(--border);margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;" id="qring-I">—</div><div style="font-size:9px;color:var(--muted);">Pain ID'd</div></div>
+    <div style="text-align:center;"><div style="font-size:13px;font-weight:700;margin-bottom:4px;color:var(--muted);">C</div><div style="width:36px;height:36px;border-radius:50%;border:2px solid var(--border);margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;" id="qring-C">—</div><div style="font-size:9px;color:var(--muted);">Competition</div></div>
+  </div>
+
+  <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:8px;margin-bottom:1.2rem;">
+    <span style="font-size:12px;color:var(--muted);white-space:nowrap;">Deal health</span>
+    <div style="flex:1;height:6px;background:var(--surface2);border-radius:3px;overflow:hidden;"><div id="qhealth-fill" style="height:100%;width:0%;background:var(--red);border-radius:3px;transition:width .4s,background .4s;"></div></div>
+    <span style="font-size:13px;font-weight:700;min-width:36px;text-align:right;" id="qhealth-pct">0%</span>
+    <span style="font-size:12px;font-weight:700;min-width:80px;text-align:right;color:var(--red);" id="qhealth-status">Unqualified</span>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>Pain (from Call Script + notes)</h3>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:6px;">What's the #1 precon problem, in his words?</div>
+      <textarea id="qpain-main" oninput="qUpdate()" style="width:100%;padding:8px 12px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:13px;font-family:'Barlow',sans-serif;resize:vertical;min-height:58px;line-height:1.5;margin-bottom:10px;" placeholder="e.g. 'We pass on real work every month because the team can't get takeoffs done fast enough'"></textarea>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:6px;">What happens if this isn't fixed in 6 months?</div>
+      <textarea id="qpain-consequence" oninput="qUpdate()" style="width:100%;padding:8px 12px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:13px;font-family:'Barlow',sans-serif;resize:vertical;min-height:58px;line-height:1.5;" placeholder="e.g. 'We keep losing bid capacity to firms that move faster'"></textarea>
+    </div>
+    <div class="card">
+      <h3>Buyer &amp; Process</h3>
+      <div class="cs-stat"><div class="cs-stat-label">Decision authority</div><div class="cs-stat-val" id="qsb-authority" style="font-size:16px;">—</div></div>
+      <div class="cs-stat"><div class="cs-stat-label">Budget status</div><div class="cs-stat-val" id="qsb-budget" style="font-size:16px;">—</div></div>
+      <div class="cs-stat"><div class="cs-stat-label">Timeline to decide</div><div class="cs-stat-val" id="qsb-timeline" style="font-size:16px;">—</div></div>
+      <div class="cs-stat"><div class="cs-stat-label">Competition</div><div class="cs-stat-val" id="qsb-competition" style="font-size:16px;">—</div></div>
+      <div style="font-size:11px;color:var(--muted);margin-top:8px;">Pulled automatically from the deal-qualify phase of the 📞 Call Script tab.</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px;">
+    <h3>Metrics (auto-synced from Call Script)</h3>
+    <div class="grid-3">
+      <div class="cs-stat"><div class="cs-stat-label">Bids/month</div><div class="cs-stat-val amber" id="qsb-bids">—</div></div>
+      <div class="cs-stat"><div class="cs-stat-label">Hrs/takeoff</div><div class="cs-stat-val amber" id="qsb-hours">—</div></div>
+      <div class="cs-stat"><div class="cs-stat-label">Est. annual pain</div><div class="cs-stat-val amber" id="qsb-pain">—</div></div>
+    </div>
+  </div>
+
+  <div class="card card-red" style="margin-top:14px;">
+    <h3 style="color:var(--text);">Gaps &amp; Next Step</h3>
+    <div id="q-gap-list" style="font-size:14px;color:#e88;line-height:2;">Fill in the Call Script tab to populate this automatically.</div>
+  </div>
+
+  <button class="gen-btn" onclick="genBrief()">Generate CRM deal brief ↗</button>
+  <div class="summary-out" id="brief-out"></div>
+</section>
+
+<script>
+// ════════════════════════════════════════
+// NAV
+// ════════════════════════════════════════
+function show(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function toggleObj(card) {
+  const body = card.querySelector('.obj-body');
+  const icon = card.querySelector('.obj-head span');
+  const isOpen = body.classList.contains('open');
+  document.querySelectorAll('.obj-body').forEach(b => b.classList.remove('open'));
+  document.querySelectorAll('.obj-head span').forEach(i => i.textContent = '+');
+  if (!isOpen) { body.classList.add('open'); icon.textContent = '−'; }
+}
+
+function csToggle(head) {
+  const body = head.nextElementSibling;
+  if(body) body.classList.toggle('open');
+}
+
+// ════════════════════════════════════════
+// ROI CALC STATE
+// P keys reused across Call Script + ROI + Qualifier:
+//   ftes = estimators, tickets = bids/mo, handle = hrs/takeoff,
+//   ftecost = loaded $/hr, deflect = takeoff time reduction %,
+//   returns = bids passed on/mo, shipments = win rate %,
+//   claimrate = avg contract value $, claimval = gross margin %,
+//   filedpct = % jobs w/ takeoff miss, sla = $/busted bid,
+//   platform = $/seat/yr license, perres = one-time onboarding $
+// ════════════════════════════════════════
+const P = { ftes:6, tickets:12, handle:14, ftecost:65, deflect:70, returns:2, shipments:25, claimrate:3500000, claimval:12, filedpct:8, sla:18000, platform:4200, perres:6000 };
+const CAPTURE_RATE = 0.3; // share of freed-up bid capacity assumed to convert to pursued + won work in year 1 (ramp-up, execution-capacity realism)
+
+const fmtK = n => {
+  if(!n||isNaN(n)) return '—';
+  const a = Math.abs(n); const r = Math.round(n);
+  if(a>=1000000) return '$'+(n/1000000).toFixed(1)+'M';
+  if(a>=1000) return '$'+Math.round(n/1000)+'K';
+  return '$'+r.toLocaleString();
+};
+
+function roiView(mode) {
+  const full = document.getElementById('roi-full-view');
+  const save = document.getElementById('roi-savings-view');
+  const btnF = document.getElementById('view-full');
+  const btnS = document.getElementById('view-save');
+  if(mode === 'save') {
+    if(full) full.style.display = 'none';
+    if(save) save.style.display = 'block';
+    if(btnF) { btnF.style.background='transparent'; btnF.style.color='var(--muted)'; btnF.style.borderColor='var(--border)'; }
+    if(btnS) { btnS.style.background='rgba(245,166,35,.15)'; btnS.style.color='var(--amber)'; btnS.style.borderColor='var(--amber)'; }
+  } else {
+    if(full) full.style.display = 'block';
+    if(save) save.style.display = 'none';
+    if(btnF) { btnF.style.background='rgba(245,166,35,.15)'; btnF.style.color='var(--amber)'; btnF.style.borderColor='var(--amber)'; }
+    if(btnS) { btnS.style.background='transparent'; btnS.style.color='var(--muted)'; btnS.style.borderColor='var(--border)'; }
+  }
+}
+
+function set(k, v) {
+  P[k] = parseFloat(v);
+  const d = {
+    ftes:      Math.round(P.ftes),
+    tickets:   Math.round(P.tickets),
+    handle:    Math.round(P.handle),
+    ftecost:   '$'+Math.round(P.ftecost),
+    deflect:   Math.round(P.deflect)+'%',
+    returns:   Math.round(P.returns),
+    shipments: Math.round(P.shipments)+'%',
+    claimrate: '$'+Math.round(P.claimrate).toLocaleString(),
+    claimval:  Math.round(P.claimval)+'%',
+    filedpct:  Math.round(P.filedpct)+'%',
+    sla:       '$'+Math.round(P.sla).toLocaleString(),
+    platform:  '$'+Math.round(P.platform).toLocaleString(),
+    perres:    '$'+Math.round(P.perres).toLocaleString()
+  };
+  const el = document.getElementById('v-'+k);
+  if(el) el.textContent = d[k];
+  calc();
+}
+
+function calc() {
+  const monthlyHrs   = P.tickets * P.handle;
+  const annualHrs     = monthlyHrs * 12;
+  const annualLaborCost = annualHrs * P.ftecost;
+  const laborHoursFreed = annualHrs * (P.deflect/100);
+  const laborSavings  = laborHoursFreed * P.ftecost;
+  const hrsFreedMonth = Math.round(laborHoursFreed/12);
+
+  const bidsDeclinedYr   = P.returns * 12;
+  const extraCapacityYr  = P.handle > 0 ? laborHoursFreed / P.handle : 0;
+  const extraBidsPursued = Math.min(bidsDeclinedYr, extraCapacityYr);
+  // CAPTURE_RATE discounts for ramp-up time and execution-capacity limits elsewhere in the
+  // business (self-perform labor, PM bandwidth) — not every freed hour converts to new backlog in year 1.
+  const incrementalRevenue = extraBidsPursued * (P.shipments/100) * P.claimrate * (P.claimval/100) * CAPTURE_RATE;
+
+  const annualBids   = P.tickets * 12;
+  const annualJobsWon = annualBids * (P.shipments/100);
+  const bustedBidCost = annualJobsWon * (P.filedpct/100) * P.sla;
+  const errorReduction = bustedBidCost * 0.60;
+
+  const totalPain  = Math.round(annualLaborCost + incrementalRevenue + bustedBidCost);
+  const totalValue = Math.round(laborSavings + incrementalRevenue + errorReduction);
+
+  const costSeats      = P.ftes * P.platform;
+  const costOnboarding = P.perres;
+  const totalCost       = Math.round(costSeats + costOnboarding);
+
+  const roi = totalCost > 0 ? (totalValue / totalCost).toFixed(1)+'x' : '—';
+  const totalPaybackDays = totalValue > 0 ? Math.round(totalCost / (totalValue/365)) : 0;
+
+  const el = id => document.getElementById(id);
+  const s  = (id, v) => { const e = el(id); if(e) e.textContent = v; };
+
+  s('out-pain',    fmtK(totalPain));
+  s('out-cost',    fmtK(totalCost));
+  s('out-value',   fmtK(totalValue));
+  s('out-roi',     roi);
+  s('out-hrs',     hrsFreedMonth+' hrs');
+  s('out-payback', totalPaybackDays > 730 ? '730+' : totalPaybackDays);
+  s('out-payback-label', `days to full ROI (${fmtK(totalValue)}/yr total value — labor savings + bid revenue + busted-bid cost avoided)`);
+
+  s('price-platform-yr', fmtK(costSeats)+'/yr');
+  s('price-res-yr',      fmtK(costOnboarding)+' one-time');
+  s('price-total-yr',    fmtK(totalCost));
+  s('price-res-count',   Math.round(P.ftes)+' seats');
+
+  s('sv-total',   fmtK(totalValue));
+  s('sv-cost',    fmtK(totalCost));
+  s('sv-net',     fmtK(totalValue - totalCost));
+  s('sv-labor',   fmtK(laborSavings));
+  s('sv-labor-sub', hrsFreedMonth+' hrs/month freed across the precon team');
+  s('sv-claims',  fmtK(incrementalRevenue));
+  s('sv-sla',     fmtK(errorReduction));
+  s('sv-payback', totalPaybackDays > 730 ? '730+' : totalPaybackDays);
+  s('sv-roi',     roi);
+  s('sv-hrs',     hrsFreedMonth+' hrs');
+
+  const pilotSeats = Math.min(2, P.ftes || 1);
+  const pilotCost  = Math.round(P.platform * pilotSeats * (60/365));
+  const totalValuePerDay = totalValue / 365;
+  const pilotPaybackDays = totalValuePerDay > 0 ? Math.round(pilotCost / totalValuePerDay) : 0;
+  s('pilot-total-cost',    fmtK(pilotCost));
+  s('pilot-total-cost2',   fmtK(pilotCost));
+  s('pilot-platform',      fmtK(pilotCost));
+  s('pilot-se-rate',       fmtK(P.perres));
+  s('pilot-total-inline',  fmtK(pilotCost));
+
+  const maxBar = Math.max(annualLaborCost, incrementalRevenue, bustedBidCost, laborSavings, errorReduction, 1);
+  const barsData = [
+    {label:'Estimator hrs — manual takeoff', val:annualLaborCost,     type:'red'},
+    {label:'Missed-bid opportunity cost',    val:incrementalRevenue,  type:'red'},
+    {label:'Busted-bid cost',                val:bustedBidCost,       type:'red'},
+    {label:'Labor savings w/ TrueBuilt',     val:laborSavings,        type:'green'},
+    {label:'Bid revenue unlocked',           val:incrementalRevenue,  type:'green'},
+    {label:'Busted-bid cost avoided',        val:errorReduction,      type:'green'}
+  ].filter(b => b.val > 0);
+
+  const barsEl = document.getElementById('bars');
+  if(barsEl) barsEl.innerHTML = barsData.map(b => {
+    const pct = Math.min(100, Math.round((b.val/maxBar)*100));
+    return `<div class="bar-row"><div class="bar-label">${b.label}</div><div class="bar-track"><div class="bar-fill bar-fill-${b.type}" style="width:${pct}%">${fmtK(b.val)}</div></div></div>`;
+  }).join('');
+
+  const opS = (id, v) => { const e = document.getElementById(id); if(e) e.textContent = v; };
+  opS('op-roi-value',    fmtK(totalValue));
+  opS('op-roi-cost',     fmtK(totalCost));
+  opS('op-roi-net',      fmtK(totalValue - totalCost));
+  opS('op-roi-multiple', roi);
+  opS('op-pilot-cost',   fmtK(pilotCost));
+  opS('op-pilot-payback', pilotPaybackDays > 365 ? '365+' : (pilotPaybackDays || '—'));
+  opS('op-pain',         fmtK(totalPain));
+  opS('op-hrs-freed',    hrsFreedMonth ? hrsFreedMonth+' hrs' : '—');
+  opS('op-tickets',      Math.round(P.tickets));
+  opS('op-handle',       Math.round(P.handle)+' hrs');
+
+  window._calc = {annualLaborCost, laborSavings, incrementalRevenue, bustedBidCost, errorReduction, totalPain, totalValue, totalCost, roi, hrsFreedMonth, pilotCost, pilotPaybackDays};
+}
+
+function genSummary() {
+  const c = window._calc;
+  if(!c) return;
+  const txt = `SNYDER LANGSTON ROI SNAPSHOT — TrueBuilt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CURRENT STATE (annual pain estimate)
+  Estimator labor on manual takeoff:  ${fmtK(c.annualLaborCost)}
+  Missed-bid opportunity cost:        ${fmtK(c.incrementalRevenue)}
+  Busted-bid cost:                    ${fmtK(c.bustedBidCost)}
+  TOTAL ANNUAL PAIN:                  ${fmtK(c.totalPain)}
+
+TRUEBUILT PRICING (modeled — confirm real quote with AE)
+  Per-seat annual license:            $${Math.round(P.platform).toLocaleString()}/seat/yr × ${Math.round(P.ftes)} seats
+  One-time onboarding:                $${Math.round(P.perres).toLocaleString()}
+  ESTIMATED YEAR-1 COST:              ${fmtK(c.totalCost)}
+
+WITH TRUEBUILT (year-1 net value)
+  Labor recaptured:                   ${fmtK(c.laborSavings)}
+  Bid revenue unlocked:               ${fmtK(c.incrementalRevenue)}
+  Busted-bid cost avoided:            ${fmtK(c.errorReduction)}
+  TOTAL ANNUAL VALUE:                 ${fmtK(c.totalValue)}
+  NET AFTER TRUEBUILT COST:           ${fmtK(c.totalValue - c.totalCost)}
+
+Year-1 ROI:                           ${c.roi}
+Estimator hours freed / month:        ${c.hrsFreedMonth} hrs
+Payback period:                       ~${c.pilotPaybackDays} days
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RECOMMENDED PILOT
+  Scope: One live bid, run in parallel with the current process
+  Team: 1-2 estimators
+  Timeline: Days 1-3 setup → Days 4-14 parallel takeoff/estimate/level → Day 15 review
+  Pilot investment: ${fmtK(c.pilotCost)} (seat licenses only — onboarding waived)
+
+truebuiltsoftware.com`;
+  const box = document.getElementById('summary-out');
+  if(box) { box.style.display='block'; box.textContent=txt; }
+}
+
+// ════════════════════════════════════════
+// CALL SCRIPT LIVE MATH
+// ════════════════════════════════════════
+function csCalc() {
+  const g = id => { const e = document.getElementById(id); return e ? e.value : ''; };
+  const gf = id => parseFloat(g(id))||0;
+
+  const estimators = gf('cs-estimators');
+  const bids       = gf('cs-bids');
+  const hours      = gf('cs-hours');
+  const declined   = gf('cs-declined');
+  const winrate    = gf('cs-winrate');
+  const contractval= gf('cs-contractval');
+  const margin     = gf('cs-margin');
+  const errorpct   = gf('cs-errorpct');
+  const errorcost  = gf('cs-errorcost');
+  const esc        = g('cs-escalation');
+  const sop        = g('cs-sop').trim();
+
+  const monthlyHrs = bids && hours ? Math.round(bids*hours*10)/10 : 0;
+  const laborCostAnnual = monthlyHrs ? Math.round(monthlyHrs*12*65) : 0;
+  const bustedBidAnnual = winrate && errorpct && errorcost ? Math.round(bids*12*(winrate/100)*(errorpct/100)*errorcost) : 0;
+  const missedBidAnnual = declined && winrate && contractval && margin ? Math.round(declined*12*(winrate/100)*contractval*(margin/100)) : 0;
+  const total = laborCostAnnual + bustedBidAnnual + missedBidAnnual;
+
+  const s = (id,v) => { const e=document.getElementById(id); if(e) e.textContent=v; };
+  s('cssb-ftes',    estimators ? estimators+' people' : '—');
+  s('cssb-tickets', bids       ? bids+'/mo' : '—');
+  s('cssb-handle',  hours      ? hours+' hrs' : '—');
+  s('cssb-systems', winrate    ? winrate+'%' : '—');
+  s('cssb-sla',     declined   ? declined+'/mo' : '—');
+  s('cssb-miss',    errorpct   ? errorpct+'%' : '—');
+  s('cssb-hours',   monthlyHrs ? monthlyHrs+' hrs' : '—');
+  s('cssb-hours-sub', monthlyHrs ? 'every month' : '');
+  s('cssb-labor',   laborCostAnnual ? fmtK(laborCostAnnual)+'/yr' : '—');
+  s('cssb-claims',  bustedBidAnnual ? fmtK(bustedBidAnnual)+'/yr' : '—');
+  s('cssb-slayr',   missedBidAnnual ? fmtK(missedBidAnnual)+'/yr' : '—');
+  s('cssb-total',   total ? fmtK(total) : '—');
+
+  const calcHrs = document.getElementById('cs-calc-hours');
+  if(calcHrs) calcHrs.textContent = (bids && hours)
+    ? `${bids} bids × ${hours} hrs = ${monthlyHrs} estimator-hours a month, just on manual takeoff.`
+    : 'Enter bids and hours per takeoff above';
+
+  const sayHrs = document.getElementById('cs-say-hours');
+  const hrsStmt = document.getElementById('cs-hours-stmt');
+  if(sayHrs && hrsStmt) {
+    if(monthlyHrs > 0) {
+      hrsStmt.textContent = `So based on what you just told me — ${bids} bids, ${hours} hours each — that's ${monthlyHrs} estimator-hours a month, every month, just on takeoff.`;
+      sayHrs.style.display = 'block';
+      const sil = document.getElementById('cs-silence1');
+      if(sil) sil.style.display = 'block';
+    } else {
+      sayHrs.style.display = 'none';
+      const sil = document.getElementById('cs-silence1');
+      if(sil) sil.style.display = 'none';
+    }
+  }
+
+  const calcCl = document.getElementById('cs-calc-claims');
+  if(calcCl) calcCl.textContent = (winrate && errorpct && errorcost)
+    ? `At a ${winrate}% win rate and ${errorpct}% miss rate on ${Math.round(bids*12)} bids/yr, busted bids alone run about ${fmtK(bustedBidAnnual)}/yr — before counting the ${declined||0} bids/month you're not even chasing.`
+    : 'Enter win rate, contract value, and error rate above';
+
+  const sayCl = document.getElementById('cs-say-claims');
+  const clStmt = document.getElementById('cs-claims-stmt');
+  if(sayCl && clStmt) {
+    if(bustedBidAnnual > 0 || missedBidAnnual > 0) {
+      clStmt.textContent = `Just on busted bids and bandwidth-constrained opportunity — at those rates — that's about ${fmtK(bustedBidAnnual+missedBidAnnual)} a year sitting on the table. Before we touch a single takeoff.`;
+      sayCl.style.display = 'block';
+    } else { sayCl.style.display = 'none'; }
+  }
+
+  const pb = document.getElementById('cs-playback');
+  if(pb) {
+    const parts = [];
+    if(bids) parts.push(`${bids} bids a month`);
+    if(hours) parts.push(`about ${hours} hours of manual takeoff each`);
+    if(monthlyHrs) parts.push(`${monthlyHrs} estimator-hours a month just on takeoff`);
+    if(declined) parts.push(`around ${declined} bids a month passed on for lack of bandwidth`);
+    if(bustedBidAnnual) parts.push(`roughly ${fmtK(bustedBidAnnual)} a year in busted-bid cost`);
+    if(sop) parts.push(`historical bid data living in ${sop}`);
+    if(esc==='both') parts.push('misses driven by both training gaps and a process that keeps shifting');
+    else if(esc==='process') parts.push('misses driven by a process that keeps shifting under the team');
+    else if(esc==='training') parts.push('misses tied to newer estimators still getting up to speed');
+    pb.innerHTML = parts.length >= 2
+      ? `"So let me make sure I've got this right — you're running ${parts.join(', ')}. Does that capture it?"`
+      : 'Fill in the earlier sections — your playback language builds here automatically.';
+    pb.className = 'cs-playback visible';
+  }
+
+  const authority   = g('cs-authority');
+  const budget      = g('cs-budget');
+  const timeline    = g('cs-timeline');
+  const competition = g('cs-competition');
+  const lastpurch   = g('cs-lastpurchase').trim();
+
+  const mark = (num, done) => {
+    const n=document.getElementById('csn'+num); const d=document.getElementById('csd'+num);
+    if(n){ n.className='cs-phase-num'+(done?' done':''); n.textContent=done?'✓':num; }
+    if(d) d.textContent = done ? 'done' : '';
+  };
+  mark(1, bids>0 && hours>0);
+  mark(2, winrate>0 || errorpct>0);
+  mark(3, esc!=='' || sop!=='');
+  mark(4, total>0);
+  mark(45, authority!=='' || budget!=='' || timeline!=='');
+
+  const ringScore = (prefix, id, scored, partial) => {
+    const el = document.getElementById(prefix+id);
+    if(!el) return;
+    if(scored)       { el.style.cssText='width:'+(prefix==='qring-'?'36px':'28px')+';height:'+(prefix==='qring-'?'36px':'28px')+';border-radius:50%;border:1px solid rgba(46,204,113,.5);background:rgba(46,204,113,.15);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin:0 auto;transition:all .3s;'; el.textContent='✓'; }
+    else if(partial) { el.style.cssText='width:'+(prefix==='qring-'?'36px':'28px')+';height:'+(prefix==='qring-'?'36px':'28px')+';border-radius:50%;border:1px solid rgba(245,166,35,.4);background:rgba(245,166,35,.1);color:var(--amber);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin:0 auto;transition:all .3s;'; el.textContent='~'; }
+    else             { el.style.cssText='width:'+(prefix==='qring-'?'36px':'28px')+';height:'+(prefix==='qring-'?'36px':'28px')+';border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;margin:0 auto;transition:all .3s;color:var(--muted);'; el.textContent='—'; }
+  };
+
+  const qpainMain = document.getElementById('qpain-main') ? document.getElementById('qpain-main').value : '';
+
+  const mR = { M:false, E:false, D:false, I:false, C:false };
+  const mP = { M:false, E:false, D:false, I:false, C:false };
+  mR.M = bids>0 && hours>0 && (winrate>0||errorpct>0);
+  mP.M = bids>0 || hours>0;
+  mR.E = authority === 'yes';
+  mP.E = authority === 'partial';
+  mR.D = (timeline!==''&&timeline!=='unknown') && (budget!==''&&budget!=='unknown');
+  mP.D = timeline!=='' || budget!=='';
+  mR.I = qpainMain.length>20 || (bids>0 && errorpct>0);
+  mP.I = bids>0 || errorpct>0;
+  mR.C = competition!=='' && competition!=='unknown';
+  mP.C = lastpurch!=='';
+
+  Object.keys(mR).forEach(k => { ringScore('cs-ring-', k, mR[k], mP[k]); });
+  ringScore('qring-', 'M', mR.M, mP.M);
+  ringScore('qring-', 'E', mR.E, mP.E);
+  ringScore('qring-', 'D', mR.D, mP.D);
+  ringScore('qring-', 'I', mR.I, mP.I);
+  ringScore('qring-', 'C', mR.C, mP.C);
+
+  const scored  = Object.values(mR).filter(Boolean).length;
+  const partial = Object.values(mP).filter(v=>v).length - scored;
+  const pct     = Math.round(((scored + partial*0.5)/5)*100);
+  const clr = pct>=70?'var(--green)':pct>=40?'var(--amber)':'var(--red)';
+
+  const bar  = document.getElementById('cs-deal-bar');
+  const stat = document.getElementById('cs-deal-status');
+  const pctEl = document.getElementById('cs-deal-pct');
+  if(bar)  { bar.style.width=pct+'%'; bar.style.background=clr; }
+  if(stat) { stat.textContent = pct>=70?'Well Qualified':pct>=40?'Qualifying':'Unqualified'; stat.style.color=clr; }
+  if(pctEl){ pctEl.textContent=pct+'%'; pctEl.style.color=clr; }
+
+  const qhFill = document.getElementById('qhealth-fill');
+  const qhPct  = document.getElementById('qhealth-pct');
+  const qhStat = document.getElementById('qhealth-status');
+  if(qhFill){ qhFill.style.width=pct+'%'; qhFill.style.background=clr; }
+  if(qhPct) qhPct.textContent = pct+'%';
+  if(qhStat){ qhStat.textContent = pct>=70?'Well Qualified':pct>=40?'Qualifying':'Unqualified'; qhStat.style.color=clr; }
+
+  const gaps = [];
+  if(!mR.M) gaps.push('Capture bids/month + hours/takeoff + win rate + error rate');
+  if(!mR.E && !mP.E) gaps.push('Ask who signs off on a decision like this');
+  if(!mR.D) gaps.push('Get timeline + budget status confirmed');
+  if(!mR.I) gaps.push('Confirm pain consequence — what happens if this stays unsolved?');
+  if(!mR.C && !mP.C) gaps.push('Ask about prior purchases + competition');
+  const gapEl = document.getElementById('cs-deal-gap');
+  if(gapEl) gapEl.textContent = gaps.length ? '→ ' + gaps[0] : 'Ready to propose the pilot.';
+
+  const gapList = document.getElementById('q-gap-list');
+  if(gapList) gapList.innerHTML = gaps.length ? gaps.map(g=>'→ '+g).join('<br>') : 'Ready to propose the pilot.';
+
+  // Sync ROI sliders
+  function pushSlider(key, val, min, max) {
+    if(!val) return;
+    const clamped = Math.min(max, Math.max(min, val));
+    P[key] = clamped;
+    const slider = document.querySelector('input[oninput="set(\'' + key + '\',this.value)"]');
+    if(slider) slider.value = clamped;
+    const label = document.getElementById('v-'+key);
+    if(label) label.textContent = ({
+      ftes: Math.round(clamped), tickets: Math.round(clamped), handle: Math.round(clamped),
+      returns: Math.round(clamped), shipments: Math.round(clamped)+'%',
+      claimrate: '$'+Math.round(clamped).toLocaleString(), claimval: Math.round(clamped)+'%',
+      filedpct: Math.round(clamped)+'%', sla: '$'+Math.round(clamped).toLocaleString()
+    })[key];
+  }
+  if(estimators) pushSlider('ftes', estimators, 1, 40);
+  if(bids)       pushSlider('tickets', bids, 2, 80);
+  if(hours)      pushSlider('handle', hours, 2, 60);
+  if(declined)   pushSlider('returns', declined, 0, 30);
+  if(winrate)    pushSlider('shipments', winrate, 10, 50);
+  if(contractval)pushSlider('claimrate', contractval, 250000, 30000000);
+  if(margin)     pushSlider('claimval', margin, 5, 25);
+  if(errorpct)   pushSlider('filedpct', errorpct, 0, 30);
+  if(errorcost)  pushSlider('sla', errorcost, 2000, 100000);
+
+  calc();
+
+  // Day-in-life + qualifier sync
+  const hrsFreedMonth = window._calc ? window._calc.hrsFreedMonth : 0;
+  s('dl-stat-hrs', hrsFreedMonth ? hrsFreedMonth+' hrs' : '—');
+  s('dl-handle-before', hours ? hours+' hrs' : '14 hrs');
+  s('dl-claimval-before', contractval ? fmtK(contractval) : '$3.5M');
+
+  const qsbAuthMap = {yes:'Adam signs', partial:'Recommends, above signs', no:'Champion only', '':'—'};
+  const qsbBudgetMap = {yes:'Allocated now', unallocated:'Exists, not allocated', needsapproval:'Needs approval', no:'No budget yet', '':'—'};
+  const qsbTimelineMap = {immediate:'Weeks', thisquarter:'This quarter', nextquarter:'Next quarter', sixplus:'6+ months', '':'—'};
+  const qsbCompMap = {none:'Only us', buildvsbuy:'Sticking with current tools', competitor:'Competitor(s)', donothing:'vs. doing nothing', '':'—'};
+  s('qsb-authority', qsbAuthMap[authority]||'—');
+  s('qsb-budget', qsbBudgetMap[budget]||'—');
+  s('qsb-timeline', qsbTimelineMap[timeline]||'—');
+  s('qsb-competition', qsbCompMap[competition]||'—');
+  s('qsb-bids', bids || '—');
+  s('qsb-hours', hours || '—');
+  s('qsb-pain', total ? fmtK(total) : '—');
+
+  saveState();
+}
+
+function qUpdate() { if(typeof csCalc === 'function') csCalc(); }
+
+function genBrief() {
+  const g = id => { const e = document.getElementById(id); return e ? e.value : ''; };
+  const c = window._calc || {};
+  const txt = `DEAL BRIEF — Snyder Langston / Adam Schneider (Director of Preconstruction)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAIN: ${g('qpain-main') || '—'}
+CONSEQUENCE IF UNSOLVED: ${g('qpain-consequence') || '—'}
+
+METRICS
+  Bids/month: ${g('cs-bids')||'—'}   Hrs/takeoff: ${g('cs-hours')||'—'}   Win rate: ${g('cs-winrate')||'—'}%
+  Est. annual pain: ${fmtK(c.totalPain)}   Est. annual value: ${fmtK(c.totalValue)}
+
+BUYER & PROCESS
+  Decision authority: ${document.getElementById('qsb-authority') ? document.getElementById('qsb-authority').textContent : '—'}
+  Budget status: ${document.getElementById('qsb-budget') ? document.getElementById('qsb-budget').textContent : '—'}
+  Timeline: ${document.getElementById('qsb-timeline') ? document.getElementById('qsb-timeline').textContent : '—'}
+  Competition: ${document.getElementById('qsb-competition') ? document.getElementById('qsb-competition').textContent : '—'}
+
+NEXT STEP: ${document.getElementById('q-gap-list') ? document.getElementById('q-gap-list').textContent : 'Ready to propose the pilot.'}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
+  const box = document.getElementById('brief-out');
+  if(box) { box.style.display='block'; box.textContent=txt; }
+}
+
+// ════════════════════════════════════════
+// PRINT 1-PAGER
+// ════════════════════════════════════════
+function printOnePager() {
+  const el = document.getElementById('print-onepager');
+  if(!el) return;
+  const css = `*{box-sizing:border-box;margin:0;padding:0;}body{font-family:Arial,sans-serif;background:#fff;color:#111;font-size:14px;padding:24px;}
+  .onepager{border:1px solid #ddd;border-radius:8px;overflow:hidden;}
+  .onepager-header{background:#0f1923;padding:24px 28px;color:#fff;}
+  .onepager-body{padding:24px 28px;}
+  hr{border:none;border-top:1px solid #e0e0e0;margin:16px 0;}
+  h3{font-size:15px;font-weight:700;margin-bottom:6px;color:#c47a10;}
+  p{line-height:1.6;color:#444;margin-bottom:10px;}
+  .section-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#c47a10;margin-bottom:8px;}
+  .grid-2,.grid-3{display:grid;gap:12px;}
+  .grid-2{grid-template-columns:1fr 1fr;}
+  .grid-3{grid-template-columns:1fr 1fr 1fr;}
+  .pain-metric,.stat-box{display:inline-flex;flex-direction:column;align-items:center;padding:10px 14px;background:#f7f7f7;border:1px solid #e0e0e0;border-radius:6px;text-align:center;}
+  .n,.stat-number{font-size:22px;font-weight:900;}
+  .l,.stat-label{font-size:10px;color:#888;margin-top:3px;}
+  @media print{body{padding:0;}}`;
+  const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>TrueBuilt — Snyder Langston 1-Pager</title><style>${css}</style></head><body>${el.outerHTML}<script>window.onload=function(){window.print();};<\/script></body></html>`;
+  try {
+    const blob = new Blob([html], {type:'text/html'});
+    const url  = URL.createObjectURL(blob);
+    const w    = window.open(url, '_blank');
+    if(!w) { alert('Please allow popups for this page to use the print function.'); URL.revokeObjectURL(url); return; }
+    setTimeout(()=>URL.revokeObjectURL(url), 10000);
+  } catch(e) { alert('Print failed: ' + e.message); }
+}
+
+// ════════════════════════════════════════
+// SAVE / RESTORE
+// ════════════════════════════════════════
+const LS_KEY = 'truebuilt_dealroom_v1';
+
+function saveState() {
+  try {
+    const data = { P: Object.assign({}, P), inputs: {} };
+    document.querySelectorAll('input[id], select[id], textarea[id]').forEach(el => {
+      data.inputs[el.id] = el.value;
+    });
+    localStorage.setItem(LS_KEY, JSON.stringify(data));
+    const ind = document.getElementById('save-indicator');
+    if(ind) { ind.style.opacity='1'; setTimeout(()=>ind.style.opacity='0', 1200); }
+  } catch(e) { console.warn('Save failed:', e); }
+}
+
+function restoreState() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if(!raw) return false;
+    const data = JSON.parse(raw);
+    if(data.inputs) {
+      Object.keys(data.inputs).forEach(id => {
+        const el = document.getElementById(id);
+        if(el && el.type !== 'range') el.value = data.inputs[id];
+      });
+    }
+    if(data.P) Object.assign(P, data.P);
+    ['ftes','tickets','handle','ftecost','deflect','returns','shipments','claimrate','claimval','filedpct','sla','platform','perres'].forEach(k => {
+      const slider = document.querySelector('input[oninput="set(\'' + k + '\',this.value)"]');
+      if(slider && P[k]!==undefined) slider.value = P[k];
+    });
+    return true;
+  } catch(e) { console.warn('Restore failed:', e); return false; }
+}
+
+function clearState() {
+  if(!confirm('Clear all saved data and reset to defaults?')) return;
+  localStorage.removeItem(LS_KEY);
+  location.reload();
+}
+
+document.addEventListener('input', e => { if(e.target.matches('input,select,textarea')) saveState(); });
+
+// ════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════
+restoreState();
+calc();
+csCalc();
+roiView('full');
+</script>
+
+</body>
+</html>
