@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrueRestore × AllDry — VP Strategic Accounts | Network Win Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070d10; --surface:#0e161b; --surface2:#152128;
+  --border:#1d2c34; --teal:#25c4b8; --amber:#f5a623; --red:#e8556b;
+  --green:#2ecc71; --blue:#3a9bd5; --text:#e8eef0; --muted:#7c8b92;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Barlow',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:15px;}
+.nav{position:sticky;top:0;z-index:100;background:rgba(7,13,16,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;height:50px;gap:0;}
+.nav-brand{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:var(--teal);letter-spacing:.06em;margin-right:20px;white-space:nowrap;}
+.nav-tabs{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.nav-tab{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;cursor:pointer;border-radius:4px;color:var(--muted);white-space:nowrap;transition:all .15s;border:none;background:none;}
+.nav-tab:hover{color:var(--text);background:var(--surface);}
+.nav-tab.active{color:var(--teal);background:rgba(37,196,184,.1);}
+.section{display:none;padding:36px 24px;max-width:1120px;margin:0 auto;}
+.section.active{display:block;animation:fadeIn .2s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.section-label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;}
+h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(34px,5vw,56px);font-weight:900;line-height:1;letter-spacing:-.01em;margin-bottom:18px;}
+h2{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;letter-spacing:.01em;margin-bottom:14px;margin-top:6px;}
+h3{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;letter-spacing:.02em;margin-bottom:10px;color:var(--teal);}
+p{line-height:1.7;color:#b8c2c7;margin-bottom:12px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:22px;margin-bottom:14px;}
+.card-teal{border-left:3px solid var(--teal);}
+.card-amber{border-left:3px solid var(--amber);}
+.card-red{border-left:3px solid var(--red);}
+.card-green{border-left:3px solid var(--green);}
+.card-blue{border-left:3px solid var(--blue);}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+@media(max-width:760px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}}
+.stat-box{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:18px;text-align:center;}
+.stat-number{font-family:'Barlow Condensed',sans-serif;font-size:40px;font-weight:900;color:var(--teal);line-height:1;margin-bottom:4px;}
+.stat-label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+.tag{display:inline-block;border-radius:4px;padding:3px 10px;font-size:12px;font-weight:600;letter-spacing:.05em;margin:3px 3px 3px 0;font-family:'Space Mono',monospace;border:1px solid;}
+.tag-teal{color:var(--teal);border-color:rgba(37,196,184,.3);background:rgba(37,196,184,.07);}
+.tag-amber{color:var(--amber);border-color:rgba(245,166,35,.3);background:rgba(245,166,35,.07);}
+.tag-red{color:var(--red);border-color:rgba(232,85,107,.3);background:rgba(232,85,107,.07);}
+.tag-green{color:var(--green);border-color:rgba(46,204,113,.3);background:rgba(46,204,113,.07);}
+.tag-blue{color:var(--blue);border-color:rgba(58,155,213,.3);background:rgba(58,155,213,.07);}
+.hero-band{background:linear-gradient(90deg,rgba(37,196,184,.08) 0%,transparent 100%);border:1px solid rgba(37,196,184,.15);border-radius:8px;padding:22px 26px;margin-bottom:28px;}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(37,196,184,.1);border:1px solid rgba(37,196,184,.3);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;font-family:'Space Mono',monospace;margin-bottom:10px;}
+.badge::before{content:'●';font-size:8px;}
+.badge-amber{background:rgba(245,166,35,.1);border-color:rgba(245,166,35,.3);color:var(--amber);}
+.note{font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:8px 12px;margin-bottom:12px;line-height:1.6;}
+.src{font-size:10px;color:var(--muted);font-family:'Space Mono',monospace;margin-top:6px;line-height:1.5;}
+hr{border:none;border-top:1px solid var(--border);margin:22px 0;}
+ul.clean{list-style:none;padding:0;}
+ul.clean li{font-size:14px;color:#b8c2c7;padding:4px 0 4px 18px;position:relative;line-height:1.6;}
+ul.clean li::before{content:'▸';color:var(--teal);position:absolute;left:0;}
+/* confidence pills */
+.conf{display:inline-block;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.08em;padding:2px 7px;border-radius:3px;text-transform:uppercase;}
+.conf-known{background:rgba(46,204,113,.12);color:var(--green);border:1px solid rgba(46,204,113,.3);}
+.conf-infer{background:rgba(245,166,35,.12);color:var(--amber);border:1px solid rgba(245,166,35,.3);}
+.conf-verify{background:rgba(232,85,107,.12);color:var(--red);border:1px solid rgba(232,85,107,.3);}
+/* stakeholder */
+.stk-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+@media(max-width:760px){.stk-grid{grid-template-columns:1fr;}}
+.stk-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 18px;border-top:3px solid var(--border);}
+.stk-card.tier-fr{border-top-color:var(--blue);}
+.stk-card.tier-champ{border-top-color:var(--green);}
+.stk-card.tier-owner{border-top-color:var(--amber);}
+.stk-role{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.stk-name{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;margin-bottom:6px;letter-spacing:.01em;}
+.stk-body{font-size:13px;color:#b8c2c7;line-height:1.6;}
+.stk-body strong{color:var(--text);}
+/* timeline */
+.timeline{position:relative;padding-left:28px;}
+.timeline::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:2px;background:var(--border);}
+.tl-item{position:relative;margin-bottom:24px;}
+.tl-dot{position:absolute;left:-24px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--teal);border:2px solid var(--bg);}
+.tl-period{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:4px;}
+.tl-title{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;margin-bottom:6px;}
+.tl-bullets{list-style:none;padding:0;}
+.tl-bullets li{font-size:14px;color:#b8c2c7;padding:3px 0 3px 16px;position:relative;line-height:1.6;}
+.tl-bullets li::before{content:'▸';color:var(--teal);position:absolute;left:0;}
+/* pipeline stages */
+.pipe{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:8px;}
+@media(max-width:900px){.pipe{grid-template-columns:1fr 1fr 1fr;}}
+@media(max-width:520px){.pipe{grid-template-columns:1fr;}}
+.pipe-stage{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 12px 14px;border-top:3px solid var(--teal);}
+.pipe-num{font-family:'Space Mono',monospace;font-size:10px;color:var(--muted);}
+.pipe-name{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:800;margin:3px 0 8px;line-height:1.05;}
+.pipe-def{font-size:12px;color:#b8c2c7;line-height:1.55;}
+.pipe-exit{font-size:11px;color:var(--teal);margin-top:8px;font-family:'Space Mono',monospace;line-height:1.5;}
+/* battle table */
+.bt{width:100%;border-collapse:collapse;font-size:13px;}
+.bt th,.bt td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.5;}
+.bt th{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+.bt td.dim{color:var(--muted);width:26%;}
+.bt .win{color:var(--teal);font-weight:600;}
+.bt .lose{color:var(--muted);}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:8px;}
+/* toolstack */
+.tool-row{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--border);}
+@media(max-width:600px){.tool-row{grid-template-columns:1fr;gap:6px;}}
+.tool-job{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);padding-top:3px;}
+.tool-name{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;margin-bottom:3px;}
+.tool-why{font-size:13px;color:#b8c2c7;line-height:1.6;}
+.tool-alt{font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;margin-top:4px;}
+/* ROI calc */
+.slider-row{margin-bottom:14px;}
+.slider-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;}
+.slider-name{font-size:13px;color:var(--muted);}
+.slider-val{font-size:13px;font-weight:700;color:var(--text);font-family:'Space Mono',monospace;}
+input[type=range]{width:100%;-webkit-appearance:none;height:4px;background:var(--border);border-radius:2px;outline:none;}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--teal);cursor:pointer;}
+.roi-out-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0;}
+@media(max-width:600px){.roi-out-grid{grid-template-columns:1fr 1fr;}}
+.roi-metric{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;}
+.roi-metric .n{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:900;line-height:1;margin-bottom:4px;}
+.roi-metric .l{font-size:11px;color:var(--muted);}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:13px;}
+.bar-label{width:210px;flex-shrink:0;color:var(--muted);font-size:12px;}
+.bar-track{flex:1;background:var(--surface2);border-radius:3px;height:20px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:3px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:700;transition:width .3s ease;white-space:nowrap;}
+.bar-fill-red{background:rgba(232,85,107,.2);color:var(--red);}
+.bar-fill-green{background:rgba(46,204,113,.2);color:var(--green);}
+.gen-btn{width:100%;padding:11px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--text);font-size:14px;cursor:pointer;margin-top:14px;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.05em;transition:background .15s;}
+.gen-btn:hover{background:var(--surface);}
+.summary-out{display:none;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:16px;font-size:13px;line-height:1.9;margin-top:12px;font-family:'Space Mono',monospace;white-space:pre-wrap;color:#b8c2c7;}
+/* flow steps */
+.flow-step{display:flex;gap:14px;margin-bottom:16px;}
+.flow-num{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:var(--teal);background:rgba(37,196,184,.1);border:1px solid rgba(37,196,184,.3);border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.flow-content{flex:1;}
+.flow-content strong{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;display:block;margin-bottom:5px;color:var(--text);}
+::-webkit-scrollbar{width:6px;height:6px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+.foot{max-width:1120px;margin:0 auto;padding:24px;border-top:1px solid var(--border);font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);line-height:1.7;}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-brand">TRUERESTORE × ALLDRY</div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="show('overview',this)">◇ Overview</button>
+    <button class="nav-tab" onclick="show('stakeholders',this)">👥 Stakeholder Map</button>
+    <button class="nav-tab" onclick="show('plan',this)">♟ Win Plan</button>
+    <button class="nav-tab" onclick="show('process',this)">⇄ Sales Process</button>
+    <button class="nav-tab" onclick="show('tools',this)">🛠 Toolstack</button>
+    <button class="nav-tab" onclick="show('roi',this)">💧 ROI Model</button>
+    <button class="nav-tab" onclick="show('battle',this)">⚔ Battle Card</button>
+    <button class="nav-tab" onclick="show('risks',this)">⚠ What's Hard</button>
+    <button class="nav-tab" onclick="show('research',this)">🔎 Research Log</button>
+    <button class="nav-tab" onclick="show('qa',this)">💬 My Questions</button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ OVERVIEW -->
+<section id="overview" class="section active">
+  <div class="section-label">VP, Strategic Accounts · Final-Round Plan</div>
+  <h1>Three locations today.<br><span style="color:var(--teal)">A plan for all 178.</span></h1>
+  <div class="hero-band">
+    <div class="badge">The thesis in one line</div>
+    <p style="color:var(--text);font-size:16px;margin:0;line-height:1.7;">AllDry is a claims business, and in a claims business the money is won or lost on how fast and how completely a job becomes a <strong style="color:var(--teal)">carrier-accepted estimate</strong>. Encircle captures; it doesn't close the loop to revenue. TrueRestore does — and we already have living proof inside their own brand in <strong style="color:var(--teal)">Seattle</strong>. This isn't a top-down mandate sale; it's a <strong style="color:var(--teal)">peer-proof, franchisor-endorsed</strong> network rollout. Win the endorsement, turn Seattle into the reference engine, and let owner economics do the closing.</p>
+  </div>
+
+  <h2>The prize, in numbers</h2>
+  <div class="grid-4" style="margin-bottom:8px;">
+    <div class="stat-box"><div class="stat-number">3<span style="font-size:20px;color:var(--muted);">/178</span></div><div class="stat-label">Locations live today</div></div>
+    <div class="stat-box"><div class="stat-number">$641K</div><div class="stat-label">Full-network ARR (178 × $300 × 12)</div></div>
+    <div class="stat-box"><div class="stat-number" style="color:var(--amber);">$630K</div><div class="stat-label">Open new ARR (175 locations)</div></div>
+    <div class="stat-box"><div class="stat-number" style="color:var(--amber);">~$175K</div><div class="stat-label">One-time onboarding upside</div></div>
+  </div>
+  <div class="note">Given figures from the brief: ~178 independently owned locations · ~$300/location/month · ~$11K ACV live today across 3 sites. Everything downstream in this deck is sized off these anchors.</div>
+
+  <h2>The three we already have — this is the whole strategy's fulcrum</h2>
+  <div class="grid-3">
+    <div class="card card-green" style="margin:0;">
+      <div class="badge" style="margin-bottom:8px;">Champion</div>
+      <h3 style="color:var(--text);">AllDry Seattle</h3>
+      <p style="font-size:13px;margin:0;">Genuinely happy, uses TrueRestore daily, actively helping refine the platform. Our strongest relationship and best proof point in the entire network. <strong style="color:var(--green);">This is not just a happy customer — it's the reference engine and the co-author of the network case study.</strong></p>
+    </div>
+    <div class="card card-amber" style="margin:0;">
+      <div class="badge badge-amber" style="margin-bottom:8px;">Quiet user</div>
+      <h3 style="color:var(--text);">AllDry San Bernardino</h3>
+      <p style="font-size:13px;margin:0;">On the platform, but transactional — little direct relationship. <strong style="color:var(--amber);">A live in-network expansion lab:</strong> can we convert a quiet user to an advocate with a deliberate success motion? Whatever works here is the playbook for the other 172.</p>
+    </div>
+    <div class="card card-amber" style="margin:0;">
+      <div class="badge badge-amber" style="margin-bottom:8px;">Quiet user</div>
+      <h3 style="color:var(--text);">AllDry Austin</h3>
+      <p style="font-size:13px;margin:0;">Same picture as San Bernardino — using it, no champion yet. <strong style="color:var(--amber);">Second data point</strong> to prove the quiet-to-advocate motion repeats, and a Sun Belt reference for the high-water-volume southern territories.</p>
+    </div>
+  </div>
+
+  <hr>
+  <h2>What has to be true to win the network</h2>
+  <div class="grid-2">
+    <div class="card card-teal" style="margin:0;">
+      <ul class="clean" style="margin:0;">
+        <li><strong style="color:var(--text);">Owner economics are undeniable at the unit level</strong> — a location makes more approved revenue per job with less double work. The +11.6% approved-ticket case study has to hold up on <em>their</em> jobs.</li>
+        <li><strong style="color:var(--text);">Seattle becomes a repeatable reference</strong>, not a one-off anecdote — quantified, on the record, and willing to talk to peers.</li>
+        <li><strong style="color:var(--text);">The franchisor endorses</strong> (preferred/approved vendor + a slot at the conference and in onboarding) even though they won't mandate.</li>
+      </ul>
+    </div>
+    <div class="card card-teal" style="margin:0;">
+      <ul class="clean" style="margin:0;">
+        <li><strong style="color:var(--text);">The quiet-user motion is provable</strong> — San Bernardino and/or Austin convert to advocates, showing adoption isn't luck.</li>
+        <li><strong style="color:var(--text);">Migration off Encircle is de-risked</strong> — data, habit, and switching cost are handled, not hand-waved.</li>
+        <li><strong style="color:var(--text);">We ride the network's own rhythms</strong> — FAC, regional peer groups, annual conference, the busy-season claims surge — instead of fighting them.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card card-blue" style="margin-top:14px;">
+    <h3 style="color:var(--text);">One asset most vendors don't have here</h3>
+    <p style="margin:0;">TrueRestore is <strong style="color:var(--blue);">formerly Capabuild</strong>, now inside the TrueBuilt family — so behind the field app sits real AI estimating and construction-tech muscle. For a claims network that lives and dies on Xactimate throughput, "documentation that becomes the estimate" isn't a feature gap we're papering over — it's the core of the platform's origin. <span class="src">Source: capabuild.app ("TrueRestore formerly Capabuild"); TrueBuilt/Capabuild acquisition coverage, Nov 2025. Confidence: <span class="conf conf-known">Known</span></span></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ STAKEHOLDER MAP -->
+<section id="stakeholders" class="section">
+  <div class="section-label">Assignment · Piece 1</div>
+  <h1>Map the account<br><span style="color:var(--teal)">and the people who move it.</span></h1>
+  <p style="font-size:16px;max-width:760px;margin-bottom:18px;">A franchise network has three distinct buying layers, and you win by working all three at once. Nobody at the top can force a revenue tool onto an independent owner — so the map isn't a hierarchy, it's an influence system. Below is what I can build from the outside today, tagged by confidence, with exactly what I'd verify in the first real conversation.</p>
+
+  <div class="note">Legend — <span class="conf conf-known">Known</span> sourced &amp; confident · <span class="conf conf-infer">Inferred</span> reasoned from public signals · <span class="conf conf-verify">Verify</span> a gap I'd close on the first call. This tagging is deliberate: the brief explicitly asks what I'm confident about vs. inferring vs. verifying.</div>
+
+  <h2>Layer 1 · The franchisor (endorsement, not the checkbook)</h2>
+  <div class="stk-grid">
+    <div class="stk-card tier-fr">
+      <div class="stk-role">Founder &amp; CEO · Franchisor</div>
+      <div class="stk-name">Matt Kuntz <span class="conf conf-known">Known</span></div>
+      <div class="stk-body">Founded AllDry; 25 years running an HVAC/plumbing/electrical business before this. An operator, not a technologist — he'll care about brand consistency, franchisee profitability, and validation counts. <strong>My move:</strong> executive sponsor of the "network standard" narrative; I want him referencing TrueRestore from the mainstage at the annual conference.</div>
+      <div class="src">Source: myalldry.com, ZoomInfo, franchise press.</div>
+    </div>
+    <div class="stk-card tier-fr">
+      <div class="stk-role">President of Operations · Franchisor</div>
+      <div class="stk-name">Jason Schlafer <span class="conf conf-known">Known</span></div>
+      <div class="stk-body">Owns how the network actually runs — playbooks, onboarding, franchisee support. <strong>This is very likely my primary franchisor sponsor.</strong> His KPI is franchisee success and consistency; a tool that lifts approved tickets and cuts cycle time is his win, not just mine. <strong>My move:</strong> co-build the ROI story with him and get TrueRestore into new-franchisee onboarding.</div>
+      <div class="src">Source: All Dry Services leadership (visualvisitor / ZoomInfo).</div>
+    </div>
+    <div class="stk-card tier-fr">
+      <div class="stk-role">President · Franchisor + Multi-hat owner</div>
+      <div class="stk-name">Todd Marshall <span class="conf conf-known">Known</span></div>
+      <div class="stk-body">President and also local owner of an AllDry location — a rare bridge who sits on both sides. <strong>Uniquely credible internal advocate:</strong> if he runs TrueRestore in his own shop and vouches for it, that's franchisor endorsement <em>and</em> owner peer-proof in one person. <strong>My move:</strong> make him a lighthouse owner-user.</div>
+      <div class="src">Source: All Dry Jacksonville blog; company profiles.</div>
+    </div>
+    <div class="stk-card tier-fr">
+      <div class="stk-role">Franchise / vendor-program owner</div>
+      <div class="stk-name">Director of Franchise Ops / Preferred-Vendor lead <span class="conf conf-verify">Verify</span></div>
+      <div class="stk-body">Someone owns the approved-/preferred-vendor program and the tech stack franchisees are steered toward. Title unconfirmed from outside. <strong>My move:</strong> first-call question — "Who owns the vendor/tech program and the FAC agenda?" That person controls the single highest-leverage lever in this whole deal: <strong>preferred-vendor status.</strong></div>
+      <div class="src">Gap. Close via Seattle intro + LinkedIn org mapping.</div>
+    </div>
+  </div>
+
+  <h2>Layer 2 · The owners who actually shape the network</h2>
+  <div class="stk-grid">
+    <div class="stk-card tier-champ">
+      <div class="stk-role">Champion · Lighthouse</div>
+      <div class="stk-name">AllDry Seattle owner <span class="conf conf-known">Known</span></div>
+      <div class="stk-body">Our engaged, daily-using champion and product co-refiner. <strong>The most valuable relationship in the network.</strong> <strong>My move:</strong> turn happiness into artifacts — a quantified case study, a peer webinar, an FAC testimonial, and 2–3 warm intros to owners they respect. Protect this relationship above all; it's the flywheel's ignition.</div>
+      <div class="src">Given in brief. Verify their real numbers to anchor the case study.</div>
+    </div>
+    <div class="stk-card tier-owner">
+      <div class="stk-role">Expansion lab · Quiet users</div>
+      <div class="stk-name">San Bernardino + Austin owners <span class="conf conf-known">Known</span></div>
+      <div class="stk-body">On the platform, transactional, no champion. <strong>My move:</strong> run a deliberate success play on both — QBR, adoption check, a small ticket-uplift win — and document whether a quiet user converts to advocate. If yes, I have a repeatable motion; if not, I learn the real adoption blocker before scaling.</div>
+      <div class="src">Given in brief. Relationship depth = my first verify.</div>
+    </div>
+    <div class="stk-card tier-owner">
+      <div class="stk-role">Network shapers</div>
+      <div class="stk-name">Multi-unit owners &amp; FAC members <span class="conf conf-infer">Inferred</span></div>
+      <div class="stk-body">Networks this size have owners running several territories and an advisory council whose opinion moves peers faster than any franchisor email. <strong>My move:</strong> identify the 8–12 most influential/multi-unit owners, get to the FAC through Seattle + the franchisor, and win the loud, respected voices first.</div>
+      <div class="src">Inferred from franchise-network norms (IFA / FAC literature). Verify roster on first call.</div>
+    </div>
+    <div class="stk-card tier-owner">
+      <div class="stk-role">Regional peer clusters</div>
+      <div class="stk-name">High-claims-volume territories <span class="conf conf-infer">Inferred</span></div>
+      <div class="stk-body">Owners in freeze-belt and storm-exposed metros feel cycle-time and Xactimate pain most acutely. <strong>My move:</strong> sequence outreach to where the pain (and busy season) is sharpest, and cluster references regionally so peer-proof travels the way trust actually travels in this industry — locally.</div>
+      <div class="src">Inferred from claims/weather seasonality. Verify against AllDry's territory map.</div>
+    </div>
+  </div>
+
+  <h2>Layer 3 · The endorsers &amp; influencers around the deal</h2>
+  <div class="grid-3">
+    <div class="card" style="margin:0;"><h3>Insurance / carrier &amp; TPA relationships</h3><p style="font-size:13px;margin:0;">Owners live on adjuster and carrier acceptance. "Carrier-accepted, Xactimate-ready" is language that resonates up the claims chain — a secondary proof source I can cite even if I don't sell to carriers directly.</p></div>
+    <div class="card" style="margin:0;"><h3>The Voda / franchise channel</h3><p style="font-size:13px;margin:0;">We came in through the Voda/franchise channel — that relationship is a warm path to the franchisor and to how AllDry evaluates vendors. <strong style="color:var(--text);">First thing I'd map:</strong> who that channel relationship is with and what goodwill it carries.</p></div>
+    <div class="card" style="margin:0;"><h3>Industry bodies &amp; peer forums</h3><p style="font-size:13px;margin:0;">RIA, IICRC circles, restoration Facebook/owner groups, and conference stages are where this industry's reputations are made. Third-party credibility and case studies land here.</p></div>
+  </div>
+
+  <div class="card card-teal" style="margin-top:14px;">
+    <h3 style="color:var(--text);">How I build the picture — outside-in, then inside-out</h3>
+    <div class="grid-2">
+      <ul class="clean" style="margin:0;">
+        <li><strong style="color:var(--text);">Outside-in (now):</strong> FDD &amp; franchise-portal research, LinkedIn Sales Navigator org-mapping of the franchisor, location directory to find multi-unit owners, review/permit signals for high-volume shops.</li>
+        <li><strong style="color:var(--text);">The Voda channel:</strong> debrief whoever owns that relationship for the real politics and history.</li>
+      </ul>
+      <ul class="clean" style="margin:0;">
+        <li><strong style="color:var(--text);">Inside-out (once in):</strong> Seattle names the influential owners and the FAC; a franchisor QBR reveals the vendor-program owner and conference calendar.</li>
+        <li><strong style="color:var(--text);">Verify-first discipline:</strong> every <span class="conf conf-infer">Inferred</span>/<span class="conf conf-verify">Verify</span> tag above becomes an explicit first-call question, not an assumption I build a forecast on.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ WIN PLAN -->
+<section id="plan" class="section">
+  <div class="section-label">Assignment · Piece 2</div>
+  <h1>From 3 to 178<br><span style="color:var(--teal)">without a mandate.</span></h1>
+  <p style="font-size:16px;max-width:760px;margin-bottom:18px;">You can't top-down a revenue tool onto independent owners. So the strategy is a flywheel: <strong>prove owner economics → manufacture peer-proof → earn franchisor endorsement → convert in regional waves → make TrueRestore the network default in onboarding.</strong> Seattle starts the wheel; the franchisor's endorsement and the annual conference give it torque.</p>
+
+  <h2>The flywheel</h2>
+  <div class="grid-3" style="margin-bottom:8px;">
+    <div class="card card-green" style="margin:0;"><div class="badge" style="margin-bottom:6px;">1 · Prove</div><p style="font-size:13px;margin:0;">Quantify Seattle's real results (approved-ticket uplift, cycle time, hours saved). Convert San Bernardino + Austin from quiet to advocate to prove adoption is a <em>repeatable motion</em>, not luck.</p></div>
+    <div class="card card-blue" style="margin:0;"><div class="badge" style="margin-bottom:6px;">2 · Amplify</div><p style="font-size:13px;margin:0;">Turn proof into peer-proof: a case study in owner language, a peer webinar hosted by Seattle, FAC testimonials, and warm owner-to-owner intros. Peers move peers.</p></div>
+    <div class="card card-amber" style="margin:0;"><div class="badge badge-amber" style="margin-bottom:6px;">3 · Endorse</div><p style="font-size:13px;margin:0;">Land franchisor endorsement: preferred/approved-vendor status, a conference mainstage slot, and a place in new-franchisee onboarding — so new owners start on TrueRestore by default.</p></div>
+  </div>
+  <div class="grid-2">
+    <div class="card card-teal" style="margin:0;"><div class="badge" style="margin-bottom:6px;">4 · Convert in waves</div><p style="font-size:13px;margin:0;">Roll out region by region, led by the influential/multi-unit owners and high-claims territories, with a group offer and white-glove Encircle migration. Each converted region becomes the reference for the next.</p></div>
+    <div class="card card-teal" style="margin:0;"><div class="badge" style="margin-bottom:6px;">5 · Default</div><p style="font-size:13px;margin:0;">Make TrueRestore the assumed standard — bundled into onboarding, referenced in the FAC, and renewed automatically. The goal isn't 175 individual sales; it's one network decision, sold 175 times faster because it's peer- and franchisor-backed.</p></div>
+  </div>
+
+  <hr>
+  <h2>Why Seattle is worth more than one account</h2>
+  <div class="card card-green">
+    <p>A happy daily user who's actively helping refine the product is the single most leverageable asset in a franchise sale. Owners trust owners far more than they trust a vendor. So I'd spend real energy converting Seattle's goodwill into <strong style="color:var(--text)">transferable, reusable assets</strong>:</p>
+    <div class="grid-2">
+      <ul class="clean" style="margin:0;">
+        <li>A <strong style="color:var(--text)">quantified case study</strong> in owner math — dollars per job, not features.</li>
+        <li>A <strong style="color:var(--text)">Seattle-hosted peer webinar</strong> / conference breakout — owner tells the story, I hold the mic.</li>
+      </ul>
+      <ul class="clean" style="margin:0;">
+        <li><strong style="color:var(--text)">2–3 warm intros</strong> to owners Seattle respects, ideally FAC or multi-unit.</li>
+        <li>A standing <strong style="color:var(--text)">product-advisory role</strong> so their influence (and loyalty) deepens as we grow.</li>
+      </ul>
+    </div>
+    <p style="margin:0;font-size:13px;color:var(--muted);">Risk I'd manage: don't burn the relationship by over-asking. Seattle is a partner, not a billboard — every ask should give them status back.</p>
+  </div>
+
+  <h2>The sequence</h2>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-dot" style="background:var(--green)"></div><div class="tl-period">Days 0–30 · Anchor the proof</div><div class="tl-title">Make the three we have unarguable</div>
+      <ul class="tl-bullets">
+        <li>Deep QBR with Seattle — pull real numbers, agree the case-study story, secure reference willingness</li>
+        <li>Success sprint on San Bernardino + Austin — adoption audit, one visible win each, start converting quiet → advocate</li>
+        <li>Map the franchisor org and the Voda channel; identify the vendor-program owner and FAC</li>
+      </ul>
+    </div>
+    <div class="tl-item"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-period">Days 30–90 · Manufacture peer-proof &amp; open the franchisor</div><div class="tl-title">Turn proof into momentum</div>
+      <ul class="tl-bullets">
+        <li>Publish the Seattle case study; run the first owner peer-webinar</li>
+        <li>Franchisor executive meeting (Schlafer-led): present network ROI, pitch preferred-vendor status + onboarding inclusion</li>
+        <li>Build the target list of 8–12 influential/multi-unit owners; begin warm, referenced outreach</li>
+      </ul>
+    </div>
+    <div class="tl-item"><div class="tl-dot" style="background:var(--amber)"></div><div class="tl-period">Quarter 2–3 · Convert the first wave</div><div class="tl-title">Land the loud, respected owners</div>
+      <ul class="tl-bullets">
+        <li>Close the FAC / multi-unit influencers first — a network group offer + white-glove Encircle migration</li>
+        <li>Secure the conference mainstage moment; let Seattle + early adopters carry the story</li>
+        <li>Stand up regional reference clusters so proof travels locally</li>
+      </ul>
+    </div>
+    <div class="tl-item"><div class="tl-dot" style="background:var(--teal)"></div><div class="tl-period">Quarter 3+ · Scale to default</div><div class="tl-title">Region-by-region to network standard</div>
+      <ul class="tl-bullets">
+        <li>Roll region by region on the back of local references and busy-season urgency</li>
+        <li>Embed TrueRestore in new-franchisee onboarding so growth is automatic</li>
+        <li>Track network penetration as the north-star metric; renew + expand seats within converted locations</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SALES PROCESS -->
+<section id="process" class="section">
+  <div class="section-label">Assignment · Piece 3</div>
+  <h1>The process<br><span style="color:var(--teal)">I'd actually run.</span></h1>
+  <p style="font-size:16px;max-width:780px;margin-bottom:18px;">Two motions running in parallel: a <strong>network motion</strong> (win the franchisor endorsement + FAC once) and a <strong>location motion</strong> (convert owners, repeated at scale). "Qualified" and "committed" mean something specific when the buyer is an independent owner with a franchisor sitting above them — defined below.</p>
+
+  <h2>The location pipeline (repeated ~175×)</h2>
+  <div class="pipe">
+    <div class="pipe-stage"><div class="pipe-num">01</div><div class="pipe-name">Aware</div><div class="pipe-def">Owner has heard of TrueRestore — via peer, franchisor channel, or conference.</div><div class="pipe-exit">Exit: agrees to a conversation.</div></div>
+    <div class="pipe-stage"><div class="pipe-num">02</div><div class="pipe-name">Qualified</div><div class="pipe-def">Fits &amp; has pain: insurance-driven volume, on Encircle/double-entry, owner is the decision-maker, feels cycle-time/ticket pain.</div><div class="pipe-exit">Exit: pain + fit + authority confirmed.</div></div>
+    <div class="pipe-stage"><div class="pipe-num">03</div><div class="pipe-name">Value-proven</div><div class="pipe-def">Owner has seen TrueRestore on their own workflow — a real job run doc→ESX→estimate, or a peer reference that maps to them.</div><div class="pipe-exit">Exit: owner accepts the ROI on their numbers.</div></div>
+    <div class="pipe-stage"><div class="pipe-num">04</div><div class="pipe-name">Committed</div><div class="pipe-def">Verbal yes + a start date + migration plan off Encircle + who's trained. Not "interested" — a scheduled switch.</div><div class="pipe-exit">Exit: signed + onboarding booked.</div></div>
+    <div class="pipe-stage"><div class="pipe-num">05</div><div class="pipe-name">Adopted</div><div class="pipe-def">Live and actually used daily — first jobs documented, first estimates shipped, habit forming.</div><div class="pipe-exit">Exit: usage threshold hit in 30 days.</div></div>
+    <div class="pipe-stage"><div class="pipe-num">06</div><div class="pipe-name">Advocate</div><div class="pipe-def">Getting results and willing to say so — a reference, a peer intro, an FAC voice. Fuel for the next wave.</div><div class="pipe-exit">Exit: gives a reference or referral.</div></div>
+  </div>
+  <div class="note">Adopted and Advocate are deliberately part of the pipeline. In a franchise network the sale isn't done at signature — an unused seat churns and, worse, becomes negative peer-proof. Adoption <em>is</em> the deal.</div>
+
+  <h2>What "qualified" and "committed" really mean here</h2>
+  <div class="grid-2">
+    <div class="card card-amber" style="margin:0;">
+      <h3 style="color:var(--text);">Qualified — the franchise nuance</h3>
+      <ul class="clean" style="margin:0;">
+        <li><strong style="color:var(--text)">Fit:</strong> insurance/claims-driven, meaningful monthly job volume, currently on Encircle or manual double-entry.</li>
+        <li><strong style="color:var(--text)">Pain:</strong> owner feels cycle time, double work, or tickets left on the table — in their own words.</li>
+        <li><strong style="color:var(--text)">Authority:</strong> the owner <em>is</em> the buyer (no franchisor sign-off needed) — but check whether they defer to the FAC or a multi-unit boss.</li>
+        <li><strong style="color:var(--text)">Timing:</strong> a real trigger — busy season, an Encircle renewal, a bad-cycle-time month.</li>
+      </ul>
+    </div>
+    <div class="card card-green" style="margin:0;">
+      <h3 style="color:var(--text);">Committed — the anti-drift test</h3>
+      <ul class="clean" style="margin:0;">
+        <li><strong style="color:var(--text)">A date, not a vibe:</strong> a scheduled go-live, not "sounds good, circle back."</li>
+        <li><strong style="color:var(--text)">Migration owned:</strong> a concrete plan to move off Encircle — data, habit, who trains the crew.</li>
+        <li><strong style="color:var(--text)">A named user:</strong> the person on the truck who'll actually run it, bought in.</li>
+        <li><strong style="color:var(--text)">Success defined:</strong> owner has agreed what "this worked" looks like in 30 days (so renewal is pre-sold).</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>The network motion (run once, in parallel)</h2>
+  <div class="grid-4">
+    <div class="card" style="margin:0;"><div class="pipe-num">N1</div><h3 style="font-size:15px;">Franchisor discovery</h3><p style="font-size:12px;margin:0;">Map org, vendor program, FAC, conference calendar, Voda channel. Find the sponsor (likely Schlafer).</p></div>
+    <div class="card" style="margin:0;"><div class="pipe-num">N2</div><h3 style="font-size:15px;">Business case</h3><p style="font-size:12px;margin:0;">Present network ROI in franchisee-success terms. Ask for preferred-vendor status + onboarding inclusion.</p></div>
+    <div class="card" style="margin:0;"><div class="pipe-num">N3</div><h3 style="font-size:15px;">FAC endorsement</h3><p style="font-size:12px;margin:0;">Win the advisory council with Seattle's proof. Their yes de-risks it for every owner behind them.</p></div>
+    <div class="card" style="margin:0;"><div class="pipe-num">N4</div><h3 style="font-size:15px;">Default standard</h3><p style="font-size:12px;margin:0;">Conference moment + onboarding default + renewal motion. The network decision, made once, compounds.</p></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TOOLSTACK -->
+<section id="tools" class="section">
+  <div class="section-label">Assignment · Piece 4</div>
+  <h1>The stack<br><span style="color:var(--teal)">serves the plan.</span></h1>
+  <p style="font-size:16px;max-width:780px;margin-bottom:18px;">Every tool below is tied to a specific job in the process above and the moment I'd reach for it. I care more about the reasoning than the logos — swap any for an equivalent, but the <em>job</em> has to be covered. Principle: <strong>one system of record (CRM), everything else feeds it.</strong></p>
+
+  <div class="card">
+    <div class="tool-row"><div class="tool-job">Research · Account</div><div><div class="tool-name">FranchiseDB / FDD + the AllDry location directory</div><div class="tool-why">The FDD and the public location map are the ground truth for network size, territories, and multi-unit owners. Job: build the account structure and find the owners who shape it. <span class="tool-alt">Moment: Days 0–30 account mapping.</span></div></div></div>
+    <div class="tool-row"><div class="tool-job">Research · People</div><div><div class="tool-name">LinkedIn Sales Navigator</div><div class="tool-why">Org-map the franchisor, spot the vendor-program owner and FAC members, and track owner job-changes/new-franchisee triggers. Job: turn the outside-in stakeholder map into named, reachable people. <span class="tool-alt">Alt: Apollo/ZoomInfo for org depth. Moment: stakeholder mapping + trigger monitoring.</span></div></div></div>
+    <div class="tool-row"><div class="tool-job">Enrichment · Contacts</div><div><div class="tool-name">Apollo.io / Clay</div><div class="tool-why">Enrich owner and franchisor contacts (verified email/mobile), and use Clay to build/maintain the 178-location list with firmographic + signal data so outreach is targeted, not spray. Job: fill the map with accurate contact + signal data. <span class="tool-alt">Moment: before wave outreach.</span></div></div></div>
+    <div class="tool-row"><div class="tool-job">CRM · System of record</div><div><div class="tool-name">HubSpot or Salesforce — one location = one record</div><div class="tool-why">The whole 178 tracked as one strategic account with child records per location, custom stages (Aware→Advocate), and the network motion as its own plan. Job: single source of truth, forecast, and team visibility. <span class="tool-alt">Why it matters here: without per-location tracking, "3 of 178" has no operating system. Moment: everything routes here.</span></div></div></div>
+    <div class="tool-row"><div class="tool-job">Prospecting · Sequencing</div><div><div class="tool-name">Outreach / Salesloft (or HubSpot Sequences)</div><div class="tool-why">Multi-touch, referenced sequences per region wave — warm, peer-anchored, not cold blasts. Job: run the location motion at scale without losing personalization. <span class="tool-alt">Moment: wave conversion Q2+.</span></div></div></div>
+    <div class="tool-row"><div class="tool-job">Call intelligence</div><div><div class="tool-name">Gong / Fireflies</div><div class="tool-why">Record owner discovery + franchisor meetings; mine the exact language owners use about Encircle pain and Xactimate cycle time to sharpen the case study and coach the motion. Job: turn every call into reusable insight and repeatable plays. <span class="tool-alt">Moment: from first discovery onward — this is how the Seattle story gets told in owner words.</span></div></div></div>
+    <div class="tool-row"><div class="tool-job">Reference &amp; advocacy</div><div><div class="tool-name">A reference program (even a lightweight sheet) + webinar tooling</div><div class="tool-why">Systematize Seattle → peer-proof: track who'll reference, match references to prospects by region/size, host owner webinars. Job: manufacture and route peer-proof — the actual engine of a franchise win. <span class="tool-alt">Moment: Days 30–90 onward.</span></div></div></div>
+    <div class="tool-row" style="border-bottom:none;"><div class="tool-job">Team visibility · Exec</div><div><div class="tool-name">CRM dashboards + a simple network-penetration board</div><div class="tool-why">One view: locations by stage, wave progress, franchisor-endorsement status, adoption/health per live site. Job: keep the VP, the team, and leadership honest on the north-star — % of network won, not just logos. <span class="tool-alt">Moment: weekly cadence.</span></div></div></div>
+  </div>
+  <div class="note">The AI-documentation product itself (TrueRestore, formerly Capabuild) is also "tooling" — its Xactimate/ESX output is the proof engine every meeting leans on. The sales stack exists to get owners to <em>experience</em> that product on their own jobs as fast as possible.</div>
+</section>
+
+<!-- ═══════════════════════════ ROI MODEL -->
+<section id="roi" class="section">
+  <div class="section-label">Owner economics · The close happens here</div>
+  <h1>The money math<br><span style="color:var(--teal)">an owner can't argue with.</span></h1>
+  <p style="font-size:16px;max-width:780px;margin-bottom:16px;">Owners buy on three levers — job volume, average ticket, cycle time. TrueRestore moves ticket and cycle time and kills double work. This models the value <em>per location</em> and across the open network. Adjust anything; the defaults are grounded in the sources noted below.</p>
+  <div class="note">Grounding — case study approved-ticket uplift ~+11.6% YoY (brief). Outsourced Xactimate estimates run ~$99 each with 1–2 day turnaround (industry) — TrueRestore removes that cost and delay by producing the ESX in-house. Software ~$300/location/month (brief). Defaults are conservative placeholders — <strong>replace with the owner's real numbers on the call.</strong></div>
+
+  <div class="grid-2" style="margin-bottom:16px;">
+    <div>
+      <h3 style="color:var(--text);margin-bottom:12px;">Per-location inputs</h3>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Jobs per month</span><span class="slider-val" id="v-jobs">25</span></div><input type="range" min="5" max="80" step="1" value="25" oninput="setP('jobs',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Avg approved ticket ($)</span><span class="slider-val" id="v-ticket">$3,800</span></div><input type="range" min="800" max="15000" step="100" value="3800" oninput="setP('ticket',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Approved-ticket uplift w/ TrueRestore</span><span class="slider-val" id="v-uplift">11.6%</span></div><input type="range" min="2" max="20" step="0.4" value="11.6" oninput="setP('uplift',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Owner margin on incremental revenue</span><span class="slider-val" id="v-margin">35%</span></div><input type="range" min="10" max="60" step="1" value="35" oninput="setP('margin',this.value)"></div>
+    </div>
+    <div>
+      <h3 style="color:var(--text);margin-bottom:12px;">Cost &amp; cycle-time inputs</h3>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Current estimate cost (outsource $/job or double-entry time)</span><span class="slider-val" id="v-estcost">$99</span></div><input type="range" min="0" max="200" step="1" value="99" oninput="setP('estcost',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">TrueRestore price ($/location/month)</span><span class="slider-val" id="v-price">$300</span></div><input type="range" min="150" max="600" step="10" value="300" oninput="setP('price',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Cycle-time reduction (days faster to estimate)</span><span class="slider-val" id="v-cycle">1.5</span></div><input type="range" min="0" max="5" step="0.5" value="1.5" oninput="setP('cycle',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Open locations in scope</span><span class="slider-val" id="v-locs">175</span></div><input type="range" min="1" max="175" step="1" value="175" oninput="setP('locs',this.value)"></div>
+    </div>
+  </div>
+
+  <hr>
+  <h3 style="color:var(--text);">Per location · annual</h3>
+  <div class="roi-out-grid" style="grid-template-columns:repeat(4,1fr);">
+    <div class="roi-metric"><div class="n" style="color:var(--green);" id="out-inc">—</div><div class="l">Incremental approved revenue</div></div>
+    <div class="roi-metric"><div class="n" style="color:var(--green);" id="out-margin">—</div><div class="l">Owner margin on that</div></div>
+    <div class="roi-metric"><div class="n" style="color:var(--green);" id="out-estsave">—</div><div class="l">Estimate-cost saved</div></div>
+    <div class="roi-metric"><div class="n" style="color:var(--teal);" id="out-roi">—</div><div class="l">Owner ROI on TrueRestore</div></div>
+  </div>
+  <div class="card card-green" style="margin-top:4px;">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:14px;">
+      <span>Owner net gain / location / yr: <strong style="color:var(--green);" id="out-net">—</strong></span>
+      <span>TrueRestore cost / yr: <strong style="color:var(--amber);" id="out-cost">—</strong></span>
+      <span>Payback: <strong style="color:var(--teal);" id="out-payback">—</strong></span>
+      <span>Cycle time: <strong style="color:var(--teal);" id="out-cycleout">—</strong> faster</span>
+    </div>
+  </div>
+
+  <h3 style="color:var(--text);margin-top:20px;">Across the open network</h3>
+  <div class="roi-out-grid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="roi-metric"><div class="n" style="color:var(--teal);" id="out-arr">—</div><div class="l">New ARR to TrueRestore (in scope)</div></div>
+    <div class="roi-metric"><div class="n" style="color:var(--green);" id="out-netval">—</div><div class="l">Owner value created across network</div></div>
+    <div class="roi-metric"><div class="n" style="color:var(--amber);" id="out-ratio">—</div><div class="l">Owner value : software cost</div></div>
+  </div>
+  <div class="note">The punchline for the franchisor: for roughly <span id="out-arr2">—</span> in software spend across the network, owners capture <span id="out-netval2">—</span> in value. That ratio — not the seat price — is what earns preferred-vendor status. It's franchisee profitability, which is the franchisor's actual job.</div>
+
+  <button class="gen-btn" onclick="genROI()">Generate ROI leave-behind ↗</button>
+  <div class="summary-out" id="roi-out"></div>
+</section>
+
+<!-- ═══════════════════════════ BATTLE CARD -->
+<section id="battle" class="section">
+  <div class="section-label">Pressure-testing the thesis</div>
+  <h1>TrueRestore<br><span style="color:var(--teal)">vs. Encircle.</span></h1>
+  <p style="font-size:16px;max-width:780px;margin-bottom:12px;">The brief calls "where we win" a thesis to pressure-test, not gospel — so here's the honest head-to-head, including where Encircle is genuinely strong and where I'd expect to lose if I'm not careful.</p>
+
+  <div class="tbl-wrap" style="margin-bottom:14px;">
+    <table class="bt">
+      <thead><tr><th>Dimension</th><th>Encircle (incumbent)</th><th>TrueRestore</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">Core job</td><td class="lose">Field documentation — photos, notes, contents, moisture</td><td class="win">Documentation → carrier-accepted, Xactimate-ready estimate. Closes the loop to revenue.</td></tr>
+        <tr><td class="dim">The estimate</td><td class="lose">Stops at capture — owner still bounces to Xactimate. Double entry.</td><td class="win">Produces ESX sketches + estimate from field data. One flow, no re-keying.</td></tr>
+        <tr><td class="dim">Owner economic impact</td><td class="lose">Efficiency in capture; revenue loop left open</td><td class="win">Higher approved ticket (~+11.6% YoY case study) + faster cycle time + less double work</td></tr>
+        <tr><td class="dim">AI / estimating depth</td><td class="lose">Adding AI classification features</td><td class="win">Estimating is the origin (formerly Capabuild, TrueBuilt family) — not bolted on</td></tr>
+        <tr><td class="dim">In-network proof</td><td class="lose">Incumbent across much of AllDry — familiarity + inertia</td><td class="win">A live, happy AllDry champion (Seattle) inside their own brand</td></tr>
+        <tr><td class="dim">Where Encircle wins today</td><td class="win">Installed base, habit, mature field UX, broad feature breadth, brand recognition</td><td class="lose">Switching cost, migration friction, smaller footprint, less name recognition — the honest gaps</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid-2">
+    <div class="card card-red" style="margin:0;">
+      <h3 style="color:var(--text);">Where I'd lose if I'm sloppy</h3>
+      <ul class="clean" style="margin:0;">
+        <li><strong style="color:var(--text)">"It works fine" inertia</strong> — Encircle isn't broken; it's incomplete. I have to make the open revenue loop <em>felt</em>, not argued.</li>
+        <li><strong style="color:var(--text)">Migration fear</strong> — years of data and crew habit on Encircle. If I don't own the switch, the deal stalls at "later."</li>
+        <li><strong style="color:var(--text)">Feature bake-offs</strong> — I lose a spec-sheet war. I win an outcome war: dollars per approved job.</li>
+      </ul>
+    </div>
+    <div class="card card-teal" style="margin:0;">
+      <h3 style="color:var(--text);">How I reframe the fight</h3>
+      <ul class="clean" style="margin:0;">
+        <li><strong style="color:var(--text)">Not "rip out Encircle" — "close the loop."</strong> Anchor on the estimate that actually gets paid.</li>
+        <li><strong style="color:var(--text)">Run it on one real job</strong> — doc → ESX → estimate — so the owner feels the double-work vanish.</li>
+        <li><strong style="color:var(--text)">Let a peer say it.</strong> Seattle telling an owner "my approved tickets went up" beats any battle card I could write.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note">I'd ask the team for the real TrueRestore-vs-Encircle battle card offered in the brief to sharpen the head-to-head with current feature/pricing specifics — and to stress-test the +11.6% claim against a broader sample before I put it in front of the FAC.</div>
+</section>
+
+<!-- ═══════════════════════════ WHAT'S HARD -->
+<section id="risks" class="section">
+  <div class="section-label">Be honest about what's hard</div>
+  <h1>Where this<br><span style="color:var(--teal)">could stall — and my answer.</span></h1>
+  <p style="font-size:16px;max-width:780px;margin-bottom:18px;">Closing a network of independent owners is not a top-down sale, and pretending otherwise is how these deals die. Here's how I actually think a franchise network adopts, where AllDry specifically could stall, and what I'd do about each.</p>
+
+  <div class="grid-2">
+    <div class="card card-red" style="margin:0;">
+      <h3 style="color:var(--text);">Risk · No one can force it</h3>
+      <p style="font-size:13px;">Franchisors rarely mandate a revenue tool onto independent owners; owners resist mandates on principle. So there's no single signature that wins 175.</p>
+      <p style="font-size:13px;margin:0;color:var(--teal);"><strong>Answer:</strong> Don't chase a mandate. Chase endorsement + peer-proof + owner economics. The FAC and preferred-vendor status do the persuading a mandate can't.</p>
+      <div class="src">Source: IFA / FAC adoption literature — franchisees "reluctant to accept mandates."</div>
+    </div>
+    <div class="card card-red" style="margin:0;">
+      <h3 style="color:var(--text);">Risk · Quiet users churn silently</h3>
+      <p style="font-size:13px;">San Bernardino and Austin are already transactional. A quiet user who never adopts becomes negative proof — "we had it, didn't stick."</p>
+      <p style="font-size:13px;margin:0;color:var(--teal);"><strong>Answer:</strong> Treat adoption as part of the sale (see pipeline). Fix these two <em>before</em> scaling; they're the canary. If I can't convert a quiet user to advocate, I don't yet have a network motion.</p>
+    </div>
+    <div class="card card-red" style="margin:0;">
+      <h3 style="color:var(--text);">Risk · Encircle switching cost</h3>
+      <p style="font-size:13px;">Data, workflow habit, and crew muscle-memory live on Encircle. "Sounds great, but not now" is the default outcome.</p>
+      <p style="font-size:13px;margin:0;color:var(--teal);"><strong>Answer:</strong> White-glove migration as a product, not a promise — data handling, side-by-side on one live job, and a trained named user before go-live. Own the switch or don't count the deal.</p>
+    </div>
+    <div class="card card-red" style="margin:0;">
+      <h3 style="color:var(--text);">Risk · Franchisor lukewarm / distracted</h3>
+      <p style="font-size:13px;">If the franchisor sees this as "a vendor's problem," I lose the endorsement lever and the conference stage.</p>
+      <p style="font-size:13px;margin:0;color:var(--teal);"><strong>Answer:</strong> Frame it as <em>their</em> KPI — franchisee profitability and consistency — with Seattle's numbers. Make Schlafer the internal hero, not me.</p>
+    </div>
+    <div class="card card-red" style="margin:0;">
+      <h3 style="color:var(--text);">Risk · Owner economics are heterogeneous</h3>
+      <p style="font-size:13px;">178 independent P&amp;Ls; a low-volume shop may not feel +11.6% the way a busy metro does. One ROI story won't fit all.</p>
+      <p style="font-size:13px;margin:0;color:var(--teal);"><strong>Answer:</strong> Segment. Lead with high-claims-volume territories where the math is loudest; use a per-owner ROI model (the ROI tab) on their real numbers instead of a network average.</p>
+    </div>
+    <div class="card card-red" style="margin:0;">
+      <h3 style="color:var(--text);">Risk · The +11.6% is one data point</h3>
+      <p style="font-size:13px;">A single case study is fragile in front of a skeptical FAC. If it doesn't generalize, credibility craters.</p>
+      <p style="font-size:13px;margin:0;color:var(--teal);"><strong>Answer:</strong> Broaden the evidence before the FAC — San Bernardino/Austin + a couple of first-wave wins — so the claim rests on a pattern, not an anecdote. Under-promise the number, over-deliver on the proof.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber" style="margin-top:14px;">
+    <h3 style="color:var(--text);">My honest read on the adoption curve</h3>
+    <p style="margin:0;">A franchise network doesn't adopt on a straight line — it adopts on an <strong>S-curve gated by trust</strong>. The first ~10–15% (Seattle + first-wave influencers) is the hardest and slowest because it's pure proof-building. Once the FAC endorses and a few respected owners are vocal, the middle of the curve moves fast on peer-proof and busy-season urgency. The tail (low-volume, change-averse holdouts) may never fully close, and that's fine — network <em>standard</em> doesn't require 100%; it requires enough density that TrueRestore is the obvious default. I'd rather have 140 delighted, adopted locations than 178 half-used seats that churn.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ RESEARCH LOG -->
+<section id="research" class="section">
+  <div class="section-label">Show your sources &amp; your gaps</div>
+  <h1>What I know, infer,<br><span style="color:var(--teal)">and would verify.</span></h1>
+  <p style="font-size:16px;max-width:780px;margin-bottom:18px;">The brief asks me to research an account I can only partly see from the outside — and to be explicit about confidence. This is the honest ledger: sourced facts, reasoned inferences, and the gaps I'd close in the first real conversation.</p>
+
+  <h2><span class="conf conf-known">Known</span> — sourced &amp; confident</h2>
+  <div class="card">
+    <ul class="clean" style="margin:0;">
+      <li><strong style="color:var(--text)">TrueRestore = formerly Capabuild</strong>, now in the TrueBuilt family; produces Xactimate-ready ESX estimates from field docs; positioned as the modern Encircle alternative. <span class="src">capabuild.app; TrueBuilt/Capabuild acquisition coverage.</span></li>
+      <li><strong style="color:var(--text)">AllDry (All Dry Services)</strong> — national water/mold restoration franchise, HQ Jupiter FL; Founder/CEO Matt Kuntz, President of Operations Jason Schlafer, President Todd Marshall (also a location owner). <span class="src">myalldry.com, ZoomInfo, visualvisitor, franchise press.</span></li>
+      <li><strong style="color:var(--text)">Insurance-driven model</strong> — restoration is ~80% insurance-claim work; Xactimate is the carrier-accepted estimating standard; outsourced estimates ~$99 / 1–2 day turnaround. <span class="src">Verisk/Xactimate ecosystem; restoration-estimating vendors.</span></li>
+      <li><strong style="color:var(--text)">Franchise adoption mechanics</strong> — FAC + preferred/approved-vendor status are the real levers; owners resist mandates. <span class="src">IFA preferred-vendor program; FAC governance literature.</span></li>
+      <li><strong style="color:var(--text)">The given deal facts</strong> — 3 of 178 live, ~$300/loc/mo, ~$11K ACV, Seattle champion, San Bernardino + Austin quiet, came in via Voda/franchise channel. <span class="src">The brief.</span></li>
+    </ul>
+  </div>
+
+  <h2><span class="conf conf-infer">Inferred</span> — reasoned from public signals</h2>
+  <div class="card">
+    <ul class="clean" style="margin:0;">
+      <li>AllDry has multi-unit owners and an FAC (or equivalent peer body) that shape network decisions — standard at this scale, not yet confirmed for AllDry specifically.</li>
+      <li>Jason Schlafer (Ops) is the most likely franchisor sponsor because franchisee success/consistency is his mandate.</li>
+      <li>High-claims-volume territories (freeze-belt, storm-exposed metros) feel cycle-time/Xactimate pain most and should lead the sequence.</li>
+      <li>The brief's "founded early '90s / 178 locations" framing is a lightly stylized version of the real All Dry Services (public sources show a later franchising start and a larger territory count) — I treat the brief's numbers as the operative ones and flag the discrepancy rather than paper over it.</li>
+    </ul>
+  </div>
+
+  <h2><span class="conf conf-verify">Verify</span> — first-conversation questions</h2>
+  <div class="card card-red">
+    <ul class="clean" style="margin:0;">
+      <li>Who owns the franchisor's <strong style="color:var(--text)">vendor/tech program and FAC agenda</strong>? (The single highest-leverage relationship.)</li>
+      <li>Who exactly is the <strong style="color:var(--text)">Voda/franchise channel</strong> relationship with, and what goodwill/history does it carry?</li>
+      <li><strong style="color:var(--text)">Seattle's real numbers</strong> — approved-ticket uplift, cycle time, hours saved — to anchor the case study honestly.</li>
+      <li>How deep is Encircle's penetration, and what are its <strong style="color:var(--text)">renewal timing and switching costs</strong> per location?</li>
+      <li>The <strong style="color:var(--text)">roster of multi-unit / influential owners</strong> and the FAC membership.</li>
+      <li>Does the +11.6% <strong style="color:var(--text)">generalize</strong> beyond the original case study? (Broaden before the FAC.)</li>
+      <li>What does the franchisor's <strong style="color:var(--text)">annual conference calendar</strong> look like — my highest-leverage stage.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ Q&A -->
+<section id="qa" class="section">
+  <div class="section-label">~5 min · My questions for you</div>
+  <h1>What I'd want<br><span style="color:var(--teal)">to ask the team.</span></h1>
+  <p style="font-size:16px;max-width:780px;margin-bottom:18px;">Real questions — the ones whose answers would change how I run this account. A good VP hire should be interviewing the seat as hard as the seat interviews them.</p>
+
+  <div class="grid-2">
+    <div class="card card-teal" style="margin:0;">
+      <h3>About the account</h3>
+      <ul class="clean" style="margin:0;">
+        <li>How did we actually land Seattle — inbound, Voda channel, a specific person? That origin tells me what repeats.</li>
+        <li>Why are San Bernardino and Austin quiet — did we drop the ball on onboarding, or is there a real product/fit gap?</li>
+        <li>What's the true state of the franchisor relationship today — warm, neutral, or unaware of us?</li>
+      </ul>
+    </div>
+    <div class="card card-teal" style="margin:0;">
+      <h3>About the product &amp; proof</h3>
+      <ul class="clean" style="margin:0;">
+        <li>How robust is the +11.6% — sample size, conditions, does it hold across job types?</li>
+        <li>Where does TrueRestore genuinely lose to Encircle today, and what's on the roadmap to close it?</li>
+        <li>What does onboarding + Encircle migration actually look like — how white-glove can we be at scale?</li>
+      </ul>
+    </div>
+    <div class="card card-teal" style="margin:0;">
+      <h3>About the motion &amp; the team</h3>
+      <ul class="clean" style="margin:0;">
+        <li>What's the target — network penetration %, ARR, or logo count — and on what timeline?</li>
+        <li>Do I have CS/onboarding and marketing resources to run the reference + webinar engine, or do I build it?</li>
+        <li>How much pricing/packaging latitude do I have for a network group offer or preferred-vendor terms?</li>
+      </ul>
+    </div>
+    <div class="card card-teal" style="margin:0;">
+      <h3>About the role &amp; the company</h3>
+      <ul class="clean" style="margin:0;">
+        <li>Is AllDry the template — are we running this same franchise-network play across other brands?</li>
+        <li>How does the TrueBuilt / TrueRestore / Capabuild structure shape my roadmap influence and pricing authority?</li>
+        <li>Twelve months in, what does a clearly-great outcome on AllDry look like to you?</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card card-amber" style="margin-top:14px;">
+    <h3 style="color:var(--text);">How I'd run the 45 minutes</h3>
+    <p style="margin:0;font-size:14px;">~30 min walking this deck — thesis, stakeholder map, the 3→178 flywheel, process, tools, and the honest risks — anchored on Seattle and owner economics. ~10 min working it together; throw me the wrinkles (a cold franchisor, a churning quiet user, an Encircle price cut) and I'll re-plan live off the same framework. ~5 min for the questions above. Substance over slides — this whole thing is a working tool, not a polish contest.</p>
+  </div>
+</section>
+
+<div class="foot">
+  Prepared for the TrueRestore VP, Strategic Accounts final round · A working account plan for AllDry, not a finished answer — the point is how it's reasoned and how it re-plans under pressure.<br>
+  Sources are cited inline and consolidated in the Research Log. Confidence is tagged throughout: <span class="conf conf-known">Known</span> · <span class="conf conf-infer">Inferred</span> · <span class="conf conf-verify">Verify</span>. Deal-fact anchors (178 locations, $300/loc/mo, 3 live) are taken from the brief.
+</div>
+
+<script>
+function show(id, btn){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ── ROI model
+const R = { jobs:25, ticket:3800, uplift:11.6, margin:35, estcost:99, price:300, cycle:1.5, locs:175 };
+const fmt = n => {
+  if(!isFinite(n)||isNaN(n)) return '—';
+  const a=Math.abs(n);
+  if(a>=1000000) return '$'+(n/1000000).toFixed(2)+'M';
+  if(a>=1000) return '$'+Math.round(n/1000)+'K';
+  return '$'+Math.round(n).toLocaleString();
+};
+const fmtFull = n => '$'+Math.round(n).toLocaleString();
+
+function setP(k,v){
+  R[k] = parseFloat(v);
+  const disp = {
+    jobs: Math.round(R.jobs),
+    ticket: '$'+Math.round(R.ticket).toLocaleString(),
+    uplift: R.uplift.toFixed(1)+'%',
+    margin: Math.round(R.margin)+'%',
+    estcost: '$'+Math.round(R.estcost),
+    price: '$'+Math.round(R.price),
+    cycle: R.cycle.toFixed(1),
+    locs: Math.round(R.locs)
+  };
+  const el = document.getElementById('v-'+k);
+  if(el) el.textContent = disp[k];
+  calcROI();
+}
+
+function calcROI(){
+  const jobsYr = R.jobs*12;
+  const incRevLoc = jobsYr * R.ticket * (R.uplift/100);
+  const marginLoc = incRevLoc * (R.margin/100);
+  const estSaveLoc = jobsYr * R.estcost;
+  const costLoc = R.price*12;
+  const ownerGain = marginLoc + estSaveLoc; // owner's realized dollar value per year
+  const roi = costLoc>0 ? ownerGain/costLoc : 0;
+  const netLoc = ownerGain - costLoc;
+  const paybackDays = ownerGain>0 ? Math.max(1, Math.round(costLoc/(ownerGain/365))) : 0;
+
+  const s=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  s('out-inc', fmt(incRevLoc));
+  s('out-margin', fmt(marginLoc));
+  s('out-estsave', fmt(estSaveLoc));
+  s('out-roi', roi>0 ? roi.toFixed(0)+'x' : '—');
+  s('out-net', fmtFull(netLoc));
+  s('out-cost', fmtFull(costLoc));
+  s('out-payback', paybackDays? paybackDays+' days':'—');
+  s('out-cycleout', R.cycle.toFixed(1)+' days');
+
+  const arr = R.locs * costLoc;
+  const netVal = R.locs * ownerGain;
+  const ratio = arr>0 ? netVal/arr : 0;
+  s('out-arr', fmt(arr));
+  s('out-netval', fmt(netVal));
+  s('out-ratio', ratio>0 ? ratio.toFixed(0)+' : 1' : '—');
+  s('out-arr2', fmt(arr));
+  s('out-netval2', fmt(netVal));
+
+  window._roi = {incRevLoc, marginLoc, estSaveLoc, costLoc, ownerGain, roi, netLoc, paybackDays, arr, netVal, ratio};
+}
+
+function genROI(){
+  const r = window._roi; if(!r) return;
+  const txt = `TRUERESTORE — OWNER ROI SNAPSHOT (per location, annual)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+INPUTS
+  Jobs/month: ${Math.round(R.jobs)}   Avg approved ticket: ${fmtFull(R.ticket)}
+  Approved-ticket uplift: ${R.uplift.toFixed(1)}%   Owner margin on incremental: ${Math.round(R.margin)}%
+  Current estimate cost: ${fmtFull(R.estcost)}/job   TrueRestore: ${fmtFull(R.price)}/mo
+
+PER LOCATION / YEAR
+  Incremental approved revenue:   ${fmtFull(r.incRevLoc)}
+  Owner margin on that:           ${fmtFull(r.marginLoc)}
+  Estimate-cost saved:            ${fmtFull(r.estSaveLoc)}
+  Owner realized value:           ${fmtFull(r.ownerGain)}
+  TrueRestore cost:               ${fmtFull(r.costLoc)}
+  Net owner gain:                 ${fmtFull(r.netLoc)}
+  Owner ROI:                      ${r.roi.toFixed(0)}x   Payback: ~${r.paybackDays} days
+  Cycle time: ${R.cycle.toFixed(1)} days faster to a carrier-accepted estimate
+
+ACROSS ${Math.round(R.locs)} OPEN LOCATIONS
+  New ARR to TrueRestore:         ${fmtFull(r.arr)}
+  Owner value created:            ${fmtFull(r.netVal)}
+  Value : software-cost ratio:    ${r.ratio.toFixed(0)} : 1
+
+The franchisor pitch: for ${fmt(r.arr)} of network software spend, owners
+capture ${fmt(r.netVal)} in value. That ratio earns preferred-vendor status.
+(Defaults are conservative placeholders — replace with the owner's real numbers.)`;
+  const box = document.getElementById('roi-out');
+  if(box){ box.style.display='block'; box.textContent=txt; }
+}
+
+calcROI();
+</script>
+</body>
+</html>
