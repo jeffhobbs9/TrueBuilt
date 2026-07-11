@@ -16,22 +16,22 @@ html,body{height:100%;overflow:hidden;}
 body{font-family:'Barlow',sans-serif;background:var(--bg);color:var(--text);}
 /* ── deck / slides ── */
 .slide{position:fixed;inset:0;display:flex;flex-direction:column;justify-content:center;
-  padding:6vh 7vw;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s ease;overflow:auto;}
+  padding:4.6vh 7vw;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s ease;overflow:auto;}
 .slide.active{opacity:1;visibility:visible;pointer-events:auto;}
 .kicker{font-family:'Space Mono',monospace;font-size:clamp(10px,1.15vw,14px);letter-spacing:.22em;
-  text-transform:uppercase;color:var(--teal);margin-bottom:2.4vh;}
+  text-transform:uppercase;color:var(--teal);margin-bottom:1.8vh;}
 h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;line-height:.98;letter-spacing:-.01em;
-  font-size:clamp(34px,6vw,74px);margin-bottom:2.4vh;}
+  font-size:clamp(34px,6vw,74px);margin-bottom:1.9vh;}
 h1 .t{color:var(--teal);}
 h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;line-height:1.02;
-  font-size:clamp(28px,4.6vw,56px);margin-bottom:2.2vh;}
+  font-size:clamp(28px,4.4vw,54px);margin-bottom:1.6vh;}
 .lead{font-size:clamp(17px,2.3vw,28px);color:#c3ced2;line-height:1.5;max-width:24em;}
 .big{font-family:'Barlow Condensed',sans-serif;font-weight:900;color:var(--teal);
   font-size:clamp(40px,9vw,120px);line-height:.9;}
-ul.blts{list-style:none;padding:0;margin-top:1vh;max-width:30em;}
-ul.blts li{font-size:clamp(17px,2.35vw,29px);line-height:1.4;color:#cdd6da;padding:1.1vh 0 1.1vh 1.4em;
+ul.blts{list-style:none;padding:0;margin-top:.2vh;max-width:30em;}
+ul.blts li{font-size:clamp(17px,2.3vw,28px);line-height:1.36;color:#cdd6da;padding:.8vh 0 .8vh 1.4em;
   position:relative;}
-ul.blts li::before{content:'▸';color:var(--teal);position:absolute;left:0;top:1.1vh;}
+ul.blts li::before{content:'▸';color:var(--teal);position:absolute;left:0;top:.8vh;}
 ul.blts li strong{color:#fff;font-weight:600;}
 .small{font-size:clamp(13px,1.5vw,18px);}
 .mut{color:var(--muted);}
@@ -39,6 +39,8 @@ ul.blts li strong{color:#fff;font-weight:600;}
 .ambt{color:var(--amber);}
 .redt{color:var(--red);}
 .grnt{color:var(--green);}
+/* speaker notes live inside each slide but only render in the notes panel */
+.snotes{display:none;}
 /* fragment reveal */
 .fragment{opacity:0;transform:translateY(10px);transition:opacity .28s ease,transform .28s ease;}
 .fragment.vis{opacity:1;transform:none;}
@@ -182,11 +184,11 @@ body.menu-on .menu{display:block;}
   <h2>Owners trust owners.<br><span class="tealt">So I'd turn happiness into assets.</span></h2>
   <ul class="blts">
     <li class="fragment">A <strong>quantified case study</strong> in owner math — dollars per job, not features.</li>
-    <li class="fragment">A <strong>Seattle-hosted peer webinar</strong> / conference breakout — the owner tells the story, I hold the mic.</li>
+    <li class="fragment">A <strong>Seattle-hosted peer webinar</strong> — the owner tells the story, I hold the mic.</li>
     <li class="fragment"><strong>2–3 warm intros</strong> to owners they respect — ideally FAC or multi-unit.</li>
-    <li class="fragment">A standing <strong>product-advisory role</strong> so their loyalty deepens as we grow.</li>
+    <li class="fragment">A standing <strong>product-advisory role</strong> so their loyalty deepens.</li>
   </ul>
-  <div class="lead fragment" style="margin-top:2.4vh;font-size:clamp(14px,1.7vw,20px);"><span class="mut">The risk I'd manage:</span> never over-ask. Seattle is a partner, not a billboard — every ask gives them status back.</div>
+  <div class="fragment" style="margin-top:1.6vh;font-size:clamp(13px,1.55vw,18px);color:#c3ced2;line-height:1.5;max-width:34em;"><span class="mut">The risk I'd manage:</span> never over-ask. Seattle is a partner, not a billboard — every ask should give them status back.</div>
   <div class="snotes">The most leverageable asset in any franchise sale is a happy owner who'll talk to peers. Spell out how you'd <em>convert goodwill into reusable artifacts</em>. Show you also understand the downside — burning the relationship by treating them as a free marketing engine. That nuance is a VP signal.</div>
 </section>
 
