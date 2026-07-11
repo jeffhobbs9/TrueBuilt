@@ -486,10 +486,10 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
 
   <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center;">
     <span style="font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.08em;">SCENARIO:</span>
-    <button class="scn-btn" id="scn-cons" onclick="scenario('cons')">Conservative</button>
-    <button class="scn-btn active" id="scn-base" onclick="scenario('base')">Base</button>
+    <button class="scn-btn active" id="scn-cons" onclick="scenario('cons')">Conservative</button>
+    <button class="scn-btn" id="scn-base" onclick="scenario('base')">Base</button>
     <button class="scn-btn" id="scn-aggr" onclick="scenario('aggr')">Aggressive</button>
-    <span style="font-size:12px;color:var(--muted);">— presets set uplift, margin &amp; % outsourced; every slider stays adjustable.</span>
+    <span style="font-size:12px;color:var(--muted);">— opens on Conservative; click Base/Aggressive to show the upside. Every slider stays adjustable.</span>
   </div>
 
   <div class="grid-2" style="margin-bottom:14px;">
@@ -497,12 +497,12 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
       <h3 style="color:var(--text);margin-bottom:12px;">Volume &amp; revenue lift</h3>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Jobs per month</span><span class="slider-val" id="v-jobs">25</span></div><input type="range" min="5" max="80" step="1" value="25" oninput="setP('jobs',this.value)"></div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Avg approved ticket ($)</span><span class="slider-val" id="v-ticket">$3,800</span></div><input type="range" min="800" max="15000" step="100" value="3800" oninput="setP('ticket',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Approved-ticket uplift w/ TrueRestore</span><span class="slider-val" id="v-uplift">11.6%</span></div><input type="range" min="2" max="20" step="0.2" value="11.6" oninput="setP('uplift',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Contribution margin on incremental</span><span class="slider-val" id="v-cmargin">45%</span></div><input type="range" min="20" max="80" step="1" value="45" oninput="setP('cmargin',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Approved-ticket uplift w/ TrueRestore</span><span class="slider-val" id="v-uplift">7.0%</span></div><input type="range" min="2" max="20" step="0.2" value="7" oninput="setP('uplift',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Contribution margin on incremental</span><span class="slider-val" id="v-cmargin">35%</span></div><input type="range" min="20" max="80" step="1" value="35" oninput="setP('cmargin',this.value)"></div>
     </div>
     <div>
       <h3 style="color:var(--text);margin-bottom:12px;">Estimate cost &amp; software switch</h3>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">% of estimates outsourced/paid-for today</span><span class="slider-val" id="v-outpct">50%</span></div><input type="range" min="0" max="100" step="5" value="50" oninput="setP('outpct',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">% of estimates outsourced/paid-for today</span><span class="slider-val" id="v-outpct">30%</span></div><input type="range" min="0" max="100" step="5" value="30" oninput="setP('outpct',this.value)"></div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Cost per outsourced estimate ($)</span><span class="slider-val" id="v-estcost">$99</span></div><input type="range" min="0" max="200" step="1" value="99" oninput="setP('estcost',this.value)"></div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Current Encircle spend ($/mo)</span><span class="slider-val" id="v-encircle">$455</span></div><input type="range" min="0" max="650" step="5" value="455" oninput="setP('encircle',this.value)"></div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">TrueRestore price ($/location/month)</span><span class="slider-val" id="v-price">$300</span></div><input type="range" min="150" max="600" step="10" value="300" oninput="setP('price',this.value)"></div>
@@ -530,7 +530,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
   <h3 style="color:var(--text);margin-top:20px;">Across the open network</h3>
   <div class="grid-2" style="margin-bottom:12px;">
     <div class="slider-row"><div class="slider-head"><span class="slider-name">Open locations in scope</span><span class="slider-val" id="v-locs">175</span></div><input type="range" min="1" max="175" step="1" value="175" oninput="setP('locs',this.value)"></div>
-    <div class="slider-row"><div class="slider-head"><span class="slider-name">Realistic Year-1 network adoption</span><span class="slider-val" id="v-adopt">45%</span></div><input type="range" min="10" max="100" step="5" value="45" oninput="setP('adopt',this.value)"></div>
+    <div class="slider-row"><div class="slider-head"><span class="slider-name">Realistic Year-1 network adoption</span><span class="slider-val" id="v-adopt">30%</span></div><input type="range" min="10" max="100" step="5" value="30" oninput="setP('adopt',this.value)"></div>
   </div>
   <div class="roi-out-grid" style="grid-template-columns:repeat(4,1fr);">
     <div class="roi-metric"><div class="n" style="color:var(--teal);" id="out-tamarr">—</div><div class="l">Full-network ARR (all in scope)</div></div>
@@ -742,7 +742,7 @@ function show(id, btn){
 }
 
 // ── ROI model (grounded defaults — see Assumptions & sources in the ROI tab)
-const R = { jobs:25, ticket:3800, uplift:11.6, cmargin:45, outpct:50, estcost:99, encircle:455, price:300, locs:175, adopt:45 };
+const R = { jobs:25, ticket:3800, uplift:7, cmargin:35, outpct:30, estcost:99, encircle:455, price:300, locs:175, adopt:30 };
 const SCN = {
   cons: { uplift:7,    cmargin:35, outpct:30, adopt:30 },
   base: { uplift:11.6, cmargin:45, outpct:50, adopt:45 },

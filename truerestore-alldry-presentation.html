@@ -362,17 +362,17 @@ body.menu-on .menu{display:block;}
   <h2>The number an owner can't argue with</h2>
   <div style="display:flex;gap:7px;align-items:center;margin-bottom:1.4vh;flex-wrap:wrap;">
     <span style="font-family:'Space Mono',monospace;font-size:clamp(9px,1vw,12px);color:var(--muted);letter-spacing:.08em;">SCENARIO</span>
-    <button class="scn-btn" id="scn-cons" onclick="scenario('cons')">Conservative</button>
-    <button class="scn-btn active" id="scn-base" onclick="scenario('base')">Base</button>
+    <button class="scn-btn active" id="scn-cons" onclick="scenario('cons')">Conservative</button>
+    <button class="scn-btn" id="scn-base" onclick="scenario('base')">Base</button>
     <button class="scn-btn" id="scn-aggr" onclick="scenario('aggr')">Aggressive</button>
   </div>
   <div class="roi-wrap">
     <div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Jobs / month</span><span class="slider-val" id="v-jobs">25</span></div><input type="range" min="5" max="80" step="1" value="25" oninput="setP('jobs',this.value)"></div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Avg approved ticket</span><span class="slider-val" id="v-ticket">$3,800</span></div><input type="range" min="800" max="15000" step="100" value="3800" oninput="setP('ticket',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Approved-ticket uplift</span><span class="slider-val" id="v-uplift">11.6%</span></div><input type="range" min="2" max="20" step="0.2" value="11.6" oninput="setP('uplift',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Contribution margin on incremental</span><span class="slider-val" id="v-cmargin">45%</span></div><input type="range" min="20" max="80" step="1" value="45" oninput="setP('cmargin',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Year-1 network adoption</span><span class="slider-val" id="v-adopt">45%</span></div><input type="range" min="10" max="100" step="5" value="45" oninput="setP('adopt',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Approved-ticket uplift</span><span class="slider-val" id="v-uplift">7.0%</span></div><input type="range" min="2" max="20" step="0.2" value="7" oninput="setP('uplift',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Contribution margin on incremental</span><span class="slider-val" id="v-cmargin">35%</span></div><input type="range" min="20" max="80" step="1" value="35" oninput="setP('cmargin',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Year-1 network adoption</span><span class="slider-val" id="v-adopt">30%</span></div><input type="range" min="10" max="100" step="5" value="30" oninput="setP('adopt',this.value)"></div>
     </div>
     <div>
       <div class="roi-outs">
@@ -384,7 +384,7 @@ body.menu-on .menu{display:block;}
       <div class="roi-punch" style="margin-top:1vh;">TrueRestore ($300) ≈ their current Encircle spend — <strong class="tealt">a software wash</strong>, so the value is upside. Across 175 locations at <span id="out-adoptp">45%</span> Year-1 adoption: <strong class="tealt" id="out-y1arr">—</strong> ARR to us · <strong class="grnt" id="out-netval">—</strong> owner value · <strong class="ambt" id="out-ratio">—</strong> ratio.</div>
     </div>
   </div>
-  <div class="snotes">This is your memorable moment — <strong>drive it live.</strong> Ask them to throw you a number ("a busy Seattle shop doing 40 jobs a month?") and move the slider. Two things to land: (1) <strong>it's a software wash</strong> — they're already paying Encircle ~$455/mo, so TrueRestore at $300 costs nothing net and the approved-ticket lift is pure upside; (2) the <strong>ratio</strong>, not the seat price — "even at a conservative 45% Year-1 adoption, owners capture millions against ~$280K of spend; that's franchisee profitability, which is the franchisor's job." Defaults are sourced (national avg ticket, restoration margins, Encircle pricing); full assumptions live in the deal-room ROI tab.</div>
+  <div class="snotes">This is your memorable moment — <strong>drive it live.</strong> Ask them to throw you a number ("a busy Seattle shop doing 40 jobs a month?") and move the slider. Two things to land: (1) <strong>it's a software wash</strong> — they're already paying Encircle ~$455/mo, so TrueRestore at $300 costs nothing net and the approved-ticket lift is pure upside; (2) the <strong>ratio</strong>, not the seat price. It opens on <strong>Conservative on purpose</strong> — lead with the floor (10x, ~$1.9M owner value), then click <strong>Base</strong> to show the upside so <em>they</em> push the number up, not you. Line: "even on my conservative floor, owners capture millions against a couple hundred K of spend — that's franchisee profitability, which is the franchisor's job." Defaults are sourced (national avg ticket, restoration margins, Encircle pricing); full assumptions live in the deal-room ROI tab.</div>
 </section>
 
 <!-- ══════════ 15b · THE NUMBER ══════════ -->
@@ -504,7 +504,7 @@ slides.forEach((s,i)=>{
 setTimeout(()=>{ const h=document.getElementById('hint'); if(h) h.style.opacity='0'; }, 6000);
 
 // ── ROI model (canonical — matches the deal-room; defaults are sourced)
-const R = { jobs:25, ticket:3800, uplift:11.6, cmargin:45, outpct:50, estcost:99, encircle:455, price:300, locs:175, adopt:45 };
+const R = { jobs:25, ticket:3800, uplift:7, cmargin:35, outpct:30, estcost:99, encircle:455, price:300, locs:175, adopt:30 };
 const SCN = {
   cons: { uplift:7,    cmargin:35, outpct:30, adopt:30 },
   base: { uplift:11.6, cmargin:45, outpct:50, adopt:45 },
