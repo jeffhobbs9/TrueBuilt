@@ -115,7 +115,7 @@
 ---
 
 ## SLIDE 14 — How I'd land them (~50 sec) — **the two moves that de-risk it**
-> "Two moves make this actually work. First — I don't ask anyone to rip out Encircle. I have them keep it and run TrueRestore on three or four live claims *in parallel*. The owner feels the higher approved ticket on their own jobs, at zero risk, before they switch. It's a trial, not a migration — and that turns the biggest objection, switching cost, into a no-brainer.
+> "Two moves make this actually work. First — I don't ask anyone to rip out Encircle. I have them keep it and run TrueRestore on three or four live claims *in parallel* — a short, comped trial, so they're never double-paying. The owner feels the higher approved ticket on their own jobs at zero risk, and only *then* drops Encircle — which is where the software-wash economics kick in. It's a trial, not a migration, and that turns the biggest objection, switching cost, into a no-brainer.
 >
 > Second — my beachhead is the multi-unit owners, the ones running four-plus territories. One sale there is several locations converted *and* a respected advisory-council voice. In a peer network density beats breadth — a few undeniable proof clusters tip the network faster than scattered logos. Land the loud, respected owners and the middle of the curve follows."
 
