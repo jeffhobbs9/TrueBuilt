@@ -82,7 +82,7 @@
 ## SLIDE 9 — Layer 1, the franchisor (~50 sec)
 > "Layer one, the franchisor — and their role is endorsement, not the checkbook. I've confirmed the entity: this is All Dry Services, myalldry.com — I verified real Seattle and Inland-Empire locations that match the brief. The names are from public sources, so I'd confirm current titles on call one.
 >
-> Matt Kuntz, founder — an operator, not a technologist; he cares about brand consistency and franchisee profit. Jason Schlafer runs operations — he's very likely my primary sponsor, because franchisee success *is* his KPI, and that's exactly what we lift. Todd Marshall is president and also owns a location — that's rare; he's endorsement and owner peer-proof in one person. And there's a fourth box I *can't* fill from outside: whoever owns the preferred-vendor program and the advisory-council agenda. That's the highest-leverage relationship in the whole deal, and finding that person is my number-one first-call question."
+> Pete Waxman is the CEO — the economic buyer for a network-wide call, my day-90 sign-off. Jason Molzer is the COO — he's my primary sponsor, and very likely the owner of the tech-vendor decision; in fact AllDry's 'Business Management Technology' partner slot ties to him, which is the literal preferred-vendor slot I want to be in. Tim Courtney is the Chief Development Officer — he owns franchise development and recruitment, so he's my onboarding-default lever: get TrueRestore into every new franchisee from day one. And the one most reps would miss — Camilo Sifuentes, Director of Tech Training. He trains the whole network on technology, so for a *tech* tool he's the difference between a shelf-ware seat and an onboarding default. I'd make him an early ally. One honest note: this roster corrected the aggregator data I started with — which is exactly why I tag everything 'confirm on call one.'"
 
 *Advance.*
 
@@ -94,7 +94,7 @@
 ---
 
 ## SLIDE 11 — How I get in the door (~45 sec)
-> "Before the strategy — how do I actually *reach* these people? The rule in a franchise network is simple: first touch is reference-led, never cold. Cold outreach here gets ignored. So — the franchisor: I go in through the Voda channel we already came in on, that's my warm path, then straight to Schlafer carrying Seattle's proof and the royalty math, with Molzer as the router because he owns onboarding. The owners: warm intros from Seattle, the advisory council, and the multi-unit owners first; for anyone without a warm path, referenced outreach off the location directory and Sales Navigator, but that's second wave. And one-to-many: the annual conference stage and peer webinars — the highest-leverage rooms in the network, where one owner's story reaches dozens. The through-line: in a franchise you get in warm, or you don't get in — and the coexist trial is the offer that gets the yes."
+> "Before the strategy — how do I actually *reach* these people? The rule in a franchise network is simple: first touch is reference-led, never cold. Cold outreach here gets ignored. So — the franchisor: I go in through the Voda channel we already came in on, that's my warm path, then straight to Molzer, the COO, carrying Seattle's proof and the royalty math, with Courtney on the onboarding side and Sifuentes to get it into the tech training. The owners: warm intros from Seattle, the advisory council, and the multi-unit owners first; for anyone without a warm path, referenced outreach off the location directory and Sales Navigator, but that's second wave. And one-to-many: the annual conference stage and peer webinars — the highest-leverage rooms in the network, where one owner's story reaches dozens. The through-line: in a franchise you get in warm, or you don't get in — and the coexist trial is the offer that gets the yes."
 
 *Advance.*
 
@@ -121,7 +121,7 @@
 *Advance.*
 
 ## SLIDE 15 — The sequence (~40 sec)
-> "Concretely, and time-boxed. First 30 days: anchor the proof — a deep review with Seattle for real numbers, a success sprint on the two quiet users, and map the franchisor org and the Voda channel. Days 30–90: manufacture momentum — publish the case study, run the first peer webinar, and take the business case to Schlafer. Quarter two to three: convert the first wave — the council and multi-unit influencers, with a group offer and white-glove migration, and own the conference stage. Quarter three on: scale region by region to network standard, and embed us in onboarding so growth becomes automatic."
+> "Concretely, and time-boxed. First 30 days: anchor the proof — a deep review with Seattle for real numbers, a success sprint on the two quiet users, and map the franchisor org and the Voda channel. Days 30–90: manufacture momentum — publish the case study, run the first peer webinar, and take the business case to Molzer, the COO. Quarter two to three: convert the first wave — the council and multi-unit influencers, with a group offer and white-glove migration, and own the conference stage. Quarter three on: scale region by region to network standard, and embed us in onboarding so growth becomes automatic."
 
 *Advance.*
 
@@ -229,7 +229,7 @@ Don't present this linearly. Pull it up if they ask "how are you different from 
 > "I can go faster on *signatures*. I can't go faster on *adoption* without manufacturing churn, and in a peer network churn is contagious. I'd rather commit to 40 adopted than 90 signed-and-churning. But tell me the real constraint — if it's a board number, let's talk about where I'd add onboarding capacity to safely pull the curve forward."
 
 **"Why should the franchisor care?"**
-> "Because it's their KPI, not mine. Franchisee profitability and consistency *is* the franchisor's job. I'm not asking them to sell software — I'm handing them a lift to their owners' P&L and a story for the conference stage. I make Schlafer the hero."
+> "Because it's their KPI, not mine. Franchisee profitability and consistency *is* the franchisor's job. I'm not asking them to sell software — I'm handing them a lift to their owners' P&L, a royalty bump for HQ, and a story for the conference stage. I make Molzer, the COO, the hero."
 
 ---
 
