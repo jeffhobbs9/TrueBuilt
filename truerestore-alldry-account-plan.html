@@ -51,7 +51,13 @@ p{line-height:1.7;color:#b8c2c7;margin-bottom:12px;}
 .badge::before{content:'●';font-size:8px;}
 .badge-amber{background:rgba(245,166,35,.1);border-color:rgba(245,166,35,.3);color:var(--amber);}
 .note{font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:8px 12px;margin-bottom:12px;line-height:1.6;}
-.src{font-size:10px;color:var(--muted);font-family:'Space Mono',monospace;margin-top:6px;line-height:1.5;}
+.src{font-size:10px;color:var(--muted);font-family:'Space Mono',monospace;margin-top:6px;line-height:1.6;}
+a{color:var(--teal);text-decoration:none;border-bottom:1px dotted rgba(37,196,184,.45);}
+a:hover{color:#fff;border-bottom-color:#fff;}
+.srclist{list-style:none;padding:0;margin:0;}
+.srclist li{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);padding:6px 0;border-bottom:1px solid var(--border);line-height:1.5;}
+.srclist li:last-child{border-bottom:none;}
+.srclist .lbl{color:var(--text);}
 hr{border:none;border-top:1px solid var(--border);margin:22px 0;}
 ul.clean{list-style:none;padding:0;}
 ul.clean li{font-size:14px;color:#b8c2c7;padding:4px 0 4px 18px;position:relative;line-height:1.6;}
@@ -235,7 +241,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
   <p style="font-size:16px;max-width:760px;margin-bottom:18px;">A franchise network has three distinct buying layers, and you win by working all three at once. Nobody at the top can force a revenue tool onto an independent owner — so the map isn't a hierarchy, it's an influence system. Below is what I can build from the outside today, tagged by confidence, with exactly what I'd verify in the first real conversation.</p>
 
   <div class="note">Legend — <span class="conf conf-known">Known</span> sourced &amp; confident · <span class="conf conf-infer">Inferred</span> reasoned from public signals · <span class="conf conf-verify">Verify</span> a gap I'd close on the first call. This tagging is deliberate: the brief explicitly asks what I'm confident about vs. inferring vs. verifying.</div>
-  <div class="note" style="border-color:rgba(37,196,184,.25);"><strong style="color:var(--teal);">Entity confirmed:</strong> AllDry = All Dry Services (myalldry.com) — verified real Seattle + Inland-Empire/San Bernardino locations, matching the brief. The <em>names</em> below are from public sources; I treat their <em>current titles</em> as a call-one confirmation, not an assumption to forecast on.</div>
+  <div class="note" style="border-color:rgba(37,196,184,.25);"><strong style="color:var(--teal);">Entity confirmed:</strong> AllDry = All Dry Services (<a href="https://www.myalldry.com/franchising/" target="_blank" rel="noopener">myalldry.com</a>) — verified real <a href="https://www.myalldry.com/seattle/" target="_blank" rel="noopener">Seattle</a> + <a href="https://www.myalldry.com/riverside-county-california/" target="_blank" rel="noopener">Inland-Empire/San Bernardino</a> locations, matching the brief. The <em>names</em> below are from public sources; I treat their <em>current titles</em> as a call-one confirmation, not an assumption to forecast on.</div>
 
   <h2>Layer 1 · The franchisor (endorsement, not the checkbook)</h2>
   <div class="stk-grid">
@@ -243,25 +249,25 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
       <div class="stk-role">Founder &amp; CEO · Franchisor</div>
       <div class="stk-name">Matt Kuntz <span class="conf conf-known">Known</span></div>
       <div class="stk-body">Founded AllDry; 25 years running an HVAC/plumbing/electrical business before this. An operator, not a technologist — he'll care about brand consistency, franchisee profitability, and validation counts. <strong>My move:</strong> executive sponsor of the "network standard" narrative; I want him referencing TrueRestore from the mainstage at the annual conference.</div>
-      <div class="src">Source: myalldry.com, ZoomInfo, franchise press.</div>
+      <div class="src">Sources: <a href="https://www.zoominfo.com/c/all-dry-services/370496870" target="_blank" rel="noopener">ZoomInfo</a> · <a href="https://www.linkedin.com/company/alldryservices" target="_blank" rel="noopener">All Dry (LinkedIn)</a> · <a href="https://www.franchisesidekick.com/brands/all-dry" target="_blank" rel="noopener">Franchise Sidekick</a></div>
     </div>
     <div class="stk-card tier-fr">
       <div class="stk-role">President of Operations · Franchisor</div>
       <div class="stk-name">Jason Schlafer <span class="conf conf-known">Known</span></div>
-      <div class="stk-body">Owns how the network actually runs — playbooks, onboarding, franchisee support. <strong>This is very likely my primary franchisor sponsor.</strong> His KPI is franchisee success and consistency; a tool that lifts approved tickets and cuts cycle time is his win, not just mine. <strong>My move:</strong> co-build the ROI story with him and get TrueRestore into new-franchisee onboarding.</div>
-      <div class="src">Source: All Dry Services leadership (visualvisitor / ZoomInfo).</div>
+      <div class="stk-body">Owns how the network actually runs — playbooks, onboarding, franchisee support. <strong>Very likely my primary sponsor — and, at this company stage, the most likely owner of the preferred-vendor decision and FAC agenda too.</strong> His KPI is franchisee success and consistency; a tool that lifts approved tickets is his win, not just mine. <strong>My move:</strong> co-build the ROI story with him; confirm he owns the vendor program or who does.</div>
+      <div class="src">Sources: <a href="https://www.visualvisitor.com/companies/2122274/all-dry-services" target="_blank" rel="noopener">VisualVisitor</a> · <a href="https://www.zoominfo.com/c/all-dry-services/370496870" target="_blank" rel="noopener">ZoomInfo</a></div>
     </div>
     <div class="stk-card tier-fr">
       <div class="stk-role">President · Franchisor + Multi-hat owner</div>
       <div class="stk-name">Todd Marshall <span class="conf conf-known">Known</span></div>
       <div class="stk-body">President and also local owner of an AllDry location — a rare bridge who sits on both sides. <strong>Uniquely credible internal advocate:</strong> if he runs TrueRestore in his own shop and vouches for it, that's franchisor endorsement <em>and</em> owner peer-proof in one person. <strong>My move:</strong> make him a lighthouse owner-user.</div>
-      <div class="src">Source: All Dry Jacksonville blog; company profiles.</div>
+      <div class="src">Sources: <a href="https://www.linkedin.com/company/alldryservices" target="_blank" rel="noopener">All Dry (LinkedIn)</a> · company profiles — confirm title on call one.</div>
     </div>
     <div class="stk-card tier-fr">
-      <div class="stk-role">Franchise / vendor-program owner</div>
-      <div class="stk-name">Director of Franchise Ops / Preferred-Vendor lead <span class="conf conf-verify">Verify</span></div>
-      <div class="stk-body">Someone owns the approved-/preferred-vendor program and the tech stack franchisees are steered toward. Title unconfirmed from outside. <strong>My move:</strong> first-call question — "Who owns the vendor/tech program and the FAC agenda?" That person controls the single highest-leverage lever in this whole deal: <strong>preferred-vendor status.</strong></div>
-      <div class="src">Gap. Close via Seattle intro + LinkedIn org mapping.</div>
+      <div class="stk-role">Franchise Development · onboarding + vendor path</div>
+      <div class="stk-name">Jason Molzer <span class="conf conf-known">Known</span></div>
+      <div class="stk-body">Director of Franchise Development — owns new-franchisee recruitment and onboarding, and touches every owner. <strong>Two jobs for me:</strong> get TrueRestore into the onboarding flow (my "default" lever), and have him route me to whoever owns preferred-vendor status — most likely <strong>Schlafer</strong>. <span class="conf conf-verify">Verify</span> the vendor-program + FAC owner on call one. <span style="color:var(--muted);">(Note: All Dry sells franchises via Franchise FastLane — an external partner, not the internal vendor owner.)</span></div>
+      <div class="src">Sources: <a href="https://www.linkedin.com/in/jason-molzer-207254186/" target="_blank" rel="noopener">Molzer (LinkedIn)</a> · <a href="https://wiza.co/d/alldryservices/b508/jason-molzer" target="_blank" rel="noopener">title corroboration</a> — confirm current title.</div>
     </div>
   </div>
 
@@ -636,6 +642,20 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
     <h3 style="color:var(--text);">My honest read on the adoption curve</h3>
     <p style="margin:0 0 10px;">A franchise network doesn't adopt on a straight line — it adopts on an <strong>S-curve gated by trust</strong>, over <strong>2–3 years, not one</strong>. The first ~10–15% (Seattle + first-wave influencers) is the hardest and slowest because it's pure proof-building. Once the FAC endorses and a few respected owners are vocal, the middle of the curve moves fast on peer-proof and busy-season urgency. The tail (low-volume, change-averse holdouts) may never fully close, and that's fine — network <em>standard</em> doesn't require 100%; it requires enough density that TrueRestore is the obvious default. I'd rather have 140 delighted, adopted locations than 178 half-used seats that churn.</p>
     <p style="margin:0;font-size:13px;color:var(--muted);"><strong style="color:var(--text);">The bottleneck I'd watch isn't sales — it's onboarding capacity.</strong> Migrating an owner off Encircle well (data, training, habit) takes real CS hours. If I sell faster than we can onboard cleanly, I manufacture churn and negative peer-proof — the exact thing that stalls the whole network. So I'd pace outbound to migration throughput and invest early in a repeatable migration playbook (that's part of what the Seattle + quiet-user work buys me).</p>
+  </div>
+
+  <h2 style="margin-top:22px;">Sources — click to verify</h2>
+  <div class="card">
+    <ul class="srclist">
+      <li><span class="lbl">Entity &amp; locations:</span> <a href="https://www.myalldry.com/franchising/" target="_blank" rel="noopener">myalldry.com/franchising</a> · <a href="https://www.myalldry.com/seattle/" target="_blank" rel="noopener">All Dry Seattle</a> · <a href="https://www.myalldry.com/riverside-county-california/" target="_blank" rel="noopener">All Dry Inland Empire</a></li>
+      <li><span class="lbl">People:</span> <a href="https://www.linkedin.com/in/jason-molzer-207254186/" target="_blank" rel="noopener">Jason Molzer — Dir. Franchise Development (LinkedIn)</a> · <a href="https://www.linkedin.com/company/alldryservices" target="_blank" rel="noopener">All Dry Services (company)</a> · <a href="https://www.visualvisitor.com/companies/2122274/all-dry-services" target="_blank" rel="noopener">VisualVisitor</a> · <a href="https://www.zoominfo.com/c/all-dry-services/370496870" target="_blank" rel="noopener">ZoomInfo</a></li>
+      <li><span class="lbl">Brand / founding (~2015):</span> <a href="https://www.franchisesidekick.com/brands/all-dry" target="_blank" rel="noopener">Franchise Sidekick</a></li>
+      <li><span class="lbl">Product:</span> <a href="https://www.capabuild.app/" target="_blank" rel="noopener">TrueRestore / Capabuild</a></li>
+      <li><span class="lbl">Competitor pricing (Encircle $270–$650/mo):</span> <a href="https://www.getencircle.com/pricing/" target="_blank" rel="noopener">getencircle.com/pricing</a></li>
+      <li><span class="lbl">Avg approved ticket ($3,814–$3,867):</span> <a href="https://www.angi.com/articles/how-much-does-it-cost-repair-water-damage.htm" target="_blank" rel="noopener">Angi — water damage cost 2025–26</a></li>
+      <li><span class="lbl">Restoration margins (50–80% gross):</span> <a href="https://pushleads.com/restoration-company-seo/restoration-company-financial-benchmarks-and-kpis/" target="_blank" rel="noopener">Restoration KPI benchmarks</a></li>
+    </ul>
+    <p style="margin:10px 0 0;font-size:12px;color:var(--muted);">Aggregator/LinkedIn sources are point-in-time — I'd confirm every current title and figure on the first real call. The +11.6% uplift, $300/mo, and the 178/3-live figures are taken from the account brief.</p>
   </div>
 </section>
 
