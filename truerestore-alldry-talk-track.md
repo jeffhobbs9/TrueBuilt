@@ -1,7 +1,7 @@
 # AllDry Network Win Plan — Talk Track / Speaker Script
 ### TrueRestore · VP, Strategic Accounts · final round
 
-**What this is:** a start-to-finish spoken script for the ~30-minute presentation, mapped to the 24 slides in `truerestore-alldry-presentation.html` (slides 1–23 present linearly; slide 24 is a **backup** you jump to only if challenged on Encircle). The words below are what to *say* — natural, first-person, out loud. The deck carries the anchors; you carry the story. (Every slide also has these notes built in — press **N** in the deck.)
+**What this is:** a start-to-finish spoken script for the ~30-minute presentation, mapped to the 25 slides in `truerestore-alldry-presentation.html` (slides 1–24 present linearly; slide 25 is a **backup** you jump to only if challenged on Encircle). The words below are what to *say* — natural, first-person, out loud. The deck carries the anchors; you carry the story. (Every slide also has these notes built in — press **N** in the deck.)
 
 **How to rehearse:** read it out loud 3×. First time for words, second for timing, third with the deck open advancing as you go. Then throw the deck away and just talk to it — if you know the five section headlines below, you can rebuild the whole thing live.
 
@@ -13,14 +13,14 @@
 |---|---|---|
 | Open: thesis + product | 1–3 | 3 min |
 | The prize + the three we have | 4–7 | 4 min |
-| Stakeholder map | 8–10 | 5 min |
-| The plan: flywheel + proof engine + contrarian + sequence + landing | 11–15 | 6 min |
-| Process + qualification | 16–17 | 3 min |
-| Toolstack | 18 | 1 min |
-| ROI live demo | 19 | 4 min |
-| The number I'd own | 20 | 2 min |
-| What's hard + research + close | 21–23 | 2 min |
-| *Backup (only if asked): TrueRestore vs Encircle* | *24* | *—* |
+| Stakeholder map | 8–10 | 4 min |
+| How I get in the door + the plan (flywheel, proof engine, contrarian, sequence, landing) | 11–16 | 6 min |
+| Process + qualification | 17–18 | 3 min |
+| Toolstack | 19 | 1 min |
+| ROI live demo | 20 | 4 min |
+| The number I'd own | 21 | 2 min |
+| What's hard + research + close | 22–24 | 2 min |
+| *Backup (only if asked): TrueRestore vs Encircle* | *25* | *—* |
 
 ---
 
@@ -93,19 +93,24 @@
 
 ---
 
-## SLIDE 11 — The flywheel (~50 sec)
+## SLIDE 11 — How I get in the door (~45 sec)
+> "Before the strategy — how do I actually *reach* these people? The rule in a franchise network is simple: first touch is reference-led, never cold. Cold outreach here gets ignored. So — the franchisor: I go in through the Voda channel we already came in on, that's my warm path, then straight to Schlafer carrying Seattle's proof and the royalty math, with Molzer as the router because he owns onboarding. The owners: warm intros from Seattle, the advisory council, and the multi-unit owners first; for anyone without a warm path, referenced outreach off the location directory and Sales Navigator, but that's second wave. And one-to-many: the annual conference stage and peer webinars — the highest-leverage rooms in the network, where one owner's story reaches dozens. The through-line: in a franchise you get in warm, or you don't get in — and the coexist trial is the offer that gets the yes."
+
+*Advance.*
+
+## SLIDE 12 — The flywheel (~50 sec)
 > "So how do 3 become 178 without a mandate? A flywheel. **Prove** the owner economics on the three we have. **Amplify** into peer-proof — case study, peer webinar, owner-to-owner intros. **Endorse** — take that proof to the franchisor and earn preferred-vendor status plus a place in onboarding. **Convert** in regional waves, influencers first, with white-glove migration. And **default** — make TrueRestore the assumed standard, bundled into new-franchisee onboarding. I'm not trying to make 175 cold sales. I'm trying to make *one* network decision, then let peer-proof and endorsement carry it. Seattle starts the wheel; endorsement gives it torque."
 
 *Advance.*
 
-## SLIDE 12 — Proof & champion engine (~55 sec) — **the concrete "how"**
+## SLIDE 13 — Proof & champion engine (~55 sec) — **the concrete "how"**
 > "Let me get concrete about how one happy user becomes a hundred and seventy-four, because that's the real question. Five steps. One — I *confirm* the ROI: I sit with Seattle and pull the real before-and-after — approved-ticket percentage, cycle time, hours saved — and re-derive that eleven-point-six on *their* numbers. That's also where I find out, honestly, whether it holds for this network. Two — I get the *sign-off*: I turn it into a one-page, dollars-per-job case study the owner reviews and approves, so the proof is in *their* words, not mine. Three — I *activate* them as a champion: a reference, a testimonial, and a product-advisory seat, because giving input creates ownership. Four — I get the *introductions*: 'who are two or three owners you respect who'd take your call?' Seattle vouches, I take it warm. And five — the peer *re-proves* it themselves with the coexist trial, and becomes the next reference.
 >
 > Here's the insight that makes it compound: the champion doesn't just refer me — *they re-prove the ROI for each peer*, because an owner trusts another owner's numbers, not a vendor's. That's the engine, and San Bernardino and Austin are where I prove it repeats before I scale."
 
 *Advance.*
 
-## SLIDE 13 — The contrarian call (~55 sec) — **slow down here, this is your POV**
+## SLIDE 14 — The contrarian call (~55 sec) — **slow down here, this is your POV**
 > "Here's where I'd do something counterintuitive, and I'll defend it. The obvious move is to run to the franchisor first for a top-down blessing. I would deliberately *not* do that.
 >
 > Because endorsement without proof is weak — and worse, a lukewarm 'yeah, we looked at it' from the franchisor can actually *inoculate* the whole network against us. Now every owner has a reason to wait. So I'd stay bottoms-up until I have eight to ten vocal, results-backed owners — and *then* walk into the franchisor with a groundswell they can't ignore, so the endorsement is a formality, not a favor. Earn the FAC. Don't beg it."
@@ -115,14 +120,14 @@
 
 *Advance.*
 
-## SLIDE 14 — The sequence (~40 sec)
+## SLIDE 15 — The sequence (~40 sec)
 > "Concretely, and time-boxed. First 30 days: anchor the proof — a deep review with Seattle for real numbers, a success sprint on the two quiet users, and map the franchisor org and the Voda channel. Days 30–90: manufacture momentum — publish the case study, run the first peer webinar, and take the business case to Schlafer. Quarter two to three: convert the first wave — the council and multi-unit influencers, with a group offer and white-glove migration, and own the conference stage. Quarter three on: scale region by region to network standard, and embed us in onboarding so growth becomes automatic."
 
 *Advance.*
 
 ---
 
-## SLIDE 15 — How I'd land them (~50 sec) — **the two moves that de-risk it**
+## SLIDE 16 — How I'd land them (~50 sec) — **the two moves that de-risk it**
 > "Two moves make this actually work. First — I don't ask anyone to rip out Encircle. I have them keep it and run TrueRestore on three or four live claims *in parallel* — a short, comped trial, so they're never double-paying. The owner feels the higher approved ticket on their own jobs at zero risk, and only *then* drops Encircle — which is where the software-wash economics kick in. It's a trial, not a migration, and that turns the biggest objection, switching cost, into a no-brainer.
 >
 > Second — my beachhead is the multi-unit owners, the ones running four-plus territories. One sale there is several locations converted *and* a respected advisory-council voice. In a peer network density beats breadth — a few undeniable proof clusters tip the network faster than scattered logos. Land the loud, respected owners and the middle of the curve follows."
@@ -131,24 +136,24 @@
 
 ---
 
-## SLIDE 16 — Sales process (~45 sec)
+## SLIDE 17 — Sales process (~45 sec)
 > "The process I'd actually run. A location pipeline, repeated about 175 times: Aware, Qualified, Value-proven, Committed, Adopted, Advocate. Notice the last two. Most reps stop at Committed — signed. In a peer network that's a mistake, because an unused seat doesn't just churn, it becomes *negative* proof — 'we tried it, didn't stick.' So adoption is inside my funnel on purpose, and the advocates it produces feed the next wave. The sale isn't done at signature; it's done when they're getting results and willing to say so."
 
 *Advance.*
 
-## SLIDE 17 — Qualified vs Committed (~40 sec)
+## SLIDE 18 — Qualified vs Committed (~40 sec)
 > "And because you asked what those words mean with independent owners: **Qualified** is fit plus pain plus authority plus timing — they're claims-driven, on Encircle, the owner *is* the buyer, and there's a real trigger like busy season or a renewal. **Committed** is my anti-drift test — it's a *date*, not a good feeling: a scheduled go-live, a real migration plan off Encircle, a named user on the truck, and an agreed definition of what 'this worked' looks like in 30 days — so the renewal is pre-sold at the moment I close."
 
 *Advance.*
 
-## SLIDE 18 — Toolstack (~45 sec)
+## SLIDE 19 — Toolstack (~45 sec)
 > "Tools — and I'll tie each to a job, not just name-drop. Sales Navigator, Apollo, and Clay to build and enrich the 178-location map and find the council and multi-unit owners. A CRM as the single source of truth — the whole network as one strategic account, a record per location, stages from Aware to Advocate. Outreach and Gong to run and coach the motion. But the one most reps skip and that matters most here: a real *reference and advocacy engine* — systematizing Seattle into peer-proof, matching references to prospects by region, hosting owner webinars. In a peer-driven network, that's the highest-ROI tool I own. Principle: one system of record, everything feeds it."
 
 *Advance.*
 
 ---
 
-## SLIDE 19 — ROI live demo (~3.5 min) — **the centerpiece; drive it live**
+## SLIDE 20 — ROI live demo (~3.5 min) — **the centerpiece; drive it live**
 > "Let's do the money, live — and I'm going to start conservative on purpose."
 
 *(Screen is already on Conservative — 10x, ~$1.9M.)*
@@ -166,7 +171,7 @@
 
 *Advance.*
 
-## SLIDE 20 — The number I'd own (~2 min) — **the VP moment; say it with conviction**
+## SLIDE 21 — The number I'd own (~2 min) — **the VP moment; say it with conviction**
 > "A VP carries a target, so here's mine — and it's realistic, because this is a two-to-three-year capture, not a one-year hero sprint.
 >
 > Year one: about 40 locations live *and adopted* — roughly a fifth of the open network — around $140K in new recurring revenue, and preferred-vendor status secured. Adopted, not just signed. Years two and three: cross 50% on peer-proof and onboarding-default, and get to network standard, 80-plus percent.
@@ -181,17 +186,17 @@
 
 ---
 
-## SLIDE 21 — What's hard (~1 min) — **don't soften this**
+## SLIDE 22 — What's hard (~1 min) — **don't soften this**
 > "Let me be honest about where this stalls, because pretending it won't is how these die. No one can force it — so I chase endorsement and peer-proof, not a signature. Quiet users can churn — so adoption is in my funnel. Encircle has switching cost — so migration is a product, not a promise. And my read on the curve: a network adopts on a trust-gated S-curve, over two to three years, and the bottleneck is onboarding capacity, not sales. I'd rather have 140 delighted, adopted locations than 178 half-used seats that churn. Network *standard* doesn't need 100% — it needs enough density that we're the obvious default."
 
 *Advance.*
 
-## SLIDE 22 — Research / confidence (~30 sec)
+## SLIDE 23 — Research / confidence (~30 sec)
 > "And to close the loop on honesty: here's what I *know* — entity confirmed, the product, the claims economics. What I'm *inferring* — the council, the likely sponsor, and that the brief's founding story is stylized, so I use your numbers and flag the delta. And what I'd *verify* on call one — the vendor-program owner, the Voda relationship, Seattle's real figures, and whether the 11.6% generalizes. I'd rather show you the gaps than paper over them."
 
 *Advance.*
 
-## SLIDE 23 — Close & questions (~45 sec)
+## SLIDE 24 — Close & questions (~45 sec)
 > "So — endorsement, not a mandate. Seattle starts the wheel. Earn the network, don't force it. Month one, if I'm in the seat: I'd anchor the proof on the three we have, open the franchisor and the Voda channel, and start building the reference engine — prove it repeats before I spend anyone's credibility.
 >
 > That's my plan. I'm sure you're going to poke holes in it — good, let's do that. Throw me the wrinkles and I'll re-plan live."
@@ -200,7 +205,7 @@
 
 ---
 
-## SLIDE 24 (BACKUP) — TrueRestore vs Encircle — **jump here (press M) only if challenged**
+## SLIDE 25 (BACKUP) — TrueRestore vs Encircle — **jump here (press M) only if challenged**
 Don't present this linearly. Pull it up if they ask "how are you different from Encircle?" or "why would owners switch?"
 > "Fair question — and I'll be straight: Encircle is genuinely good at what it does. Field documentation, photos, contents, moisture — mature, familiar, installed across a lot of the network. I'm not going to tell you it's broken. My point is it's *incomplete*. It stops at capture — the owner still bounces to Xactimate to build the estimate that actually gets paid. TrueRestore closes that loop: the documentation *becomes* the carrier-ready estimate, which is where the higher approved ticket and the faster cycle time come from. So I don't fight a feature-by-feature war — I'd lose some of those and it doesn't matter. I win on one number: dollars per approved job. And I let a peer make the case — Seattle telling another owner 'my approved tickets went up' beats anything I could say. Where Encircle genuinely wins today is inertia and switching cost — which is *exactly* why I lead with the coexist trial, so nobody has to rip anything out to see the difference."
 
