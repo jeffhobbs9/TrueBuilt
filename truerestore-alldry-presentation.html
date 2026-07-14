@@ -449,22 +449,22 @@ body.menu-on .menu{display:block;}
   <div class="roi-wrap">
     <div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Jobs / month</span><span class="slider-val" id="v-jobs">25</span></div><input type="range" min="5" max="80" step="1" value="25" oninput="setP('jobs',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Avg approved ticket</span><span class="slider-val" id="v-ticket">$3,800</span></div><input type="range" min="800" max="15000" step="100" value="3800" oninput="setP('ticket',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Approved-ticket uplift</span><span class="slider-val" id="v-uplift">7.0%</span></div><input type="range" min="2" max="20" step="0.2" value="7" oninput="setP('uplift',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Contribution margin on incremental</span><span class="slider-val" id="v-cmargin">35%</span></div><input type="range" min="20" max="80" step="1" value="35" oninput="setP('cmargin',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Est. time to write a job</span><span class="slider-val" id="v-esttime">1.5 hr</span></div><input type="range" min="0.5" max="4" step="0.1" value="1.5" oninput="setP('esttime',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Time saved w/ TrueRestore</span><span class="slider-val" id="v-saved">50%</span></div><input type="range" min="30" max="80" step="5" value="50" oninput="setP('saved',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Loaded estimator $/hr</span><span class="slider-val" id="v-rate">$50/hr</span></div><input type="range" min="30" max="90" step="5" value="50" oninput="setP('rate',this.value)"></div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Year-1 network adoption</span><span class="slider-val" id="v-adopt">30%</span></div><input type="range" min="10" max="100" step="5" value="30" oninput="setP('adopt',this.value)"></div>
     </div>
     <div>
       <div class="roi-outs">
-        <div class="roi-metric"><div class="n grnt" id="out-inc">—</div><div class="l">Extra approved rev / loc / yr</div></div>
-        <div class="roi-metric"><div class="n grnt" id="out-net">—</div><div class="l">Owner value / loc / yr</div></div>
-        <div class="roi-metric"><div class="n tealt" id="out-roi">—</div><div class="l">Owner ROI</div></div>
-        <div class="roi-metric"><div class="n tealt" id="out-payback">—</div><div class="l">Payback</div></div>
+        <div class="roi-metric"><div class="n grnt" id="out-labor">—</div><div class="l">Labor saved / loc / yr</div></div>
+        <div class="roi-metric"><div class="n tealt" id="out-lroi">—</div><div class="l">Labor-only ROI</div></div>
+        <div class="roi-metric"><div class="n tealt" id="out-hrs">—</div><div class="l">Estimator hrs saved / loc</div></div>
+        <div class="roi-metric"><div class="n grnt" id="out-total">—</div><div class="l">+ ticket upside = total / loc</div></div>
       </div>
-      <div class="roi-punch" style="margin-top:1vh;">TrueRestore ($300) ≈ their current Encircle spend — <strong class="tealt">a software wash</strong>, so the value is upside. Across 175 locations at <span id="out-adoptp">45%</span> Year-1 adoption: <strong class="tealt" id="out-y1arr">—</strong> ARR to us · <strong class="grnt" id="out-netval">—</strong> owner value · <strong class="ambt" id="out-ratio">—</strong> ratio.</div>
+      <div class="roi-punch" style="margin-top:1vh;"><strong class="tealt">Before a dollar of ticket lift</strong>, the labor saved alone is a <strong class="tealt" id="out-lroi2">—</strong> return — and TrueRestore ($300) ≈ their Encircle spend, so net tool cost ≈ zero. Across 175 locations at <span id="out-adoptp">30%</span> adoption: <strong class="grnt" id="out-netlabor">—</strong> reclaimed labor · <strong class="tealt" id="out-y1arr">—</strong> ARR to us · <strong class="ambt" id="out-nettotal">—</strong> total owner value with the ticket upside layered on.</div>
     </div>
   </div>
-  <div class="snotes">This is your memorable moment — <strong>drive it live.</strong> Ask them to throw you a number ("a busy Seattle shop doing 40 jobs a month?") and move the slider. Two things to land: (1) <strong>it's a software wash</strong> — they're already paying Encircle ~$455/mo, so TrueRestore at $300 costs nothing net and the approved-ticket lift is pure upside; (2) the <strong>ratio</strong>, not the seat price. It opens on <strong>Conservative on purpose</strong> — lead with the floor (10x, ~$1.9M owner value), then click <strong>Base</strong> to show the upside so <em>they</em> push the number up, not you. Line: "even on my conservative floor, owners capture millions against a couple hundred K of spend — that's franchisee profitability, which is the franchisor's job." Defaults are sourced (national avg ticket, restoration margins, Encircle pricing); full assumptions live in the deal-room ROI tab. <strong>If asked how the model's built:</strong> three drivers — (1) higher approved ticket (jobs × ticket × uplift × margin), (2) estimate-production cost removed, (3) the Encircle software-wash. I deliberately do <em>not</em> monetize cycle-time (it's uncounted upside), and there's <em>no "missed-bid" line</em> because restoration is inbound insurance work, not competitive bidding — that keeps it conservative and honest.</div>
+  <div class="snotes">Your centerpiece — <strong>drive it live.</strong> The reframe: the <strong>primary ROI is labor/time saved</strong>, built on TrueBuilt's published <strong>~70% faster</strong> estimate build and researched estimator pay (~$50/hr loaded) — <em>not</em> the case-study 11.6%. So even if someone challenges the ticket lift, the labor math alone returns <strong>3–4×</strong>. Open <strong>Conservative (50% time saved)</strong>, then click <strong>Base</strong> to snap it to <strong>70% — TrueBuilt's own number</strong> — so <em>they</em> push it up. Ask them to throw you a real one ("your estimator's rate? jobs a month?") and move the sliders. Then land the <strong>enterprise roll-up</strong>: 175 locations reclaim <strong>$0.6–1.2M in labor a year</strong>. The approved-ticket lift is layered on as the "total / loc" tile — upside, not the foundation — and it's still a <strong>software-wash</strong> vs Encircle (~$455/mo) so net tool cost ≈ zero. <strong>Honest tag:</strong> 70% is TrueBuilt's construction-takeoff figure applied to restoration estimating on the same no-re-keying mechanism — I'd verify the restoration number against Seattle's actuals. I deliberately don't monetize cycle-time (uncounted upside) and there's no "missed-bid" line (restoration is inbound insurance work) — keeps it conservative.</div>
 </section>
 
 <!-- ══════════ 15b · THE NUMBER ══════════ -->
@@ -607,21 +607,21 @@ slides.forEach((s,i)=>{
 setTimeout(()=>{ const h=document.getElementById('hint'); if(h) h.style.opacity='0'; }, 6000);
 
 // ── ROI model (canonical — matches the deal-room; defaults are sourced)
-const R = { jobs:25, ticket:3800, uplift:7, cmargin:35, outpct:30, estcost:99, encircle:455, price:300, locs:175, adopt:30 };
+const R = { jobs:25, esttime:1.5, saved:50, rate:50, ticket:3800, cmargin:45, uplift:5, price:300, encircle:455, locs:175, adopt:30 };
 const SCN = {
-  cons: { uplift:7,    cmargin:35, outpct:30, adopt:30 },
-  base: { uplift:11.6, cmargin:45, outpct:50, adopt:45 },
-  aggr: { uplift:15,   cmargin:60, outpct:75, adopt:60 }
+  cons: { saved:50, uplift:5,    adopt:30 },
+  base: { saved:70, uplift:7,    adopt:45 },
+  aggr: { saved:70, uplift:11.6, adopt:60 }
 };
 const fmt = n => { if(!isFinite(n)||isNaN(n)) return '—'; const a=Math.abs(n);
   if(a>=1000000) return '$'+(n/1000000).toFixed(2)+'M'; if(a>=1000) return '$'+Math.round(n/1000)+'K'; return '$'+Math.round(n).toLocaleString(); };
-const disp = k => ({ jobs:Math.round(R.jobs), ticket:'$'+Math.round(R.ticket).toLocaleString(),
-  uplift:R.uplift.toFixed(1)+'%', cmargin:Math.round(R.cmargin)+'%', adopt:Math.round(R.adopt)+'%' }[k]);
+const disp = k => ({ jobs:Math.round(R.jobs), esttime:R.esttime.toFixed(1)+' hr', saved:Math.round(R.saved)+'%',
+  rate:'$'+Math.round(R.rate)+'/hr', adopt:Math.round(R.adopt)+'%' }[k]);
 function setP(k,v){ R[k]=parseFloat(v);
   const el=document.getElementById('v-'+k); if(el&&disp(k)!==undefined) el.textContent=disp(k); calcROI(); }
 function scenario(mode){
   Object.assign(R, SCN[mode]);
-  ['uplift','cmargin','adopt'].forEach(k=>{
+  ['saved','adopt'].forEach(k=>{
     const sl=document.querySelector('input[oninput="setP(\''+k+'\',this.value)"]'); if(sl) sl.value=R[k];
     const lb=document.getElementById('v-'+k); if(lb) lb.textContent=disp(k);
   });
@@ -630,19 +630,24 @@ function scenario(mode){
 }
 function calcROI(){
   const jobsYr=R.jobs*12;
-  const incRev=jobsYr*R.ticket*(R.uplift/100);
-  const marginVal=incRev*(R.cmargin/100);
-  const estSaved=jobsYr*(R.outpct/100)*R.estcost;
-  const grossVal=marginVal+estSaved;
+  // PRIMARY lever: labor / time saved (TrueBuilt ~70% faster × researched estimator rate)
+  const hrsSaved=R.esttime*(R.saved/100)*jobsYr;
+  const laborSave=hrsSaved*R.rate;
   const trCost=R.price*12;
-  const roi=trCost>0?grossVal/trCost:0;
-  const payback=grossVal>0?Math.max(1,Math.round(trCost/(grossVal/365))):0;
-  const tamARR=R.locs*trCost, y1ARR=tamARR*(R.adopt/100);
-  const ownerY1=R.locs*grossVal*(R.adopt/100), ratio=trCost>0?grossVal/trCost:0;
+  const laborROI=trCost>0?laborSave/trCost:0;
+  // SECOND lever (upside): approved-ticket uplift — the brief's case study, layered on
+  const incRev=jobsYr*R.ticket*(R.uplift/100);
+  const ticketVal=incRev*(R.cmargin/100);
+  const ownerVal=laborSave+ticketVal;
+  // enterprise roll-up
+  const netLabor=R.locs*laborSave*(R.adopt/100);
+  const netTotal=R.locs*ownerVal*(R.adopt/100);
+  const y1ARR=R.locs*trCost*(R.adopt/100);
   const s=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
-  s('out-inc',fmt(incRev)); s('out-net',fmt(grossVal)); s('out-roi',roi>0?roi.toFixed(0)+'x':'—');
-  s('out-payback',payback?payback+' days':'—');
-  s('out-y1arr',fmt(y1ARR)); s('out-netval',fmt(ownerY1)); s('out-ratio',ratio>0?ratio.toFixed(0)+':1':'—');
+  s('out-labor',fmt(laborSave));
+  s('out-lroi',laborROI>0?laborROI.toFixed(0)+'x':'—'); s('out-lroi2',laborROI>0?laborROI.toFixed(0)+'x':'—');
+  s('out-hrs',Math.round(hrsSaved)+' hrs'); s('out-total',fmt(ownerVal));
+  s('out-netlabor',fmt(netLabor)); s('out-y1arr',fmt(y1ARR)); s('out-nettotal',fmt(netTotal));
   s('out-adoptp',Math.round(R.adopt)+'%');
 }
 
