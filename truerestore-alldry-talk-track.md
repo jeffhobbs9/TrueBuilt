@@ -1,7 +1,7 @@
 # AllDry Network Win Plan — Talk Track / Speaker Script
 ### TrueRestore · VP, Strategic Accounts · final round
 
-**What this is:** a start-to-finish spoken script for the ~30-minute presentation, mapped to the 25 slides in `truerestore-alldry-presentation.html` (slides 1–24 present linearly; slide 25 is a **backup** you jump to only if challenged on Encircle). The words below are what to *say* — natural, first-person, out loud. The deck carries the anchors; you carry the story. (Every slide also has these notes built in — press **N** in the deck.)
+**What this is:** a start-to-finish spoken script for the ~30-minute presentation, mapped to the 26 slides in `truerestore-alldry-presentation.html` (slides 1–25 present linearly; slide 26 is a **backup** you jump to only if challenged on Encircle). The words below are what to *say* — natural, first-person, out loud. The deck carries the anchors; you carry the story. (Every slide also has these notes built in — press **N** in the deck.)
 
 **How to rehearse:** read it out loud 3×. First time for words, second for timing, third with the deck open advancing as you go. Then throw the deck away and just talk to it — if you know the five section headlines below, you can rebuild the whole thing live.
 
@@ -13,14 +13,14 @@
 |---|---|---|
 | Open: thesis + product | 1–3 | 3 min |
 | The prize + the three we have | 4–7 | 4 min |
-| Stakeholder map | 8–10 | 4 min |
-| How I get in the door + the plan (flywheel, proof engine, contrarian, sequence, landing) | 11–16 | 6 min |
-| Process + qualification | 17–18 | 3 min |
-| Toolstack | 19 | 1 min |
-| ROI live demo | 20 | 4 min |
-| The number I'd own | 21 | 2 min |
-| What's hard + research + close | 22–24 | 2 min |
-| *Backup (only if asked): TrueRestore vs Encircle* | *25* | *—* |
+| Stakeholder map (three layers) | 8–11 | 4 min |
+| How I get in the door + the plan (flywheel, proof engine, contrarian, sequence, landing) | 12–17 | 6 min |
+| Process + qualification | 18–19 | 3 min |
+| Toolstack | 20 | 1 min |
+| ROI live demo | 21 | 4 min |
+| The number I'd own | 22 | 2 min |
+| What's hard + research + close | 23–25 | 2 min |
+| *Backup (only if asked): TrueRestore vs Encircle* | *26* | *—* |
 
 ---
 
@@ -79,38 +79,43 @@
 
 *Advance.*
 
-## SLIDE 9 — Layer 1, the franchisor (~50 sec)
-> "Layer one, the franchisor — and their role is endorsement, not the checkbook. I've confirmed the entity: this is All Dry Services, myalldry.com — I verified real Seattle and Inland-Empire locations that match the brief. The names are from public sources, so I'd confirm current titles on call one.
+## SLIDE 9 — Layer 1, the franchisor (~55 sec)
+> "Layer one, the franchisor — and their role is endorsement, not the checkbook. I've confirmed the entity: this is All Dry Services, myalldry.com — I verified real Seattle and Inland-Empire locations that match the brief. Every name on this slide is a live link to its source — click any one and you land on the actual person.
 >
-> Pete Waxman is the CEO — the economic buyer for a network-wide call, my day-90 sign-off. Jason Molzer is the COO — he's my primary sponsor, and very likely the owner of the tech-vendor decision; in fact AllDry's 'Business Management Technology' partner slot ties to him, which is the literal preferred-vendor slot I want to be in. Tim Courtney is the Chief Development Officer — he owns franchise development and recruitment, so he's my onboarding-default lever: get TrueRestore into every new franchisee from day one. And the one most reps would miss — Camilo Sifuentes, Director of Tech Training. He trains the whole network on technology, so for a *tech* tool he's the difference between a shelf-ware seat and an onboarding default. I'd make him an early ally. One honest note: this roster corrected the aggregator data I started with — which is exactly why I tag everything 'confirm on call one.'"
+> Jason Molzer is the COO — he's my primary sponsor, and very likely the owner of the tech-vendor decision; in fact AllDry's 'Business Management Technology' partner slot ties to him, which is the literal preferred-vendor slot I want to be in. Pete Waxman is the CEO — the economic buyer for a network-wide call, my day-90 sign-off. Tim Courtney is the Chief Development Officer — he owns franchise development and recruitment, so he's my onboarding-default lever: get TrueRestore into every new franchisee from day one. And the one most reps would miss — Camilo Sifuentes, Director of Tech Training. He trains the whole network on technology, so for a *tech* tool he's the difference between a shelf-ware seat and an onboarding default. I'd make him an early ally. Two more on the map: Matt Kuntz, the founder — my exec sponsor for the 'network standard' story once the proof exists — and Billy Black, managing partner, at the ownership level. One honest note: this roster *corrected* the aggregator data I started with — which is exactly why I tag everything 'confirm on call one.'"
 
 *Advance.*
 
 ## SLIDE 10 — Layer 2, the owners (~40 sec)
-> "Layer two is where the real persuasion happens — the owners. Seattle, the champion, protect above all. San Bernardino and Austin, the expansion lab. Then the network shapers: the multi-unit owners and the advisory council, whose opinion moves peers faster than any franchisor email — I want the loud, respected voices first. And I'd sequence by region, leading with the high-claims-volume metros where the pain, and the math, are loudest. In this industry trust travels locally — so I make proof travel locally too."
+> "Layer two is where the real persuasion happens — the owners. Seattle, the champion, protect above all. San Bernardino and Austin, the expansion lab. Then the network shapers: the multi-unit owners and the advisory council, whose opinion moves peers faster than any franchisor email — I want the loud, respected voices first. And I'd sequence by region, leading with the high-claims-volume metros where the pain, and the math, are loudest — the freeze-belt and storm markets. Water and freezing drive about 22.6% of all home claims, so I point the flywheel where the tickets are biggest. In this industry trust travels locally — so I make proof travel locally too."
+
+*Advance.*
+
+## SLIDE 11 — Layer 3, the endorsers (~30 sec) — *NEW*
+> "Layer three — the endorsers around the deal. I don't *sell* to these people; I borrow their credibility. Insurance carriers and TPAs: 'carrier-accepted, Xactimate-ready' is language that resonates up the whole claims chain, so I can cite it even though I never sell to a carrier. The Voda channel — how these three came in — is my warm path into HQ, and one of my first 'verify' items: who owns that relationship and what goodwill it carries. And the industry bodies and owner forums — RIA, IICRC, the restoration owner groups, the conference stages — that's where reputations in this industry are actually made. Three layers, worked at once — that's the influence system, not an org chart."
 
 *Advance.*
 
 ---
 
-## SLIDE 11 — How I get in the door (~45 sec)
+## SLIDE 12 — How I get in the door (~45 sec)
 > "Before the strategy — how do I actually *reach* these people? The rule in a franchise network is simple: first touch is reference-led, never cold. Cold outreach here gets ignored. So — the franchisor: I go in through the Voda channel we already came in on, that's my warm path, then straight to Molzer, the COO, carrying Seattle's proof and the royalty math, with Courtney on the onboarding side and Sifuentes to get it into the tech training. The owners: warm intros from Seattle, the advisory council, and the multi-unit owners first; for anyone without a warm path, referenced outreach off the location directory and Sales Navigator, but that's second wave. And one-to-many: the annual conference stage and peer webinars — the highest-leverage rooms in the network, where one owner's story reaches dozens. The through-line: in a franchise you get in warm, or you don't get in — and the coexist trial is the offer that gets the yes."
 
 *Advance.*
 
-## SLIDE 12 — The flywheel (~50 sec)
+## SLIDE 13 — The flywheel (~50 sec)
 > "So how do 3 become 178 without a mandate? A flywheel. **Prove** the owner economics on the three we have. **Amplify** into peer-proof — case study, peer webinar, owner-to-owner intros. **Endorse** — take that proof to the franchisor and earn preferred-vendor status plus a place in onboarding. **Convert** in regional waves, influencers first, with white-glove migration. And **default** — make TrueRestore the assumed standard, bundled into new-franchisee onboarding. I'm not trying to make 175 cold sales. I'm trying to make *one* network decision, then let peer-proof and endorsement carry it. Seattle starts the wheel; endorsement gives it torque."
 
 *Advance.*
 
-## SLIDE 13 — Proof & champion engine (~55 sec) — **the concrete "how"**
+## SLIDE 14 — Proof & champion engine (~55 sec) — **the concrete "how"**
 > "Let me get concrete about how one happy user becomes a hundred and seventy-four, because that's the real question. Five steps. One — I *confirm* the ROI: I sit with Seattle and pull the real before-and-after — approved-ticket percentage, cycle time, hours saved — and re-derive that eleven-point-six on *their* numbers. That's also where I find out, honestly, whether it holds for this network. Two — I get the *sign-off*: I turn it into a one-page, dollars-per-job case study the owner reviews and approves, so the proof is in *their* words, not mine. Three — I *activate* them as a champion: a reference, a testimonial, and a product-advisory seat, because giving input creates ownership. Four — I get the *introductions*: 'who are two or three owners you respect who'd take your call?' Seattle vouches, I take it warm. And five — the peer *re-proves* it themselves with the coexist trial, and becomes the next reference.
 >
 > Here's the insight that makes it compound: the champion doesn't just refer me — *they re-prove the ROI for each peer*, because an owner trusts another owner's numbers, not a vendor's. That's the engine, and San Bernardino and Austin are where I prove it repeats before I scale."
 
 *Advance.*
 
-## SLIDE 14 — The contrarian call (~55 sec) — **slow down here, this is your POV**
+## SLIDE 15 — The contrarian call (~55 sec) — **slow down here, this is your POV**
 > "Here's where I'd do something counterintuitive, and I'll defend it. The obvious move is to run to the franchisor first for a top-down blessing. I would deliberately *not* do that.
 >
 > Because endorsement without proof is weak — and worse, a lukewarm 'yeah, we looked at it' from the franchisor can actually *inoculate* the whole network against us. Now every owner has a reason to wait. So I'd stay bottoms-up until I have eight to ten vocal, results-backed owners — and *then* walk into the franchisor with a groundswell they can't ignore, so the endorsement is a formality, not a favor. Earn the FAC. Don't beg it."
@@ -120,14 +125,17 @@
 
 *Advance.*
 
-## SLIDE 15 — The sequence (~40 sec)
+## SLIDE 16 — The sequence (~40 sec)
 > "Concretely, and time-boxed. First 30 days: anchor the proof — a deep review with Seattle for real numbers, a success sprint on the two quiet users, and map the franchisor org and the Voda channel. Days 30–90: manufacture momentum — publish the case study, run the first peer webinar, and take the business case to Molzer, the COO. Quarter two to three: convert the first wave — the council and multi-unit influencers, with a group offer and white-glove migration, and own the conference stage. Quarter three on: scale region by region to network standard, and embed us in onboarding so growth becomes automatic."
+
+*(Optional VP-signal aside, if time allows — the field-investment I'd deploy:)*
+> "And I'd back the sequence with a real field-investment budget — convention sponsorship, in-person time with Seattle and the quiet users, owner hospitality where the FAC conversations actually happen, and professional case-study production. Roughly $35–75K a year to unlock the $630K, tied to milestones. I'd bring a plan with a number, not a blank check."
 
 *Advance.*
 
 ---
 
-## SLIDE 16 — How I'd land them (~50 sec) — **the two moves that de-risk it**
+## SLIDE 17 — How I'd land them (~50 sec) — **the two moves that de-risk it**
 > "Two moves make this actually work. First — I don't ask anyone to rip out Encircle. I have them keep it and run TrueRestore on three or four live claims *in parallel* — a short, comped trial, so they're never double-paying. The owner feels the higher approved ticket on their own jobs at zero risk, and only *then* drops Encircle — which is where the software-wash economics kick in. It's a trial, not a migration, and that turns the biggest objection, switching cost, into a no-brainer.
 >
 > Second — my beachhead is the multi-unit owners, the ones running four-plus territories. One sale there is several locations converted *and* a respected advisory-council voice. In a peer network density beats breadth — a few undeniable proof clusters tip the network faster than scattered logos. Land the loud, respected owners and the middle of the curve follows."
@@ -136,24 +144,27 @@
 
 ---
 
-## SLIDE 17 — Sales process (~45 sec)
+## SLIDE 18 — Sales process (~45 sec)
 > "The process I'd actually run. A location pipeline, repeated about 175 times: Aware, Qualified, Value-proven, Committed, Adopted, Advocate. Notice the last two. Most reps stop at Committed — signed. In a peer network that's a mistake, because an unused seat doesn't just churn, it becomes *negative* proof — 'we tried it, didn't stick.' So adoption is inside my funnel on purpose, and the advocates it produces feed the next wave. The sale isn't done at signature; it's done when they're getting results and willing to say so."
 
 *Advance.*
 
-## SLIDE 18 — Qualified vs Committed (~40 sec)
+## SLIDE 19 — Qualified vs Committed (~40 sec)
 > "And because you asked what those words mean with independent owners: **Qualified** is fit plus pain plus authority plus timing — they're claims-driven, on Encircle, the owner *is* the buyer, and there's a real trigger like busy season or a renewal. **Committed** is my anti-drift test — it's a *date*, not a good feeling: a scheduled go-live, a real migration plan off Encircle, a named user on the truck, and an agreed definition of what 'this worked' looks like in 30 days — so the renewal is pre-sold at the moment I close."
 
 *Advance.*
 
-## SLIDE 19 — Toolstack (~45 sec)
-> "Tools — and I'll tie each to a job, not just name-drop. Sales Navigator, Apollo, and Clay to build and enrich the 178-location map and find the council and multi-unit owners. A CRM as the single source of truth — the whole network as one strategic account, a record per location, stages from Aware to Advocate. Outreach and Gong to run and coach the motion. But the one most reps skip and that matters most here: a real *reference and advocacy engine* — systematizing Seattle into peer-proof, matching references to prospects by region, hosting owner webinars. In a peer-driven network, that's the highest-ROI tool I own. Principle: one system of record, everything feeds it."
+## SLIDE 20 — Toolstack (~45 sec)
+> "Tools — and I'll tie each to a job, not just name-drop. Sales Navigator, Apollo, and Clay to build and enrich the 178-location map and find the council and multi-unit owners. A CRM as the single source of truth — the whole network as one strategic account, a record per location, stages from Aware to Advocate. Outreach and Gong to run and coach the motion. And for me as the leader — team-visibility: pipeline health across all 178, per-region rep activity, and a defensible forecast, with Gong doubling as coaching, not just recording. But the one most reps skip and that matters most here: a real *reference and advocacy engine* — systematizing Seattle into peer-proof, matching references to prospects by region, hosting owner webinars. In a peer-driven network, that's the highest-ROI tool I own. Principle: one system of record, everything feeds it."
+
+*(If they want proof, not just tool names — point to the enrichment strip:)*
+> "And this isn't theory — I've already enriched the whole buying committee: Waxman, Molzer, Courtney, Sifuentes, Black on LinkedIn, plus verified email and direct dial via ZoomInfo, RocketReach, ContactOut. But aggregators decay — ZoomInfo still tags Waxman 'Business Development' — so I verify before I send."
 
 *Advance.*
 
 ---
 
-## SLIDE 20 — ROI live demo (~3.5 min) — **the centerpiece; drive it live**
+## SLIDE 21 — ROI live demo (~3.5 min) — **the centerpiece; drive it live**
 > "Let's do the money, live — and I'm going to start conservative on purpose."
 
 *(Screen is already on Conservative — 10x, ~$1.9M.)*
@@ -171,7 +182,7 @@
 
 *Advance.*
 
-## SLIDE 21 — The number I'd own (~2 min) — **the VP moment; say it with conviction**
+## SLIDE 22 — The number I'd own (~2 min) — **the VP moment; say it with conviction**
 > "A VP carries a target, so here's mine — and it's realistic, because this is a two-to-three-year capture, not a one-year hero sprint.
 >
 > Year one: about 40 locations live *and adopted* — roughly a fifth of the open network — around $140K in new recurring revenue, and preferred-vendor status secured. Adopted, not just signed. Years two and three: cross 50% on peer-proof and onboarding-default, and get to network standard, 80-plus percent.
@@ -186,17 +197,17 @@
 
 ---
 
-## SLIDE 22 — What's hard (~1 min) — **don't soften this**
+## SLIDE 23 — What's hard (~1 min) — **don't soften this**
 > "Let me be honest about where this stalls, because pretending it won't is how these die. No one can force it — so I chase endorsement and peer-proof, not a signature. Quiet users can churn — so adoption is in my funnel. Encircle has switching cost — so migration is a product, not a promise. And my read on the curve: a network adopts on a trust-gated S-curve, over two to three years, and the bottleneck is onboarding capacity, not sales. I'd rather have 140 delighted, adopted locations than 178 half-used seats that churn. Network *standard* doesn't need 100% — it needs enough density that we're the obvious default."
 
 *Advance.*
 
-## SLIDE 23 — Research / confidence (~30 sec)
-> "And to close the loop on honesty: here's what I *know* — entity confirmed, the product, the claims economics. What I'm *inferring* — the council, the likely sponsor, and that the brief's founding story is stylized, so I use your numbers and flag the delta. And what I'd *verify* on call one — the vendor-program owner, the Voda relationship, Seattle's real figures, and whether the 11.6% generalizes. I'd rather show you the gaps than paper over them."
+## SLIDE 24 — Research / confidence (~30 sec)
+> "And to close the loop on honesty: here's what I *know* — entity confirmed, the product, the claims economics — and every source on this deck is a live link you can click. What I'm *inferring* — the council, the likely sponsor, and that the brief's founding story is stylized, so I use your numbers and flag the delta. And what I'd *verify* on call one — the vendor-program owner, the Voda relationship, Seattle's real figures, and whether the 11.6% generalizes. I'd rather show you the gaps than paper over them."
 
 *Advance.*
 
-## SLIDE 24 — Close & questions (~45 sec)
+## SLIDE 25 — Close & questions (~45 sec)
 > "So — endorsement, not a mandate. Seattle starts the wheel. Earn the network, don't force it. Month one, if I'm in the seat: I'd anchor the proof on the three we have, open the franchisor and the Voda channel, and start building the reference engine — prove it repeats before I spend anyone's credibility.
 >
 > That's my plan. I'm sure you're going to poke holes in it — good, let's do that. Throw me the wrinkles and I'll re-plan live."
@@ -205,7 +216,7 @@
 
 ---
 
-## SLIDE 25 (BACKUP) — TrueRestore vs Encircle — **jump here (press M) only if challenged**
+## SLIDE 26 (BACKUP) — TrueRestore vs Encircle — **jump here (press M) only if challenged**
 Don't present this linearly. Pull it up if they ask "how are you different from Encircle?" or "why would owners switch?"
 > "Fair question — and I'll be straight: Encircle is genuinely good at what it does. Field documentation, photos, contents, moisture — mature, familiar, installed across a lot of the network. I'm not going to tell you it's broken. My point is it's *incomplete*. It stops at capture — the owner still bounces to Xactimate to build the estimate that actually gets paid. TrueRestore closes that loop: the documentation *becomes* the carrier-ready estimate, which is where the higher approved ticket and the faster cycle time come from. So I don't fight a feature-by-feature war — I'd lose some of those and it doesn't matter. I win on one number: dollars per approved job. And I let a peer make the case — Seattle telling another owner 'my approved tickets went up' beats anything I could say. Where Encircle genuinely wins today is inertia and switching cost — which is *exactly* why I lead with the coexist trial, so nobody has to rip anything out to see the difference."
 
@@ -231,6 +242,12 @@ Don't present this linearly. Pull it up if they ask "how are you different from 
 **"Why should the franchisor care?"**
 > "Because it's their KPI, not mine. Franchisee profitability and consistency *is* the franchisor's job. I'm not asking them to sell software — I'm handing them a lift to their owners' P&L, a royalty bump for HQ, and a story for the conference stage. I make Molzer, the COO, the hero."
 
+**"How would you actually spend it — what's your budget / field investment?"**
+> "A field-investment budget, deployed where trust is built: the annual convention stage, in-person time with Seattle and the quiet users, owner hospitality where the real FAC conversations happen, and professional case-study production. Roughly $35–75K a year against $630K of open ARR — tied to milestones, and I'd cut anything not feeding the flywheel. I'd bring a plan with a number, not a blank check."
+
+**"How do you know your stakeholder names are current?"**
+> "I don't assume — I verified them off AllDry's own team page, and every name on the deck is a live link to its source. Current titles are a first-call confirmation, not a forecast input. In fact the team page corrected the aggregator data I started with — which is exactly why the aggregators still mis-tag Waxman."
+
 ---
 
 ## YOUR 5 MINUTES OF QUESTIONS (pick 3–4, listen hard)
@@ -239,6 +256,7 @@ Don't present this linearly. Pull it up if they ask "how are you different from 
 - What's the real state of the franchisor relationship today — warm, neutral, or unaware of us?
 - What's the target — network penetration, ARR, or logos — and on what timeline?
 - Do I get CS/onboarding and marketing to run the migration and reference engine, or do I build it?
+- How much budget/pricing latitude do I have — for a network group offer and for field investment?
 - Is AllDry the template — are we running this franchise-network play across other brands?
 
 ---
@@ -255,7 +273,7 @@ Don't present this linearly. Pull it up if they ask "how are you different from 
 ---
 
 ## GLOSSARY — terms you must own cold
-**FAC** = Franchise Advisory Council (elected owners who advise HQ; their endorsement moves the network). · **Xactimate** = the estimating software carriers accept to pay a claim. · **ESX** = the Xactimate estimate file TrueRestore auto-generates. · **Approved ticket** = the dollar amount the carrier actually approves per job (what the owner collects). · **Supplement** = a follow-up ask to the carrier for scope missed/denied first time — fewer of these = the +11.6%. · **Mitigation** = the emergency drying phase (bulk of inbound claim volume). · **Cycle time** = days from job start to a carrier-accepted estimate. · **Encircle** = the incumbent capture tool (documents, but doesn't build the estimate). · **Preferred/approved vendor** = a tool the franchisor endorses and steers owners toward (rarely mandates). · **Royalty** = the % of franchisee gross HQ collects (~6% at AllDry). · **ARR/ACV** = Annual Recurring Revenue / Annual Contract Value ($641K full network; ~$11K live). · **CAC/LTV** = Customer Acquisition Cost / Lifetime Value. · **Contribution margin** = revenue minus variable cost — near-100% on the ticket lift because the work's already done.
+**FAC** = Franchise Advisory Council (elected owners who advise HQ; their endorsement moves the network). · **Xactimate** = the estimating software carriers accept to pay a claim. · **ESX** = the Xactimate estimate file TrueRestore auto-generates. · **Approved ticket** = the dollar amount the carrier actually approves per job (what the owner collects). · **Supplement** = a follow-up ask to the carrier for scope missed/denied first time — fewer of these = the +11.6%. · **Mitigation** = the emergency drying phase (bulk of inbound claim volume). · **Cycle time** = days from job start to a carrier-accepted estimate. · **Encircle** = the incumbent capture tool (documents, but doesn't build the estimate). · **Preferred/approved vendor** = a tool the franchisor endorses and steers owners toward (rarely mandates). · **Royalty** = the % of franchisee gross HQ collects (~6% at AllDry). · **TPA** = Third-Party Administrator (manages claims on a carrier's behalf; part of the claims chain). · **ARR/ACV** = Annual Recurring Revenue / Annual Contract Value ($641K full network; ~$11K live). · **CAC/LTV** = Customer Acquisition Cost / Lifetime Value. · **Contribution margin** = revenue minus variable cost — near-100% on the ticket lift because the work's already done.
 
 ---
 
@@ -264,5 +282,7 @@ Don't present this linearly. Pull it up if they ask "how are you different from 
 - **$3,800 avg ticket** — national average water-damage job ($3,814–$3,867, Angi/HomeAdvisor).
 - **45% margin** — water-damage gross margin is 50–80%; the lift is near-pure margin (work already done), so 45% is conservative.
 - **Encircle $270–$650/mo** — real public pricing (getencircle.com); TrueRestore $300 = a wash.
-- **$300/mo, 178 locations, 3 live** — from the brief (stylized; real brand is ~2015-founded, ~500+ territories — I use the brief's figures as operative).
+- **~22.6% of home claims** — water damage + freezing, 2019–2023 (ConsumerAffairs / III); freeze-belt burst-pipe claims routinely $30–50K — the basis for the freeze-belt/storm target sequencing.
+- **$300/mo, 178 locations, 3 live** — from the brief (stylized; real brand is ~2014-founded, growing territory count — I use the brief's figures as operative and flag the delta).
 - **~6% royalty** — All Dry franchise disclosures / listings.
+- **Field investment ($35–75K/yr)** — my own estimate (Inferred): convention sponsorship, T&E, owner hospitality, case-study production — right-sized against the franchisor's real event calendar and our CAC target.
