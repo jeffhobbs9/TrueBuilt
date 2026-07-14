@@ -447,6 +447,7 @@ body.menu-on .menu{display:block;}
     <button class="scn-btn" id="scn-aggr" onclick="scenario('aggr')">Aggressive</button>
     <span style="width:1px;height:15px;background:var(--border);margin:0 4px;"></span>
     <button class="scn-btn" id="scn-cap" onclick="toggleCap()" title="Optional: adds the extra jobs an owner can take with the freed-up estimator time. Off by default.">+ capacity upside</button>
+    <span style="font-family:'Space Mono',monospace;font-size:clamp(9px,1vw,12px);color:var(--muted);letter-spacing:.06em;margin-left:auto;">CAPTURE / CLAIM <b class="ambt" id="out-upliftp">5.0%</b> <span style="opacity:.6;">· brief's case study = 11.6%</span></span>
   </div>
   <div class="roi-wrap">
     <div>
@@ -461,13 +462,13 @@ body.menu-on .menu{display:block;}
         <div class="roi-metric"><div class="n grnt" id="out-labor">—</div><div class="l">Labor saved / loc / yr</div></div>
         <div class="roi-metric"><div class="n tealt" id="out-lroi">—</div><div class="l">Labor-only ROI</div></div>
         <div class="roi-metric"><div class="n tealt" id="out-hrs">—</div><div class="l">Estimator hrs saved / loc</div></div>
-        <div class="roi-metric"><div class="n grnt" id="out-total">—</div><div class="l">+ ticket upside = total / loc</div></div>
+        <div class="roi-metric"><div class="n grnt" id="out-total">—</div><div class="l">+ capture/claim = total / loc</div></div>
       </div>
       <div class="roi-punch" style="margin-top:1vh;"><strong class="tealt">Before a dollar of ticket lift</strong>, the labor saved alone is a <strong class="tealt" id="out-lroi2">—</strong> return — and TrueRestore ($300) ≈ their Encircle spend, so net tool cost ≈ zero. Across 175 locations at <span id="out-adoptp">30%</span> adoption: <strong class="grnt" id="out-netlabor">—</strong> reclaimed labor · <strong class="tealt" id="out-y1arr">—</strong> ARR to us · <strong class="ambt" id="out-nettotal">—</strong> total owner value with the ticket upside layered on.</div>
       <div style="font-size:clamp(10px,1.05vw,13px);color:var(--muted);margin-top:.8vh;">Default is a <strong class="tealt">floor</strong> — labor + capture only. Toggle <strong class="tealt">+ capacity upside</strong> to add the extra jobs from freed time; <strong>faster cash flow</strong> from quicker cycle time I leave as named upside, not a number.</div>
     </div>
   </div>
-  <div class="snotes">Your centerpiece — <strong>drive it live.</strong> The reframe: the <strong>primary ROI is labor/time saved</strong>, built on TrueBuilt's published <strong>~70% faster</strong> estimate build and researched estimator pay (~$50/hr loaded) — <em>not</em> the case-study 11.6%. So even if someone challenges the ticket lift, the labor math alone returns <strong>3–4×</strong>. Open <strong>Conservative (50% time saved)</strong>, then click <strong>Base</strong> to snap it to <strong>70% — TrueBuilt's own number</strong> — so <em>they</em> push it up. Ask them to throw you a real one ("your estimator's rate? jobs a month?") and move the sliders. Then land the <strong>enterprise roll-up</strong>: 175 locations reclaim <strong>$0.6–1.2M in labor a year</strong>. The approved-ticket lift is layered on as the "total / loc" tile — upside, not the foundation — and it's still a <strong>software-wash</strong> vs Encircle (~$455/mo) so net tool cost ≈ zero. <strong>Honest tag:</strong> 70% is TrueBuilt's construction-takeoff figure applied to restoration estimating on the same no-re-keying mechanism — I'd verify the restoration number against Seattle's actuals. I deliberately don't monetize cycle-time (uncounted upside) and there's no "missed-bid" line (restoration is inbound insurance work) — keeps it conservative.</div>
+  <div class="snotes">Your centerpiece — <strong>drive it live.</strong> The reframe: the <strong>primary ROI is labor/time saved</strong>, built on TrueBuilt's published <strong>~70% faster</strong> estimate build and researched estimator pay (~$50/hr loaded) — <em>not</em> the case-study 11.6%. So even if someone challenges the ticket lift, the labor math alone returns <strong>3–4×</strong>. Open <strong>Conservative (50% time saved)</strong>, then click <strong>Base</strong> to snap it to <strong>70% — TrueBuilt's own number</strong> — so <em>they</em> push it up. Ask them to throw you a real one ("your estimator's rate? jobs a month?") and move the sliders. Then land the <strong>enterprise roll-up</strong>: 175 locations reclaim <strong>$0.6–1.2M in labor a year</strong>. The approved-ticket lift is layered on as the "total / loc" tile — upside, not the foundation — and it's still a <strong>software-wash</strong> vs Encircle (~$455/mo) so net tool cost ≈ zero. <strong>Honest tag:</strong> 70% is TrueBuilt's construction-takeoff figure applied to restoration estimating on the same no-re-keying mechanism — I'd verify the restoration number against Seattle's actuals. I deliberately don't monetize cycle-time (uncounted upside) and there's no "missed-bid" line (restoration is inbound insurance work) — keeps it conservative. <strong>If asked about denied/missed claims:</strong> the "capture/claim" % (the brief's 11.6% on Aggressive) <em>is</em> the denied-line-items story — better docs → fewer denials → higher approved ticket; I don't add a separate "denied claims" line or it double-counts. "Missed claims" from no labor capacity = the <strong>+ capacity upside</strong> toggle. So denied + missed are both already represented — as capture and as capacity — not bolted on twice.</div>
 </section>
 
 <!-- ══════════ 15b · THE NUMBER ══════════ -->
@@ -659,7 +660,7 @@ function calcROI(){
   s('out-lroi',laborROI>0?laborROI.toFixed(0)+'x':'—'); s('out-lroi2',laborROI>0?laborROI.toFixed(0)+'x':'—');
   s('out-hrs',Math.round(hrsSaved)+' hrs'); s('out-total',fmt(ownerVal));
   s('out-netlabor',fmt(netLabor)); s('out-y1arr',fmt(y1ARR)); s('out-nettotal',fmt(netTotal));
-  s('out-adoptp',Math.round(R.adopt)+'%');
+  s('out-adoptp',Math.round(R.adopt)+'%'); s('out-upliftp',R.uplift.toFixed(1)+'%');
 }
 
 render(false);
