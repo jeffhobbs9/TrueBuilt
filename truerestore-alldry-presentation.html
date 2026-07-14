@@ -42,7 +42,9 @@ ul.blts li strong{color:#fff;font-weight:600;}
 /* speaker notes live inside each slide but only render in the notes panel */
 .snotes{display:none;}
 a{color:var(--teal);text-decoration:none;border-bottom:1px dotted rgba(37,196,184,.5);}
-abbr[title]{text-decoration:underline dotted rgba(245,166,35,.6);text-underline-offset:3px;cursor:help;}
+abbr[data-tip]{text-decoration:underline dotted rgba(245,166,35,.6);text-underline-offset:3px;cursor:help;}
+#gtip{position:fixed;z-index:99999;max-width:290px;background:#0b1418;border:1px solid var(--teal);color:#e8f0f2;font-family:'Inter',system-ui,sans-serif;font-size:13px;line-height:1.4;padding:8px 11px;border-radius:7px;box-shadow:0 6px 26px rgba(0,0,0,.55);pointer-events:none;opacity:0;transition:opacity .1s;}
+#gtip.show{opacity:1;}
 a:hover{color:#fff;border-bottom-color:#fff;}
 .srcstrip{margin-top:2vh;font-family:'Space Mono',monospace;font-size:clamp(11px,1.25vw,15px);color:var(--muted);line-height:1.7;}
 .srcstrip a{margin-right:2px;}
@@ -263,7 +265,7 @@ body.menu-on .menu{display:block;}
   <div class="cards c4">
     <div class="pcard gr fragment"><span class="tag">Champion <span class="conf conf-k">K</span></span><h3><a href="https://www.linkedin.com/in/thompser" target="_blank" rel="noopener">Eric Thompson</a></h3><p><strong>Ex-Microsoft &amp; Pega</strong> — which is <em>why</em> Seattle is our daily-using product-refiner. The flywheel's ignition; protect above all.</p></div>
     <div class="pcard am fragment"><span class="tag">Expansion lab <span class="conf conf-k">K</span></span><h3>Austin + San Bernardino</h3><p>Austin = <strong>David &amp; Pauline</strong> (3 territories); SB quiet too. Prove quiet → advocate — the playbook for the other 175.</p></div>
-    <div class="pcard am fragment"><span class="tag">Network shapers <span class="conf conf-i">I</span></span><h3>Multi-unit &amp; the FAC</h3><p>Franchise reviews cite owners running <strong>~21 locations (San Diego)</strong> &amp; ~6 (Tampa Bay) — <strong>one yes ≈ ~20 locations.</strong> The <strong>FAC</strong> moves peers faster than any email. <span class="conf conf-v">Verify the 21-owner's name → warm intro via Seattle</span></p></div>
+    <div class="pcard am fragment"><span class="tag">Network shapers <span class="conf conf-i">I</span></span><h3>Multi-unit &amp; the FAC</h3><p>Franchise reviews name multi-unit owners — <strong>Lisa (~21 locations, San Diego)</strong>, <strong>Colin (~6, Tampa)</strong> — so <strong>one yes ≈ ~20 locations.</strong> The <strong>FAC</strong> moves peers faster than any email. <span class="conf conf-v">Warm intro to Lisa via Seattle · verify identity</span></p></div>
     <div class="pcard am fragment"><span class="tag">Regional clusters <span class="conf conf-i">I</span></span><h3>High-claims metros</h3><p>Freeze-belt + storm markets feel the pain most. Sequence to where the math is loudest.</p></div>
   </div>
   <div class="srcstrip fragment" style="margin-top:9px;"><strong style="color:var(--amber);">Where I'd sequence the rollout →</strong>
@@ -697,12 +699,30 @@ const GLOSS = {
     const s=n.nodeValue, frag=document.createDocumentFragment(); let last=0,m; g.lastIndex=0;
     while((m=g.exec(s))){
       if(m.index>last) frag.appendChild(document.createTextNode(s.slice(last,m.index)));
-      const ab=document.createElement('abbr'); ab.title=GLOSS[m[1]]; ab.textContent=m[1]; frag.appendChild(ab);
+      const ab=document.createElement('abbr'); ab.setAttribute('data-tip',GLOSS[m[1]]); ab.textContent=m[1]; frag.appendChild(ab);
       last=m.index+m[1].length;
     }
     if(last<s.length) frag.appendChild(document.createTextNode(s.slice(last)));
     n.parentNode.replaceChild(frag,n);
   });
+})();
+
+// ── Instant custom tooltip for the acronyms (native title is too slow / flaky in fullscreen)
+(function(){
+  const tip=document.createElement('div'); tip.id='gtip'; document.body.appendChild(tip);
+  function show(a){
+    const host=document.fullscreenElement||document.body;
+    if(tip.parentNode!==host) host.appendChild(tip);
+    tip.textContent=a.getAttribute('data-tip');
+    tip.style.left='0px'; tip.style.top='0px';
+    const r=a.getBoundingClientRect(), tr=tip.getBoundingClientRect();
+    let left=r.left+r.width/2-tr.width/2;
+    left=Math.max(8,Math.min(left,window.innerWidth-tr.width-8));
+    let top=r.top-tr.height-9; if(top<8) top=r.bottom+9;
+    tip.style.left=left+'px'; tip.style.top=top+'px'; tip.classList.add('show');
+  }
+  document.addEventListener('mouseover',e=>{ const a=e.target.closest&&e.target.closest('abbr[data-tip]'); if(a) show(a); });
+  document.addEventListener('mouseout',e=>{ const a=e.target.closest&&e.target.closest('abbr[data-tip]'); if(a) tip.classList.remove('show'); });
 })();
 </script>
 </body>
