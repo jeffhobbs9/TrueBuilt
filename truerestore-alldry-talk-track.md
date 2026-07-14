@@ -193,7 +193,7 @@
 >
 > Why I'd own this account: franchise means low acquisition cost — peer-proof and the channel replace paid acquisition — high retention once we're the tool they document every job in, and built-in expansion as new franchisees onboard by default. Low CAC, high lifetime value. The metric I'd carry isn't logos signed — it's *adopted* network penetration.
 >
-> And one lever most people miss: the franchisor takes about a six-percent royalty on franchisee gross. So a higher approved ticket doesn't just help owners — roughly eight thousand dollars a location, about one-point-four million network-wide, flows straight to *headquarters'* top line. That reframes the whole endorsement conversation. I'm not asking them for a favor — I'm handing them a seven-figure royalty lift. Preferred-vendor status becomes their financial self-interest."
+> And one lever most people miss: AllDry takes a seven-percent royalty on franchisee gross — that's the real number from their FDD. So a higher approved ticket doesn't just help owners — roughly ninety-three hundred dollars a location, about one-point-six million network-wide, flows straight to *headquarters'* top line. That reframes the whole endorsement conversation. I'm not asking them for a favor — I'm handing them a seven-figure royalty lift. Preferred-vendor status becomes their financial self-interest."
 
 *Advance.*
 
@@ -272,13 +272,13 @@ Don't present this linearly. Pull it up if they ask "how are you different from 
 3. **Win with peer-proof + endorsement, not a mandate — and earn the endorsement, don't beg it.**
 4. **Land them by coexisting (run alongside Encircle, no rip-out) and beachhead on multi-unit owners.**
 5. **I own a number: ~40 adopted / ~$140K in year one; 2–3 year capture; bottleneck is onboarding, not leads.**
-6. **The royalty lever: ~6% of the ticket lift is HQ's money — endorsement is their self-interest.**
+6. **The royalty lever: 7% of the ticket lift is HQ's money (real FDD figure) — endorsement is their self-interest.**
 7. **ROI basis is LABOR, not the case study: ~70% faster estimates × a real wage = 3–4x, before any revenue lift. The +11.6% is layered on as upside I'd verify.**
 
 ---
 
 ## GLOSSARY — terms you must own cold
-**FAC** = Franchise Advisory Council (elected owners who advise HQ; their endorsement moves the network). · **Xactimate** = the estimating software carriers accept to pay a claim. · **ESX** = the Xactimate estimate file TrueRestore auto-generates. · **Approved ticket** = the dollar amount the carrier actually approves per job (what the owner collects). · **Supplement** = a follow-up ask to the carrier for scope missed/denied first time — fewer of these = the +11.6%. · **Mitigation** = the emergency drying phase (bulk of inbound claim volume). · **Cycle time** = days from job start to a carrier-accepted estimate. · **Encircle** = the incumbent capture tool (documents, but doesn't build the estimate). · **Preferred/approved vendor** = a tool the franchisor endorses and steers owners toward (rarely mandates). · **Royalty** = the % of franchisee gross HQ collects (~6% at AllDry). · **TPA** = Third-Party Administrator (manages claims on a carrier's behalf; part of the claims chain). · **ARR/ACV** = Annual Recurring Revenue / Annual Contract Value ($641K full network; ~$11K live). · **CAC/LTV** = Customer Acquisition Cost / Lifetime Value. · **Contribution margin** = revenue minus variable cost — near-100% on the ticket lift because the work's already done.
+**FAC** = Franchise Advisory Council (elected owners who advise HQ; their endorsement moves the network). · **Xactimate** = the estimating software carriers accept to pay a claim. · **ESX** = the Xactimate estimate file TrueRestore auto-generates. · **Approved ticket** = the dollar amount the carrier actually approves per job (what the owner collects). · **Supplement** = a follow-up ask to the carrier for scope missed/denied first time — fewer of these = the +11.6%. · **Mitigation** = the emergency drying phase (bulk of inbound claim volume). · **Cycle time** = days from job start to a carrier-accepted estimate. · **Encircle** = the incumbent capture tool (documents, but doesn't build the estimate). · **Preferred/approved vendor** = a tool the franchisor endorses and steers owners toward (rarely mandates). · **Royalty** = the % of franchisee gross HQ collects (7% at AllDry, per FDD). · **TPA** = Third-Party Administrator (manages claims on a carrier's behalf; part of the claims chain). · **ARR/ACV** = Annual Recurring Revenue / Annual Contract Value ($641K full network; ~$11K live). · **CAC/LTV** = Customer Acquisition Cost / Lifetime Value. · **Contribution margin** = revenue minus variable cost — near-100% on the ticket lift because the work's already done.
 
 ---
 
@@ -292,5 +292,5 @@ Don't present this linearly. Pull it up if they ask "how are you different from 
 - **Encircle $270–$650/mo** — real public pricing (getencircle.com); TrueRestore $300 = a wash.
 - **~22.6% of home claims** — water damage + freezing, 2019–2023 (ConsumerAffairs / III); freeze-belt burst-pipe claims routinely $30–50K — the basis for the freeze-belt/storm target sequencing.
 - **$300/mo, 178 locations, 3 live** — from the brief (stylized; real brand is ~2014-founded, growing territory count — I use the brief's figures as operative and flag the delta).
-- **~6% royalty** — All Dry franchise disclosures / listings.
+- **7% royalty** — All Dry FDD (2022–2024 FDD reviews: 7% of gross + 1% brand fund + 4% local marketing). Applies to the ticket-lift (upside) revenue: ~$9.3K/loc, ~$1.6M network at full adoption.
 - **Field investment ($35–75K/yr)** — my own estimate (Inferred): convention sponsorship, T&E, owner hospitality, case-study production — right-sized against the franchisor's real event calendar and our CAC target.
