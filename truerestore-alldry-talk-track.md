@@ -87,7 +87,9 @@
 *Advance.*
 
 ## SLIDE 10 — Layer 2, the owners (~40 sec)
-> "Layer two is where the real persuasion happens — the owners. Seattle, the champion, protect above all. San Bernardino and Austin, the expansion lab. Then the network shapers: the multi-unit owners — and these are big; All Dry's own marketing cites one running about 21 territories in San Diego, so landing a single owner can mean twenty locations — plus the advisory council, whose opinion moves peers faster than any franchisor email. I want the loud, respected voices first. And I'd sequence by region, leading with the high-claims-volume metros where the pain, and the math, are loudest — the freeze-belt and storm markets. Water and freezing drive about 22.6% of all home claims, so I point the flywheel where the tickets are biggest. In this industry trust travels locally — so I make proof travel locally too."
+> "Layer two is where the real persuasion happens — the owners. The champion is **Eric Thompson** in Seattle, and here's a detail I love: he's **ex-Microsoft and Pegasystems**, a tech guy — which is exactly *why* he's the one using our product daily and helping refine it. Protect him above all. Austin — that's **David and Pauline, running three territories** — plus San Bernardino are my expansion lab, and they're the real test: can I turn a quiet, *non-tech* owner into an advocate? Then the network shapers: the multi-unit owners — these are big; All Dry's own marketing cites one running about 21 territories in San Diego, so landing a single owner can mean twenty locations — plus the advisory council, whose opinion moves peers faster than any franchisor email.
+>
+> And notice — I already pulled these names *from the outside*: Thompson, Daquino in the Inland Empire, Biggs in Tampa, off BBB and LinkedIn. That's the from-outside research the brief asked for; the influential-owner roster is what I'd complete with Seattle on call one. I'd also sequence by region, leading with the high-claims metros — freeze-belt and storm — where water and freezing drive about 22.6% of all home claims. Trust travels locally, so I make proof travel locally too."
 
 *Advance.*
 
