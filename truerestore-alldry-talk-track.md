@@ -149,6 +149,9 @@
 ## SLIDE 18 — Sales process (~45 sec)
 > "The process I'd actually run. A location pipeline, repeated about 175 times: Aware, Qualified, Value-proven, Committed, Adopted, Advocate. Notice the last two. Most reps stop at Committed — signed. In a peer network that's a mistake, because an unused seat doesn't just churn, it becomes *negative* proof — 'we tried it, didn't stick.' So adoption is inside my funnel on purpose, and the advocates it produces feed the next wave. The sale isn't done at signature; it's done when they're getting results and willing to say so."
 
+*(If they want to see the play itself:)*
+> "And I've built the actual owner discovery call-sheet — a 20-minute first call where every question does double duty: it qualifies the owner *and* collects the exact numbers I plug into that ROI live. It's in the leave-behind."
+
 *Advance.*
 
 ## SLIDE 19 — Qualified vs Committed (~40 sec)
