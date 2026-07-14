@@ -42,6 +42,7 @@ ul.blts li strong{color:#fff;font-weight:600;}
 /* speaker notes live inside each slide but only render in the notes panel */
 .snotes{display:none;}
 a{color:var(--teal);text-decoration:none;border-bottom:1px dotted rgba(37,196,184,.5);}
+abbr[title]{text-decoration:underline dotted rgba(245,166,35,.6);text-underline-offset:3px;cursor:help;}
 a:hover{color:#fff;border-bottom-color:#fff;}
 .srcstrip{margin-top:2vh;font-family:'Space Mono',monospace;font-size:clamp(11px,1.25vw,15px);color:var(--muted);line-height:1.7;}
 .srcstrip a{margin-right:2px;}
@@ -262,7 +263,7 @@ body.menu-on .menu{display:block;}
   <div class="cards c4">
     <div class="pcard gr fragment"><span class="tag">Champion <span class="conf conf-k">K</span></span><h3><a href="https://www.linkedin.com/in/thompser" target="_blank" rel="noopener">Eric Thompson</a></h3><p><strong>Ex-Microsoft &amp; Pega</strong> — which is <em>why</em> Seattle is our daily-using product-refiner. The flywheel's ignition; protect above all.</p></div>
     <div class="pcard am fragment"><span class="tag">Expansion lab <span class="conf conf-k">K</span></span><h3>Austin + San Bernardino</h3><p>Austin = <strong>David &amp; Pauline</strong> (3 territories); SB quiet too. Prove quiet → advocate — the playbook for the other 175.</p></div>
-    <div class="pcard am fragment"><span class="tag">Network shapers <span class="conf conf-i">I</span></span><h3>Multi-unit &amp; the FAC</h3><p>All Dry's own marketing cites owners running <strong>~21 territories (San Diego)</strong> &amp; ~6 (Tampa Bay) — <strong>one yes ≈ ~20 locations.</strong> The <strong>FAC</strong> moves peers faster than any email. <span class="conf conf-v">Verify the 21-owner's name → warm intro via Seattle</span></p></div>
+    <div class="pcard am fragment"><span class="tag">Network shapers <span class="conf conf-i">I</span></span><h3>Multi-unit &amp; the FAC</h3><p>Franchise reviews cite owners running <strong>~21 locations (San Diego)</strong> &amp; ~6 (Tampa Bay) — <strong>one yes ≈ ~20 locations.</strong> The <strong>FAC</strong> moves peers faster than any email. <span class="conf conf-v">Verify the 21-owner's name → warm intro via Seattle</span></p></div>
     <div class="pcard am fragment"><span class="tag">Regional clusters <span class="conf conf-i">I</span></span><h3>High-claims metros</h3><p>Freeze-belt + storm markets feel the pain most. Sequence to where the math is loudest.</p></div>
   </div>
   <div class="srcstrip fragment" style="margin-top:9px;"><strong style="color:var(--amber);">Where I'd sequence the rollout →</strong>
@@ -369,7 +370,7 @@ body.menu-on .menu{display:block;}
   <h2>How I'd actually land them</h2>
   <div class="cards c2">
     <div class="pcard tl fragment"><span class="tag">Move 1 · kill the switching risk</span><h3>Coexist, don't rip-and-replace</h3><p>Don't ask them to drop Encircle. Keep it and run TrueRestore on <strong>3–4 live claims in parallel</strong> — a <strong>short, comped trial</strong>, so no double-paying. The owner <strong>feels the higher approved ticket at zero risk</strong>, then drops Encircle at switch (that's when the software-wash kicks in). Trial, not migration.</p></div>
-    <div class="pcard am fragment"><span class="tag">Move 2 · highest-leverage entry</span><h3>Beachhead = multi-unit owners</h3><p>Real and big — All Dry's own marketing cites an owner running <strong>~21 territories (San Diego)</strong>. So one sale isn't one location — it's up to <strong>~20 at once</strong>, plus a natural FAC voice. Density and credibility in a single conversation.</p></div>
+    <div class="pcard am fragment"><span class="tag">Move 2 · highest-leverage entry</span><h3>Beachhead = multi-unit owners</h3><p>Real and big — franchise reviews cite an owner ("Lisa") running <strong>~21 locations in San Diego</strong>. So one sale isn't one location — it's up to <strong>~20 at once</strong>, plus a natural FAC voice. Density and credibility in a single conversation.</p></div>
   </div>
   <div class="fragment" style="margin-top:1.4vh;font-size:clamp(15px,1.9vw,23px);color:var(--teal);font-weight:600;">Low-risk entry × high-leverage targets = the tipping point comes faster.</div>
   <div class="snotes">These two moves are what turn a good land-and-expand into a sharp one. <strong>Coexist-then-convert</strong> is the single biggest de-risker — the whole deal hinges on getting off Encircle, and "run it in parallel on a few real claims" removes the fear entirely. <strong>Multi-unit beachhead</strong> is leverage: one owner with 4 locations is 4 conversions plus an FAC voice. If they push "why not just go wide?" — "because density beats breadth in a peer network; I want undeniable proof clusters, not scattered logos."</div>
@@ -665,6 +666,44 @@ function calcROI(){
 
 render(false);
 calcROI();
+
+// ── Auto-tooltip acronyms (hover to see the meaning)
+const GLOSS = {
+  FAC:'Franchise Advisory Council — elected owners who advise HQ',
+  TPA:'Third-Party Administrator — manages claims on a carrier’s behalf',
+  ESX:'the Xactimate estimate file TrueRestore auto-generates',
+  ACV:'Annual Contract Value',
+  ARR:'Annual Recurring Revenue',
+  CAC:'Customer Acquisition Cost',
+  LTV:'Lifetime Value',
+  QBR:'Quarterly Business Review',
+  RIA:'Restoration Industry Association',
+  IICRC:'Institute of Inspection, Cleaning & Restoration Certification',
+  FDD:'Franchise Disclosure Document'
+};
+(function glossify(){
+  const rx = new RegExp('\\b(' + Object.keys(GLOSS).join('|') + ')\\b');
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+    acceptNode(n){
+      if(!n.nodeValue || !rx.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+      const t = n.parentNode && n.parentNode.tagName;
+      if(t==='ABBR'||t==='SCRIPT'||t==='STYLE'||t==='A') return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  const nodes=[]; while(walker.nextNode()) nodes.push(walker.currentNode);
+  const g = new RegExp('\\b(' + Object.keys(GLOSS).join('|') + ')\\b','g');
+  nodes.forEach(n=>{
+    const s=n.nodeValue, frag=document.createDocumentFragment(); let last=0,m; g.lastIndex=0;
+    while((m=g.exec(s))){
+      if(m.index>last) frag.appendChild(document.createTextNode(s.slice(last,m.index)));
+      const ab=document.createElement('abbr'); ab.title=GLOSS[m[1]]; ab.textContent=m[1]; frag.appendChild(ab);
+      last=m.index+m[1].length;
+    }
+    if(last<s.length) frag.appendChild(document.createTextNode(s.slice(last)));
+    n.parentNode.replaceChild(frag,n);
+  });
+})();
 </script>
 </body>
 </html>
