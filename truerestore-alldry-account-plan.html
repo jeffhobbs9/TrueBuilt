@@ -156,6 +156,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
     <button class="nav-tab" onclick="show('stakeholders',this)">👥 Stakeholder Map</button>
     <button class="nav-tab" onclick="show('plan',this)">♟ Win Plan</button>
     <button class="nav-tab" onclick="show('process',this)">⇄ Sales Process</button>
+    <button class="nav-tab" onclick="show('callsheet',this)">📞 Call Sheet</button>
     <button class="nav-tab" onclick="show('tools',this)">🛠 Toolstack</button>
     <button class="nav-tab" onclick="show('roi',this)">💧 ROI Model</button>
     <button class="nav-tab" onclick="show('battle',this)">⚔ Battle Card</button>
@@ -567,6 +568,72 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
     <div class="card" style="margin:0;"><div class="pipe-num">N3</div><h3 style="font-size:15px;">FAC endorsement</h3><p style="font-size:12px;margin:0;">Win the advisory council with Seattle's proof. Their yes de-risks it for every owner behind them.</p></div>
     <div class="card" style="margin:0;"><div class="pipe-num">N4</div><h3 style="font-size:15px;">Default standard</h3><p style="font-size:12px;margin:0;">Conference moment + onboarding default + renewal motion. The network decision, made once, compounds.</p></div>
   </div>
+</section>
+
+<!-- ═══════════════════════════ CALL SHEET -->
+<section id="callsheet" class="section">
+  <div class="section-label">Sales Process · the play in the field</div>
+  <h1>Owner discovery call<br><span style="color:var(--teal)">— the 20-minute first call.</span></h1>
+  <p style="font-size:16px;max-width:840px;margin-bottom:14px;">This is the actual script I'd run on a first call with an AllDry owner. The design principle: <strong style="color:var(--text)">every discovery question does double duty</strong> — it qualifies them <em>and</em> it collects the exact numbers that feed the live ROI. By the end I can put a dollar figure on <em>their</em> screen, not a generic one. Warm-intro-led — I never open cold.</p>
+
+  <div class="grid-2">
+    <div class="card card-teal" style="margin:0;">
+      <div class="badge" style="margin-bottom:6px;">0 · Open (2 min)</div>
+      <ul class="clean" style="margin:0;font-size:13px;">
+        <li>Name the warm path: <em>"Eric in Seattle / [peer] suggested we talk."</em></li>
+        <li>Set the frame: <em>"I'm not here to sell you software — I want to understand how you run claims and see if there's real money on the table. 15–20 minutes?"</em></li>
+        <li>Permission to ask numbers: <em>"Some of this gets specific — push back on anything you'd rather not share."</em></li>
+      </ul>
+    </div>
+    <div class="card card-amber" style="margin:0;">
+      <div class="badge badge-amber" style="margin-bottom:6px;">Disqualify fast (be honest)</div>
+      <ul class="clean" style="margin:0;font-size:13px;">
+        <li>Not claims/insurance-driven work → not a fit.</li>
+        <li>Owner isn't the decision-maker → find who is.</li>
+        <li>Genuinely no pain with Encircle + no growth goal → park it, don't force it.</li>
+        <li><strong style="color:var(--text)">A fast "not now" is worth more than a slow maybe.</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Discovery — the questions that <em>are</em> the ROI inputs</h2>
+  <div class="tbl-wrap" style="margin-bottom:12px;">
+    <table class="bt">
+      <thead><tr><th>What I ask</th><th>What it tells me</th><th>ROI input it fills</th></tr></thead>
+      <tbody>
+        <tr><td>"Roughly how many water/mold jobs a month?"</td><td class="dim">Size + volume</td><td class="win">Jobs / month</td></tr>
+        <tr><td>"What's your average approved ticket on a water job?"</td><td class="dim">Revenue per claim</td><td class="win">Avg approved ticket</td></tr>
+        <tr><td>"Who writes your estimates — you, an in-house estimator, or outsourced? How long does one take?"</td><td class="dim">Where the labor + time goes</td><td class="win">Est. time / job</td></tr>
+        <tr><td>"What do you pay that person (or the outsourced service)?"</td><td class="dim">Cost of the bottleneck</td><td class="win">Loaded estimator $/hr</td></tr>
+        <tr><td>"What are you documenting with today — Encircle? What's that run you a month?"</td><td class="dim">Incumbent + switching cost</td><td class="win">Software-wash baseline</td></tr>
+        <tr><td>"Where do you lose money on a claim — denied line items, supplements, cycle time, re-keying into Xactimate?"</td><td class="dim">The real pain, in their words</td><td class="win">Capture / uplift story</td></tr>
+        <tr><td>"How many territories do you run? Growing?"</td><td class="dim">Multi-unit leverage + timing</td><td class="win">Beachhead / expansion</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid-2">
+    <div class="card card-teal" style="margin:0;">
+      <div class="badge" style="margin-bottom:6px;">Qualify · is this real? (F.P.A.T.)</div>
+      <ul class="clean" style="margin:0;font-size:13px;">
+        <li><strong style="color:var(--text)">Fit</strong> — claims-driven, on Encircle, water/mold.</li>
+        <li><strong style="color:var(--text)">Pain</strong> — double-entry, denials, slow cycle, tickets left on the table.</li>
+        <li><strong style="color:var(--text)">Authority</strong> — the owner is the buyer (no franchisor mandate needed).</li>
+        <li><strong style="color:var(--text)">Timing</strong> — busy season coming, an Encircle renewal, or a growth push.</li>
+      </ul>
+    </div>
+    <div class="card card-green" style="margin:0;">
+      <div class="badge" style="margin-bottom:6px;">Pivot to value → run the ROI live</div>
+      <p style="font-size:13px;margin:0 0 6px;"><em>"Based on what you just told me — [X] jobs, [Y] ticket, [Z] on estimating — let me show you what that's worth."</em> Open the <a href="#roi" onclick="show('roi',[...document.querySelectorAll('.nav-tab')].find(t=>/ROI Model/.test(t.textContent)));return false;">ROI model</a>, type in <em>their</em> numbers, and land the line: <strong style="color:var(--text)">the labor saved alone pays for it 3–4× — before any ticket lift.</strong> Then peer-proof: <em>"Eric in Seattle — an owner like you — saw ~+11.6% on approved tickets."</em></p>
+    </div>
+  </div>
+
+  <div class="card card-teal" style="margin-top:12px;">
+    <div class="badge" style="margin-bottom:6px;">The ask · move them toward "Committed"</div>
+    <p style="font-size:14px;margin:0;">Not "buy it" — <strong style="color:var(--text)">"run it in parallel."</strong> <em>"Keep Encircle. Let's put TrueRestore on your next 3–4 live claims — I'll get your team set up — and you feel the higher approved ticket on your own jobs at zero risk. If it doesn't, we shake hands and part friends."</em> That's the coexist trial — it turns the biggest objection (switching cost) into a no-brainer, and a scheduled go-live date is what "Committed" actually means. Close with a <em>specific</em> next step and a calendar invite, never "I'll follow up."</p>
+  </div>
+
+  <div class="note" style="margin-top:12px;">Ties to the rest of the plan: the <a href="#process" onclick="show('process',[...document.querySelectorAll('.nav-tab')].find(t=>/Sales Process/.test(t.textContent)));return false;">sales-process stages</a> (Aware→Advocate), the <a href="#battle" onclick="show('battle',[...document.querySelectorAll('.nav-tab')].find(t=>/Battle Card/.test(t.textContent)));return false;">Encircle battle card</a> for objections, and the <a href="#grill" onclick="show('grill',[...document.querySelectorAll('.nav-tab')].find(t=>/Grilling/.test(t.textContent)));return false;">pushback bank</a> if they get skeptical. One sheet, run on repeat, ~175 times.</div>
 </section>
 
 <!-- ═══════════════════════════ TOOLSTACK -->
