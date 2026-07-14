@@ -87,7 +87,7 @@
 *Advance.*
 
 ## SLIDE 10 — Layer 2, the owners (~40 sec)
-> "Layer two is where the real persuasion happens — the owners. Seattle, the champion, protect above all. San Bernardino and Austin, the expansion lab. Then the network shapers: the multi-unit owners and the advisory council, whose opinion moves peers faster than any franchisor email — I want the loud, respected voices first. And I'd sequence by region, leading with the high-claims-volume metros where the pain, and the math, are loudest — the freeze-belt and storm markets. Water and freezing drive about 22.6% of all home claims, so I point the flywheel where the tickets are biggest. In this industry trust travels locally — so I make proof travel locally too."
+> "Layer two is where the real persuasion happens — the owners. Seattle, the champion, protect above all. San Bernardino and Austin, the expansion lab. Then the network shapers: the multi-unit owners — and these are big; All Dry's own marketing cites one running about 21 territories in San Diego, so landing a single owner can mean twenty locations — plus the advisory council, whose opinion moves peers faster than any franchisor email. I want the loud, respected voices first. And I'd sequence by region, leading with the high-claims-volume metros where the pain, and the math, are loudest — the freeze-belt and storm markets. Water and freezing drive about 22.6% of all home claims, so I point the flywheel where the tickets are biggest. In this industry trust travels locally — so I make proof travel locally too."
 
 *Advance.*
 
@@ -138,7 +138,7 @@
 ## SLIDE 17 — How I'd land them (~50 sec) — **the two moves that de-risk it**
 > "Two moves make this actually work. First — I don't ask anyone to rip out Encircle. I have them keep it and run TrueRestore on three or four live claims *in parallel* — a short, comped trial, so they're never double-paying. The owner feels the higher approved ticket on their own jobs at zero risk, and only *then* drops Encircle — which is where the software-wash economics kick in. It's a trial, not a migration, and that turns the biggest objection, switching cost, into a no-brainer.
 >
-> Second — my beachhead is the multi-unit owners, the ones running four-plus territories. One sale there is several locations converted *and* a respected advisory-council voice. In a peer network density beats breadth — a few undeniable proof clusters tip the network faster than scattered logos. Land the loud, respected owners and the middle of the curve follows."
+> Second — my beachhead is the multi-unit owners, and these are real and big. All Dry's *own* franchise marketing highlights an owner running about **21 territories in San Diego**, another with six in Tampa Bay. So one sale there isn't one location — it's potentially *twenty*, plus a respected advisory-council voice. In a peer network density beats breadth — a few undeniable proof clusters tip the network faster than scattered logos. Land the loud, respected owners and the middle of the curve follows. *(One honest note: those are first-name success stories from their marketing — I'd verify the real identities on the first call.)*"
 
 *Advance.*
 
