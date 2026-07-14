@@ -170,25 +170,25 @@
 ---
 
 ## SLIDE 21 — ROI live demo (~3.5 min) — **the centerpiece; drive it live**
-> "Let's do the money, live — and I'm going to start with the number that's hardest to argue with: **labor.** Not our case study — just hours and a wage."
+> "Let's do the money, live. TrueRestore does two things to *every* claim: it captures **more of the approved ticket** — their own case study landed about **11.6% more** — and it **gives the estimator's time back.** I'll hold the 11.6% fixed, because that's the *product*; what I'll change is the owner's size."
 
-*(Screen is on Conservative — Time saved 50%, ~$11K labor, 3x.)*
-> "One location writes about 25 jobs a month, and each estimate takes an estimator roughly an hour and a half to build in Xactimate. TrueRestore's field capture *becomes* that carrier-ready estimate — no re-keying. TrueBuilt publishes about **70% faster**, but watch, I'll open conservative at half that. Even at 50%, that's **225 estimator-hours a year given back** — at a loaded $50 an hour, about **$11,000 a location.** That alone is a **3-to-1 return** on a $3,600 tool, before a dollar of anything else. And they're already paying Encircle around $455 a month; TrueRestore's $300 — so net tool cost is basically zero."
+*(Screen opens Conservative — a small shop: 15 jobs/mo, $3,000 tickets.)*
+> "Start small — a shop doing 15 jobs a month at three-thousand-dollar tickets. Even here: the 11.6% capture is worth about **$28,000** a location, the time saved another **$8,000** — call it **$36,000 a year, a 10-to-1 return** on a $3,600 tool. And they're already paying Encircle ~$455 a month; TrueRestore's $300, so net tool cost is basically zero."
 
-*(Click **Base** — snaps Time saved to 70%, TrueBuilt's real number.)*
-> "Now here's TrueBuilt's actual published figure — 70%. Labor given back jumps to about **$16,000 a location, a 4-to-1 return — still just labor,** no revenue assumptions at all."
+*(Click **Base**, then **Aggressive** — jobs + ticket scale up.)*
+> "Now watch what happens as I scale to a real operator — 25 jobs, $3,800 tickets: about **$73,000** a location, 20-to-1. A busy metro shop — 40 jobs, bigger tickets: **$159,000**, 44-to-1. The 11.6% never moved — that's the product. What changed is *their* volume and ticket size."
 
-*(Now the upside — point at the 'total / loc' tile.)*
-> "*Then* I layer on the revenue lever. The brief's own case study landed about **+11.6% higher approved tickets** — and I treat that as **upside I'd verify on Seattle's real numbers, not the foundation.** Layered on, total owner value is around **$52,000 a location.** But notice — I never *needed* the 11.6% to make the case. The labor alone already paid for it four times over."
+*(The honesty line — point at the two tiles.)*
+> "And notice I show the two levers separately. Even if you threw out the 11.6% capture entirely and challenged it, the **labor half alone still pays for the tool 4-to-1.** So the case doesn't live or die on the case study."
 
 *(Invite them in.)*
-> "Throw me your real numbers — your estimator's rate, jobs a month — and I'll move the sliders."
+> "Throw me your real numbers — jobs a month, your average ticket, your estimator's rate — and I'll move the sliders. This is the same discovery I'd run on every owner."
 
-*(Optional — only if they lean in for the fuller picture: click **+ capacity upside**.)*
-> "And I keep this *off* by default, but if I turn on just the extra jobs an owner takes with that freed-up estimator time — conservatively 5% more — it jumps again. I leave it off because my headline should be the floor. And faster cash flow from quicker cycle time? I don't even put a number on it — that's honest upside on top."
+*(Optional — if they lean in: click **+ capacity upside**.)*
+> "Off by default, but if I add just the extra jobs an owner takes with that freed-up time — conservatively 5% more — it climbs again. And faster cash flow from quicker cycle time I don't even put a number on. Upside on top."
 
 *(Enterprise roll-up — the VP scale.)*
-> "Now scale it. Even at a conservative Year-1 adoption, across the 175 open locations the network **reclaims well over a million dollars in labor a year** — against a couple hundred thousand in software. *That* ratio, not the seat price, is what earns preferred-vendor status. Franchisee profitability is the franchisor's actual job — I'm handing them theirs."
+> "Now scale it across the network. Even at a conservative Year-1 adoption, that's **several million dollars of owner value a year** against a couple hundred thousand in software. *That* ratio, not the seat price, is what earns preferred-vendor status. Franchisee profitability is the franchisor's actual job — I'm handing them theirs."
 
 *Advance.*
 
@@ -281,7 +281,7 @@ Don't present this linearly. Pull it up if they ask "how are you different from 
 4. **Land them by coexisting (run alongside Encircle, no rip-out) and beachhead on multi-unit owners.**
 5. **I own a number: ~40 adopted / ~$140K in year one; 2–3 year capture; bottleneck is onboarding, not leads.**
 6. **The royalty lever: 7% of the ticket lift is HQ's money (real FDD figure) — endorsement is their self-interest.**
-7. **ROI basis is LABOR, not the case study: ~70% faster estimates × a real wage = 3–4x, before any revenue lift. The +11.6% is layered on as upside I'd verify.**
+7. **ROI = every claim captures 11.6% more (brief's case study, held fixed) + estimator time saved. Scenarios scale the owner's SIZE (jobs × ticket), not the %. Fallback if 11.6% is challenged: the labor half alone still pays ~4x.**
 
 ---
 
@@ -291,10 +291,10 @@ Don't present this linearly. Pull it up if they ask "how are you different from 
 ---
 
 ## WHERE THE NUMBERS COME FROM (defend these)
-- **~70% faster estimates** — TrueBuilt's own published figure (truebuiltsoftware.com). This is the ROI's *primary* basis. Construction-takeoff stat applied to restoration estimating on the same no-re-keying mechanism — I flag that and would verify the restoration number on Seattle's actuals. I open the calculator at a conservative 50%.
+- **+11.6% capture / claim** — TrueRestore's case study, *from the brief* ("our case study landed ~+11.6% YoY"). Held **fixed** in the model as the product's effect on every claim; I'd verify it on Seattle's real before/after and broaden the evidence before the FAC. The scenarios don't change this — they change the owner's size.
+- **~70% faster estimates → time saved** — TrueBuilt's published figure (truebuiltsoftware.com); construction-takeoff stat applied to restoration estimating (same no-re-keying mechanism), verify on Seattle. Modeled conservatively at ~60% time saved. This is the *second* lever, and the fallback if the 11.6% is challenged.
 - **~1.5 hr to write an estimate in-house** — industry norm (complex jobs run higher); the time TrueRestore removes per job.
 - **~$50/hr loaded estimator** — restoration estimator ~$39.90/hr avg + load (ZipRecruiter / Salary.com 2025).
-- **+11.6% approved-ticket lift** — TrueRestore's case study, *from the brief* ("our case study landed ~+11.6% YoY"). One data point → I layer it on as **upside**, not the foundation, and would broaden the evidence before the FAC.
 - **$3,800 avg ticket** — national average water-damage job ($3,814–$3,867, Angi/HomeAdvisor).
 - **45% margin** — water-damage gross margin is 50–80%; the lift is near-pure margin (work already done), so 45% is conservative.
 - **Encircle $270–$650/mo** — real public pricing (getencircle.com); TrueRestore $300 = a wash.
