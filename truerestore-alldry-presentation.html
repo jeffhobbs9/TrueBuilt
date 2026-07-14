@@ -447,25 +447,25 @@ body.menu-on .menu{display:block;}
     <button class="scn-btn" id="scn-aggr" onclick="scenario('aggr')">Aggressive</button>
     <span style="width:1px;height:15px;background:var(--border);margin:0 4px;"></span>
     <button class="scn-btn" id="scn-cap" onclick="toggleCap()" title="Optional: adds the extra jobs an owner can take with the freed-up estimator time. Off by default.">+ capacity upside</button>
-    <span style="font-family:'Space Mono',monospace;font-size:clamp(9px,1vw,12px);color:var(--muted);letter-spacing:.06em;margin-left:auto;">CAPTURE / CLAIM <b class="ambt" id="out-upliftp">5.0%</b> <span style="opacity:.6;">· brief's case study = 11.6%</span></span>
+    <span style="font-family:'Space Mono',monospace;font-size:clamp(9px,1vw,12px);color:var(--muted);letter-spacing:.06em;margin-left:auto;">CAPTURE / CLAIM <b class="ambt" id="out-upliftp">11.6%</b> <span style="opacity:.6;">· brief's case study, held fixed</span></span>
   </div>
   <div class="roi-wrap">
     <div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Jobs / month</span><span class="slider-val" id="v-jobs">25</span></div><input type="range" min="5" max="80" step="1" value="25" oninput="setP('jobs',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Est. time to write a job</span><span class="slider-val" id="v-esttime">1.5 hr</span></div><input type="range" min="0.5" max="4" step="0.1" value="1.5" oninput="setP('esttime',this.value)"></div>
-      <div class="slider-row"><div class="slider-head"><span class="slider-name">Time saved w/ TrueRestore</span><span class="slider-val" id="v-saved">50%</span></div><input type="range" min="30" max="80" step="5" value="50" oninput="setP('saved',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Jobs / month</span><span class="slider-val" id="v-jobs">15</span></div><input type="range" min="5" max="80" step="1" value="15" oninput="setP('jobs',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Avg claim value (approved ticket)</span><span class="slider-val" id="v-ticket">$3,000</span></div><input type="range" min="1000" max="15000" step="100" value="3000" oninput="setP('ticket',this.value)"></div>
+      <div class="slider-row"><div class="slider-head"><span class="slider-name">Time saved on estimating</span><span class="slider-val" id="v-saved">60%</span></div><input type="range" min="30" max="80" step="5" value="60" oninput="setP('saved',this.value)"></div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Loaded estimator $/hr</span><span class="slider-val" id="v-rate">$50/hr</span></div><input type="range" min="30" max="90" step="5" value="50" oninput="setP('rate',this.value)"></div>
       <div class="slider-row"><div class="slider-head"><span class="slider-name">Year-1 network adoption</span><span class="slider-val" id="v-adopt">30%</span></div><input type="range" min="10" max="100" step="5" value="30" oninput="setP('adopt',this.value)"></div>
     </div>
     <div>
       <div class="roi-outs">
-        <div class="roi-metric"><div class="n grnt" id="out-labor">—</div><div class="l">Labor saved / loc / yr</div></div>
-        <div class="roi-metric"><div class="n tealt" id="out-lroi">—</div><div class="l">Labor-only ROI</div></div>
-        <div class="roi-metric"><div class="n tealt" id="out-hrs">—</div><div class="l">Estimator hrs saved / loc</div></div>
-        <div class="roi-metric"><div class="n grnt" id="out-total">—</div><div class="l">+ capture/claim = total / loc</div></div>
+        <div class="roi-metric"><div class="n grnt" id="out-capture">—</div><div class="l">Capture uplift / loc (11.6%)</div></div>
+        <div class="roi-metric"><div class="n grnt" id="out-labor">—</div><div class="l">Labor saved / loc</div></div>
+        <div class="roi-metric"><div class="n tealt" id="out-total">—</div><div class="l">Total owner value / loc</div></div>
+        <div class="roi-metric"><div class="n tealt" id="out-roi">—</div><div class="l">Total ROI</div></div>
       </div>
-      <div class="roi-punch" style="margin-top:1vh;"><strong class="tealt">Before a dollar of ticket lift</strong>, the labor saved alone is a <strong class="tealt" id="out-lroi2">—</strong> return — and TrueRestore ($300) ≈ their Encircle spend, so net tool cost ≈ zero. Across 175 locations at <span id="out-adoptp">30%</span> adoption: <strong class="grnt" id="out-netlabor">—</strong> reclaimed labor · <strong class="tealt" id="out-y1arr">—</strong> ARR to us · <strong class="ambt" id="out-nettotal">—</strong> total owner value with the ticket upside layered on.</div>
-      <div style="font-size:clamp(10px,1.05vw,13px);color:var(--muted);margin-top:.8vh;">Default is a <strong class="tealt">floor</strong> — labor + capture only. Toggle <strong class="tealt">+ capacity upside</strong> to add the extra jobs from freed time; <strong>faster cash flow</strong> from quicker cycle time I leave as named upside, not a number.</div>
+      <div class="roi-punch" style="margin-top:1vh;">Each claim captures <strong class="ambt">11.6%</strong> more (the brief's case study) <strong class="tealt">plus</strong> the estimator time TrueRestore gives back — and even the labor half alone is a <strong class="tealt" id="out-lroi2">—</strong> return. TrueRestore ($300) ≈ their Encircle spend, so net tool cost ≈ zero. Across 175 locations at <span id="out-adoptp">30%</span> adoption: <strong class="ambt" id="out-nettotal">—</strong> total owner value · <strong class="tealt" id="out-y1arr">—</strong> ARR to us.</div>
+      <div style="font-size:clamp(10px,1.05vw,13px);color:var(--muted);margin-top:.8vh;"><strong class="tealt">Conservative</strong> = a small shop (15 jobs, $3k tickets); click <strong>Base / Aggressive</strong> to scale to a busy metro — that's what varies. The <strong>11.6% capture</strong> is the brief's case study, held fixed (I'd verify on Seattle). Toggle <strong class="tealt">+ capacity upside</strong> for the extra jobs from freed time.</div>
     </div>
   </div>
   <div class="snotes">Your centerpiece — <strong>drive it live.</strong> The reframe: the <strong>primary ROI is labor/time saved</strong>, built on TrueBuilt's published <strong>~70% faster</strong> estimate build and researched estimator pay (~$50/hr loaded) — <em>not</em> the case-study 11.6%. So even if someone challenges the ticket lift, the labor math alone returns <strong>3–4×</strong>. Open <strong>Conservative (50% time saved)</strong>, then click <strong>Base</strong> to snap it to <strong>70% — TrueBuilt's own number</strong> — so <em>they</em> push it up. Ask them to throw you a real one ("your estimator's rate? jobs a month?") and move the sliders. Then land the <strong>enterprise roll-up</strong>: 175 locations reclaim <strong>$0.6–1.2M in labor a year</strong>. The approved-ticket lift is layered on as the "total / loc" tile — upside, not the foundation — and it's still a <strong>software-wash</strong> vs Encircle (~$455/mo) so net tool cost ≈ zero. <strong>Honest tag:</strong> 70% is TrueBuilt's construction-takeoff figure applied to restoration estimating on the same no-re-keying mechanism — I'd verify the restoration number against Seattle's actuals. I deliberately don't monetize cycle-time (uncounted upside) and there's no "missed-bid" line (restoration is inbound insurance work) — keeps it conservative. <strong>If asked about denied/missed claims:</strong> the "capture/claim" % (the brief's 11.6% on Aggressive) <em>is</em> the denied-line-items story — better docs → fewer denials → higher approved ticket; I don't add a separate "denied claims" line or it double-counts. "Missed claims" from no labor capacity = the <strong>+ capacity upside</strong> toggle. So denied + missed are both already represented — as capture and as capacity — not bolted on twice.</div>
@@ -611,15 +611,15 @@ slides.forEach((s,i)=>{
 setTimeout(()=>{ const h=document.getElementById('hint'); if(h) h.style.opacity='0'; }, 6000);
 
 // ── ROI model (canonical — matches the deal-room; defaults are sourced)
-const R = { jobs:25, esttime:1.5, saved:50, rate:50, ticket:3800, cmargin:45, uplift:5, tput:0, price:300, encircle:455, locs:175, adopt:30 };
+const R = { jobs:15, ticket:3000, saved:60, rate:50, esttime:1.5, capture:11.6, cmargin:45, tput:0, price:300, encircle:455, locs:175, adopt:30 };
 const SCN = {
-  cons: { saved:50, uplift:5,    adopt:30 },
-  base: { saved:70, uplift:7,    adopt:45 },
-  aggr: { saved:70, uplift:11.6, adopt:60 }
+  cons: { jobs:15, ticket:3000, adopt:30 },
+  base: { jobs:25, ticket:3800, adopt:45 },
+  aggr: { jobs:40, ticket:5500, adopt:60 }
 };
 const fmt = n => { if(!isFinite(n)||isNaN(n)) return '—'; const a=Math.abs(n);
   if(a>=1000000) return '$'+(n/1000000).toFixed(2)+'M'; if(a>=1000) return '$'+Math.round(n/1000)+'K'; return '$'+Math.round(n).toLocaleString(); };
-const disp = k => ({ jobs:Math.round(R.jobs), esttime:R.esttime.toFixed(1)+' hr', saved:Math.round(R.saved)+'%',
+const disp = k => ({ jobs:Math.round(R.jobs), ticket:'$'+Math.round(R.ticket).toLocaleString(), saved:Math.round(R.saved)+'%',
   rate:'$'+Math.round(R.rate)+'/hr', adopt:Math.round(R.adopt)+'%' }[k]);
 function setP(k,v){ R[k]=parseFloat(v);
   const el=document.getElementById('v-'+k); if(el&&disp(k)!==undefined) el.textContent=disp(k); calcROI(); }
@@ -631,7 +631,7 @@ function toggleCap(){
 }
 function scenario(mode){
   Object.assign(R, SCN[mode]);
-  ['saved','adopt'].forEach(k=>{
+  ['jobs','ticket','adopt'].forEach(k=>{
     const sl=document.querySelector('input[oninput="setP(\''+k+'\',this.value)"]'); if(sl) sl.value=R[k];
     const lb=document.getElementById('v-'+k); if(lb) lb.textContent=disp(k);
   });
@@ -640,27 +640,27 @@ function scenario(mode){
 }
 function calcROI(){
   const jobsYr=R.jobs*12;
-  // PRIMARY lever: labor / time saved (TrueBuilt ~70% faster × researched estimator rate)
+  // CAPTURE: each claim's approved ticket is R.capture% higher (brief's 11.6%, fixed)
+  const incRev=jobsYr*R.ticket*(R.capture/100);
+  const captureVal=incRev*(R.cmargin/100);
+  // LABOR: estimator time TrueRestore gives back
   const hrsSaved=R.esttime*(R.saved/100)*jobsYr;
   const laborSave=hrsSaved*R.rate;
   const trCost=R.price*12;
   const laborROI=trCost>0?laborSave/trCost:0;
-  // SECOND lever (upside): approved-ticket uplift — the brief's case study, layered on
-  const incRev=jobsYr*R.ticket*(R.uplift/100);
-  const ticketVal=incRev*(R.cmargin/100);
   // OPTIONAL (off by default): capacity upside — extra jobs from freed estimator time
   const tputVal=jobsYr*(R.tput/100)*R.ticket*(R.cmargin/100);
-  const ownerVal=laborSave+ticketVal+tputVal;
+  const ownerVal=captureVal+laborSave+tputVal;
+  const totalROI=trCost>0?ownerVal/trCost:0;
   // enterprise roll-up
-  const netLabor=R.locs*laborSave*(R.adopt/100);
   const netTotal=R.locs*ownerVal*(R.adopt/100);
   const y1ARR=R.locs*trCost*(R.adopt/100);
   const s=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
-  s('out-labor',fmt(laborSave));
-  s('out-lroi',laborROI>0?laborROI.toFixed(0)+'x':'—'); s('out-lroi2',laborROI>0?laborROI.toFixed(0)+'x':'—');
-  s('out-hrs',Math.round(hrsSaved)+' hrs'); s('out-total',fmt(ownerVal));
-  s('out-netlabor',fmt(netLabor)); s('out-y1arr',fmt(y1ARR)); s('out-nettotal',fmt(netTotal));
-  s('out-adoptp',Math.round(R.adopt)+'%'); s('out-upliftp',R.uplift.toFixed(1)+'%');
+  s('out-capture',fmt(captureVal)); s('out-labor',fmt(laborSave));
+  s('out-total',fmt(ownerVal)); s('out-roi',totalROI>0?totalROI.toFixed(0)+'x':'—');
+  s('out-lroi2',laborROI>0?laborROI.toFixed(0)+'x':'—');
+  s('out-nettotal',fmt(netTotal)); s('out-y1arr',fmt(y1ARR));
+  s('out-adoptp',Math.round(R.adopt)+'%'); s('out-upliftp',R.capture.toFixed(1)+'%');
 }
 
 render(false);
