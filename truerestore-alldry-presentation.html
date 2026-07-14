@@ -445,6 +445,8 @@ body.menu-on .menu{display:block;}
     <button class="scn-btn active" id="scn-cons" onclick="scenario('cons')">Conservative</button>
     <button class="scn-btn" id="scn-base" onclick="scenario('base')">Base</button>
     <button class="scn-btn" id="scn-aggr" onclick="scenario('aggr')">Aggressive</button>
+    <span style="width:1px;height:15px;background:var(--border);margin:0 4px;"></span>
+    <button class="scn-btn" id="scn-cap" onclick="toggleCap()" title="Optional: adds the extra jobs an owner can take with the freed-up estimator time. Off by default.">+ capacity upside</button>
   </div>
   <div class="roi-wrap">
     <div>
@@ -462,6 +464,7 @@ body.menu-on .menu{display:block;}
         <div class="roi-metric"><div class="n grnt" id="out-total">—</div><div class="l">+ ticket upside = total / loc</div></div>
       </div>
       <div class="roi-punch" style="margin-top:1vh;"><strong class="tealt">Before a dollar of ticket lift</strong>, the labor saved alone is a <strong class="tealt" id="out-lroi2">—</strong> return — and TrueRestore ($300) ≈ their Encircle spend, so net tool cost ≈ zero. Across 175 locations at <span id="out-adoptp">30%</span> adoption: <strong class="grnt" id="out-netlabor">—</strong> reclaimed labor · <strong class="tealt" id="out-y1arr">—</strong> ARR to us · <strong class="ambt" id="out-nettotal">—</strong> total owner value with the ticket upside layered on.</div>
+      <div style="font-size:clamp(10px,1.05vw,13px);color:var(--muted);margin-top:.8vh;">Default is a <strong class="tealt">floor</strong> — labor + capture only. Toggle <strong class="tealt">+ capacity upside</strong> to add the extra jobs from freed time; <strong>faster cash flow</strong> from quicker cycle time I leave as named upside, not a number.</div>
     </div>
   </div>
   <div class="snotes">Your centerpiece — <strong>drive it live.</strong> The reframe: the <strong>primary ROI is labor/time saved</strong>, built on TrueBuilt's published <strong>~70% faster</strong> estimate build and researched estimator pay (~$50/hr loaded) — <em>not</em> the case-study 11.6%. So even if someone challenges the ticket lift, the labor math alone returns <strong>3–4×</strong>. Open <strong>Conservative (50% time saved)</strong>, then click <strong>Base</strong> to snap it to <strong>70% — TrueBuilt's own number</strong> — so <em>they</em> push it up. Ask them to throw you a real one ("your estimator's rate? jobs a month?") and move the sliders. Then land the <strong>enterprise roll-up</strong>: 175 locations reclaim <strong>$0.6–1.2M in labor a year</strong>. The approved-ticket lift is layered on as the "total / loc" tile — upside, not the foundation — and it's still a <strong>software-wash</strong> vs Encircle (~$455/mo) so net tool cost ≈ zero. <strong>Honest tag:</strong> 70% is TrueBuilt's construction-takeoff figure applied to restoration estimating on the same no-re-keying mechanism — I'd verify the restoration number against Seattle's actuals. I deliberately don't monetize cycle-time (uncounted upside) and there's no "missed-bid" line (restoration is inbound insurance work) — keeps it conservative.</div>
@@ -607,7 +610,7 @@ slides.forEach((s,i)=>{
 setTimeout(()=>{ const h=document.getElementById('hint'); if(h) h.style.opacity='0'; }, 6000);
 
 // ── ROI model (canonical — matches the deal-room; defaults are sourced)
-const R = { jobs:25, esttime:1.5, saved:50, rate:50, ticket:3800, cmargin:45, uplift:5, price:300, encircle:455, locs:175, adopt:30 };
+const R = { jobs:25, esttime:1.5, saved:50, rate:50, ticket:3800, cmargin:45, uplift:5, tput:0, price:300, encircle:455, locs:175, adopt:30 };
 const SCN = {
   cons: { saved:50, uplift:5,    adopt:30 },
   base: { saved:70, uplift:7,    adopt:45 },
@@ -619,6 +622,12 @@ const disp = k => ({ jobs:Math.round(R.jobs), esttime:R.esttime.toFixed(1)+' hr'
   rate:'$'+Math.round(R.rate)+'/hr', adopt:Math.round(R.adopt)+'%' }[k]);
 function setP(k,v){ R[k]=parseFloat(v);
   const el=document.getElementById('v-'+k); if(el&&disp(k)!==undefined) el.textContent=disp(k); calcROI(); }
+function toggleCap(){
+  R.tput = R.tput>0 ? 0 : 5;
+  const b=document.getElementById('scn-cap');
+  if(b){ b.classList.toggle('active', R.tput>0); b.textContent = R.tput>0 ? '+ capacity upside ✓ (5% more jobs)' : '+ capacity upside'; }
+  calcROI();
+}
 function scenario(mode){
   Object.assign(R, SCN[mode]);
   ['saved','adopt'].forEach(k=>{
@@ -638,7 +647,9 @@ function calcROI(){
   // SECOND lever (upside): approved-ticket uplift — the brief's case study, layered on
   const incRev=jobsYr*R.ticket*(R.uplift/100);
   const ticketVal=incRev*(R.cmargin/100);
-  const ownerVal=laborSave+ticketVal;
+  // OPTIONAL (off by default): capacity upside — extra jobs from freed estimator time
+  const tputVal=jobsYr*(R.tput/100)*R.ticket*(R.cmargin/100);
+  const ownerVal=laborSave+ticketVal+tputVal;
   // enterprise roll-up
   const netLabor=R.locs*laborSave*(R.adopt/100);
   const netTotal=R.locs*ownerVal*(R.adopt/100);

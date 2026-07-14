@@ -179,6 +179,9 @@
 *(Invite them in.)*
 > "Throw me your real numbers — your estimator's rate, jobs a month — and I'll move the sliders."
 
+*(Optional — only if they lean in for the fuller picture: click **+ capacity upside**.)*
+> "And I keep this *off* by default, but if I turn on just the extra jobs an owner takes with that freed-up estimator time — conservatively 5% more — it jumps again. I leave it off because my headline should be the floor. And faster cash flow from quicker cycle time? I don't even put a number on it — that's honest upside on top."
+
 *(Enterprise roll-up — the VP scale.)*
 > "Now scale it. Even at a conservative Year-1 adoption, across the 175 open locations the network **reclaims well over a million dollars in labor a year** — against a couple hundred thousand in software. *That* ratio, not the seat price, is what earns preferred-vendor status. Franchisee profitability is the franchisor's actual job — I'm handing them theirs."
 
